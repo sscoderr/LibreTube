@@ -1,4 +1,4 @@
-package com.github.libretube.workers
+package com.bimilyoncu.sscoderr.libretube.workers
 
 import android.Manifest
 import android.app.Notification
@@ -15,18 +15,18 @@ import androidx.core.app.PendingIntentCompat
 import androidx.core.content.ContextCompat
 import androidx.work.CoroutineWorker
 import androidx.work.WorkerParameters
-import com.github.libretube.LibreTubeApp.Companion.PUSH_CHANNEL_NAME
-import com.github.libretube.R
-import com.github.libretube.api.SubscriptionHelper
-import com.github.libretube.api.obj.StreamItem
-import com.github.libretube.constants.IntentData
-import com.github.libretube.constants.PreferenceKeys
-import com.github.libretube.extensions.TAG
-import com.github.libretube.extensions.toID
-import com.github.libretube.helpers.ImageHelper
-import com.github.libretube.helpers.PreferenceHelper
-import com.github.libretube.ui.activities.MainActivity
-import com.github.libretube.ui.views.TimePickerPreference
+import com.bimilyoncu.sscoderr.libretube.LibreTubeApp.Companion.PUSH_CHANNEL_NAME
+import com.bimilyoncu.sscoderr.libretube.R
+import com.bimilyoncu.sscoderr.libretube.api.SubscriptionHelper
+import com.bimilyoncu.sscoderr.libretube.api.obj.StreamItem
+import com.bimilyoncu.sscoderr.libretube.constants.IntentData
+import com.bimilyoncu.sscoderr.libretube.constants.PreferenceKeys
+import com.bimilyoncu.sscoderr.libretube.extensions.TAG
+import com.bimilyoncu.sscoderr.libretube.extensions.toID
+import com.bimilyoncu.sscoderr.libretube.helpers.ImageHelper
+import com.bimilyoncu.sscoderr.libretube.helpers.PreferenceHelper
+import com.bimilyoncu.sscoderr.libretube.ui.activities.MainActivity
+import com.bimilyoncu.sscoderr.libretube.ui.views.TimePickerPreference
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
 import kotlinx.coroutines.awaitAll

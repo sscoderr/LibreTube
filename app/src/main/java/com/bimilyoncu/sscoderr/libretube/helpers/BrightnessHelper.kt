@@ -1,8 +1,8 @@
-package com.github.libretube.helpers
+package com.bimilyoncu.sscoderr.libretube.helpers
 
 import android.app.Activity
 import android.view.WindowManager
-import com.github.libretube.extensions.normalize
+import com.bimilyoncu.sscoderr.libretube.extensions.normalize
 
 class BrightnessHelper(activity: Activity) {
     private val window = activity.window

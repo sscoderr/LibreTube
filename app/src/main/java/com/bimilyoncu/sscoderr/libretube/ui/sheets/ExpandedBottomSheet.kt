@@ -1,4 +1,4 @@
-package com.github.libretube.ui.sheets
+package com.bimilyoncu.sscoderr.libretube.ui.sheets
 
 import android.app.Dialog
 import android.content.res.Configuration

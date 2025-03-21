@@ -1,20 +1,20 @@
-package com.github.libretube.ui.sheets
+package com.bimilyoncu.sscoderr.libretube.ui.sheets
 
 import android.os.Bundle
 import androidx.core.os.bundleOf
 import androidx.fragment.app.setFragmentResult
-import com.github.libretube.R
-import com.github.libretube.constants.IntentData
-import com.github.libretube.enums.ShareObjectType
-import com.github.libretube.extensions.serializable
-import com.github.libretube.helpers.BackgroundHelper
-import com.github.libretube.helpers.ContextHelper
-import com.github.libretube.helpers.NavigationHelper
-import com.github.libretube.obj.ShareData
-import com.github.libretube.ui.activities.DownloadActivity
-import com.github.libretube.ui.activities.NoInternetActivity
-import com.github.libretube.ui.dialogs.ShareDialog
-import com.github.libretube.ui.fragments.DownloadTab
+import com.bimilyoncu.sscoderr.libretube.R
+import com.bimilyoncu.sscoderr.libretube.constants.IntentData
+import com.bimilyoncu.sscoderr.libretube.enums.ShareObjectType
+import com.bimilyoncu.sscoderr.libretube.extensions.serializable
+import com.bimilyoncu.sscoderr.libretube.helpers.BackgroundHelper
+import com.bimilyoncu.sscoderr.libretube.helpers.ContextHelper
+import com.bimilyoncu.sscoderr.libretube.helpers.NavigationHelper
+import com.bimilyoncu.sscoderr.libretube.obj.ShareData
+import com.bimilyoncu.sscoderr.libretube.ui.activities.DownloadActivity
+import com.bimilyoncu.sscoderr.libretube.ui.activities.NoInternetActivity
+import com.bimilyoncu.sscoderr.libretube.ui.dialogs.ShareDialog
+import com.bimilyoncu.sscoderr.libretube.ui.fragments.DownloadTab
 
 class DownloadOptionsBottomSheet : BaseBottomSheet() {
     override fun onCreate(savedInstanceState: Bundle?) {

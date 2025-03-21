@@ -1,4 +1,4 @@
-package com.github.libretube.ui.base
+package com.bimilyoncu.sscoderr.libretube.ui.base
 
 import android.text.InputType
 import android.widget.Toast
@@ -7,10 +7,10 @@ import androidx.preference.ListPreference
 import androidx.preference.MultiSelectListPreference
 import androidx.preference.Preference
 import androidx.preference.PreferenceFragmentCompat
-import com.github.libretube.R
-import com.github.libretube.databinding.DialogTextPreferenceBinding
-import com.github.libretube.ui.activities.SettingsActivity
-import com.github.libretube.ui.preferences.EditNumberPreference
+import com.bimilyoncu.sscoderr.libretube.R
+import com.bimilyoncu.sscoderr.libretube.databinding.DialogTextPreferenceBinding
+import com.bimilyoncu.sscoderr.libretube.ui.activities.SettingsActivity
+import com.bimilyoncu.sscoderr.libretube.ui.preferences.EditNumberPreference
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 /**

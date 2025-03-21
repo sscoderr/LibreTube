@@ -1,18 +1,18 @@
-package com.github.libretube.api
+package com.bimilyoncu.sscoderr.libretube.api
 
-import com.github.libretube.api.RetrofitInstance.PIPED_API_URL
-import com.github.libretube.api.obj.Channel
-import com.github.libretube.api.obj.ChannelTabResponse
-import com.github.libretube.api.obj.CommentsPage
-import com.github.libretube.api.obj.DeArrowContent
-import com.github.libretube.api.obj.Message
-import com.github.libretube.api.obj.Playlist
-import com.github.libretube.api.obj.SearchResult
-import com.github.libretube.api.obj.SegmentData
-import com.github.libretube.api.obj.StreamItem
-import com.github.libretube.api.obj.Streams
-import com.github.libretube.constants.PreferenceKeys
-import com.github.libretube.helpers.PreferenceHelper
+import com.bimilyoncu.sscoderr.libretube.api.RetrofitInstance.PIPED_API_URL
+import com.bimilyoncu.sscoderr.libretube.api.obj.Channel
+import com.bimilyoncu.sscoderr.libretube.api.obj.ChannelTabResponse
+import com.bimilyoncu.sscoderr.libretube.api.obj.CommentsPage
+import com.bimilyoncu.sscoderr.libretube.api.obj.DeArrowContent
+import com.bimilyoncu.sscoderr.libretube.api.obj.Message
+import com.bimilyoncu.sscoderr.libretube.api.obj.Playlist
+import com.bimilyoncu.sscoderr.libretube.api.obj.SearchResult
+import com.bimilyoncu.sscoderr.libretube.api.obj.SegmentData
+import com.bimilyoncu.sscoderr.libretube.api.obj.StreamItem
+import com.bimilyoncu.sscoderr.libretube.api.obj.Streams
+import com.bimilyoncu.sscoderr.libretube.constants.PreferenceKeys
+import com.bimilyoncu.sscoderr.libretube.helpers.PreferenceHelper
 import kotlinx.serialization.encodeToString
 import retrofit2.HttpException
 

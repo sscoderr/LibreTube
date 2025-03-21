@@ -1,10 +1,10 @@
-package com.github.libretube.db.obj
+package com.bimilyoncu.sscoderr.libretube.db.obj
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import com.github.libretube.api.obj.StreamItem
-import com.github.libretube.extensions.toMillis
+import com.bimilyoncu.sscoderr.libretube.api.obj.StreamItem
+import com.bimilyoncu.sscoderr.libretube.extensions.toMillis
 import kotlinx.datetime.LocalDate
 import java.nio.file.Path
 

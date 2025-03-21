@@ -1,4 +1,4 @@
-package com.github.libretube.helpers
+package com.bimilyoncu.sscoderr.libretube.helpers
 
 import android.content.Context
 import androidx.work.Constraints
@@ -6,8 +6,8 @@ import androidx.work.ExistingPeriodicWorkPolicy
 import androidx.work.NetworkType
 import androidx.work.PeriodicWorkRequestBuilder
 import androidx.work.WorkManager
-import com.github.libretube.constants.PreferenceKeys
-import com.github.libretube.workers.NotificationWorker
+import com.bimilyoncu.sscoderr.libretube.constants.PreferenceKeys
+import com.bimilyoncu.sscoderr.libretube.workers.NotificationWorker
 import java.util.concurrent.TimeUnit
 
 object NotificationHelper {

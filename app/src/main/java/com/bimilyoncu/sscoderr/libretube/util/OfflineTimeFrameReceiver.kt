@@ -1,10 +1,10 @@
-package com.github.libretube.util
+package com.bimilyoncu.sscoderr.libretube.util
 
 import android.content.Context
 import android.graphics.Bitmap
 import android.media.MediaMetadataRetriever
-import com.github.libretube.extensions.toAndroidUri
-import com.github.libretube.ui.interfaces.TimeFrameReceiver
+import com.bimilyoncu.sscoderr.libretube.extensions.toAndroidUri
+import com.bimilyoncu.sscoderr.libretube.ui.interfaces.TimeFrameReceiver
 import java.nio.file.Path
 
 class OfflineTimeFrameReceiver(

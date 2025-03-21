@@ -1,4 +1,4 @@
-package com.github.libretube.obj
+package com.bimilyoncu.sscoderr.libretube.obj
 
 data class VideoResolution(
     val name: String,

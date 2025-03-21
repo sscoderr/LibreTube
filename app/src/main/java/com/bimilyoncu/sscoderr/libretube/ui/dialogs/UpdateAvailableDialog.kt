@@ -1,13 +1,13 @@
-package com.github.libretube.ui.dialogs
+package com.bimilyoncu.sscoderr.libretube.ui.dialogs
 
 import android.app.Dialog
 import android.content.Intent
 import android.os.Bundle
 import androidx.core.net.toUri
 import androidx.fragment.app.DialogFragment
-import com.github.libretube.R
-import com.github.libretube.constants.IntentData.appUpdateChangelog
-import com.github.libretube.constants.IntentData.appUpdateURL
+import com.bimilyoncu.sscoderr.libretube.R
+import com.bimilyoncu.sscoderr.libretube.constants.IntentData.appUpdateChangelog
+import com.bimilyoncu.sscoderr.libretube.constants.IntentData.appUpdateURL
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 class UpdateAvailableDialog : DialogFragment() {

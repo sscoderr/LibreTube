@@ -1,4 +1,4 @@
-package com.github.libretube.ui.views
+package com.bimilyoncu.sscoderr.libretube.ui.views
 
 import android.content.Context
 import android.graphics.Bitmap

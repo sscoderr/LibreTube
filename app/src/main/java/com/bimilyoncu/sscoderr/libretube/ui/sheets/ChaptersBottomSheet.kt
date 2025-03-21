@@ -1,4 +1,4 @@
-package com.github.libretube.ui.sheets
+package com.bimilyoncu.sscoderr.libretube.ui.sheets
 
 import android.annotation.SuppressLint
 import android.os.Bundle
@@ -9,11 +9,11 @@ import androidx.core.view.isVisible
 import androidx.fragment.app.activityViewModels
 import androidx.fragment.app.setFragmentResult
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.github.libretube.R
-import com.github.libretube.constants.IntentData
-import com.github.libretube.databinding.BottomSheetBinding
-import com.github.libretube.ui.adapters.ChaptersAdapter
-import com.github.libretube.ui.models.ChaptersViewModel
+import com.bimilyoncu.sscoderr.libretube.R
+import com.bimilyoncu.sscoderr.libretube.constants.IntentData
+import com.bimilyoncu.sscoderr.libretube.databinding.BottomSheetBinding
+import com.bimilyoncu.sscoderr.libretube.ui.adapters.ChaptersAdapter
+import com.bimilyoncu.sscoderr.libretube.ui.models.ChaptersViewModel
 
 class ChaptersBottomSheet : ExpandablePlayerSheet(R.layout.bottom_sheet) {
     private var _binding: BottomSheetBinding? = null

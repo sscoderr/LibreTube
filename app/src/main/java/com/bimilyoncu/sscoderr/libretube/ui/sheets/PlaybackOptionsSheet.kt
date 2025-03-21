@@ -1,4 +1,4 @@
-package com.github.libretube.ui.sheets
+package com.bimilyoncu.sscoderr.libretube.ui.sheets
 
 import android.os.Bundle
 import android.view.View
@@ -6,14 +6,14 @@ import androidx.core.os.bundleOf
 import androidx.media3.common.PlaybackParameters
 import androidx.media3.session.MediaController
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.github.libretube.R
-import com.github.libretube.constants.PreferenceKeys
-import com.github.libretube.databinding.PlaybackBottomSheetBinding
-import com.github.libretube.enums.PlayerCommand
-import com.github.libretube.extensions.round
-import com.github.libretube.helpers.PreferenceHelper
-import com.github.libretube.services.AbstractPlayerService
-import com.github.libretube.ui.adapters.SliderLabelsAdapter
+import com.bimilyoncu.sscoderr.libretube.R
+import com.bimilyoncu.sscoderr.libretube.constants.PreferenceKeys
+import com.bimilyoncu.sscoderr.libretube.databinding.PlaybackBottomSheetBinding
+import com.bimilyoncu.sscoderr.libretube.enums.PlayerCommand
+import com.bimilyoncu.sscoderr.libretube.extensions.round
+import com.bimilyoncu.sscoderr.libretube.helpers.PreferenceHelper
+import com.bimilyoncu.sscoderr.libretube.services.AbstractPlayerService
+import com.bimilyoncu.sscoderr.libretube.ui.adapters.SliderLabelsAdapter
 
 class PlaybackOptionsSheet(
     private val player: MediaController

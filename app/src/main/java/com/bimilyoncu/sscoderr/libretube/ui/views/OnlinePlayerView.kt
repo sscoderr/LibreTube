@@ -1,4 +1,4 @@
-package com.github.libretube.ui.views
+package com.bimilyoncu.sscoderr.libretube.ui.views
 
 import android.content.Context
 import android.os.Bundle
@@ -15,23 +15,23 @@ import androidx.media3.common.C
 import androidx.media3.common.Player
 import androidx.media3.common.util.UnstableApi
 import androidx.media3.session.MediaController
-import com.github.libretube.R
-import com.github.libretube.constants.IntentData
-import com.github.libretube.constants.PreferenceKeys
-import com.github.libretube.enums.PlayerCommand
-import com.github.libretube.extensions.toID
-import com.github.libretube.helpers.PlayerHelper
-import com.github.libretube.helpers.PreferenceHelper
-import com.github.libretube.helpers.WindowHelper
-import com.github.libretube.obj.BottomSheetItem
-import com.github.libretube.services.AbstractPlayerService
-import com.github.libretube.ui.base.BaseActivity
-import com.github.libretube.ui.dialogs.SubmitDeArrowDialog
-import com.github.libretube.ui.dialogs.SubmitSegmentDialog
-import com.github.libretube.ui.interfaces.OnlinePlayerOptions
-import com.github.libretube.ui.models.CommonPlayerViewModel
-import com.github.libretube.ui.models.PlayerViewModel
-import com.github.libretube.util.PlayingQueue
+import com.bimilyoncu.sscoderr.libretube.R
+import com.bimilyoncu.sscoderr.libretube.constants.IntentData
+import com.bimilyoncu.sscoderr.libretube.constants.PreferenceKeys
+import com.bimilyoncu.sscoderr.libretube.enums.PlayerCommand
+import com.bimilyoncu.sscoderr.libretube.extensions.toID
+import com.bimilyoncu.sscoderr.libretube.helpers.PlayerHelper
+import com.bimilyoncu.sscoderr.libretube.helpers.PreferenceHelper
+import com.bimilyoncu.sscoderr.libretube.helpers.WindowHelper
+import com.bimilyoncu.sscoderr.libretube.obj.BottomSheetItem
+import com.bimilyoncu.sscoderr.libretube.services.AbstractPlayerService
+import com.bimilyoncu.sscoderr.libretube.ui.base.BaseActivity
+import com.bimilyoncu.sscoderr.libretube.ui.dialogs.SubmitDeArrowDialog
+import com.bimilyoncu.sscoderr.libretube.ui.dialogs.SubmitSegmentDialog
+import com.bimilyoncu.sscoderr.libretube.ui.interfaces.OnlinePlayerOptions
+import com.bimilyoncu.sscoderr.libretube.ui.models.CommonPlayerViewModel
+import com.bimilyoncu.sscoderr.libretube.ui.models.PlayerViewModel
+import com.bimilyoncu.sscoderr.libretube.util.PlayingQueue
 
 @UnstableApi
 class OnlinePlayerView(

@@ -1,16 +1,16 @@
-package com.github.libretube.ui.base
+package com.bimilyoncu.sscoderr.libretube.ui.base
 
 import android.content.Context
 import android.content.pm.ActivityInfo
 import android.content.res.Configuration
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.github.libretube.R
-import com.github.libretube.constants.PreferenceKeys
-import com.github.libretube.helpers.LocaleHelper
-import com.github.libretube.helpers.PreferenceHelper
-import com.github.libretube.helpers.ThemeHelper
-import com.github.libretube.helpers.WindowHelper
+import com.bimilyoncu.sscoderr.libretube.R
+import com.bimilyoncu.sscoderr.libretube.constants.PreferenceKeys
+import com.bimilyoncu.sscoderr.libretube.helpers.LocaleHelper
+import com.bimilyoncu.sscoderr.libretube.helpers.PreferenceHelper
+import com.bimilyoncu.sscoderr.libretube.helpers.ThemeHelper
+import com.bimilyoncu.sscoderr.libretube.helpers.WindowHelper
 import java.util.Locale
 
 /**

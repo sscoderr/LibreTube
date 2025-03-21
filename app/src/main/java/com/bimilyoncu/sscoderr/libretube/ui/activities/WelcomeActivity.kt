@@ -1,4 +1,4 @@
-package com.github.libretube.ui.activities
+package com.bimilyoncu.sscoderr.libretube.ui.activities
 
 import android.content.Intent
 import android.content.pm.ActivityInfo
@@ -8,11 +8,11 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.activity.viewModels
 import androidx.core.view.isGone
 import androidx.core.view.isVisible
-import com.github.libretube.databinding.ActivityWelcomeBinding
-import com.github.libretube.ui.adapters.InstancesAdapter
-import com.github.libretube.ui.base.BaseActivity
-import com.github.libretube.ui.models.WelcomeViewModel
-import com.github.libretube.ui.preferences.BackupRestoreSettings
+import com.bimilyoncu.sscoderr.libretube.databinding.ActivityWelcomeBinding
+import com.bimilyoncu.sscoderr.libretube.ui.adapters.InstancesAdapter
+import com.bimilyoncu.sscoderr.libretube.ui.base.BaseActivity
+import com.bimilyoncu.sscoderr.libretube.ui.models.WelcomeViewModel
+import com.bimilyoncu.sscoderr.libretube.ui.preferences.BackupRestoreSettings
 
 class WelcomeActivity : BaseActivity() {
 

@@ -1,11 +1,11 @@
-package com.github.libretube.db.dao
+package com.bimilyoncu.sscoderr.libretube.db.dao
 
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import androidx.room.Update
-import com.github.libretube.db.obj.SubscriptionsFeedItem
+import com.bimilyoncu.sscoderr.libretube.db.obj.SubscriptionsFeedItem
 
 @Dao
 interface SubscriptionsFeedDao {

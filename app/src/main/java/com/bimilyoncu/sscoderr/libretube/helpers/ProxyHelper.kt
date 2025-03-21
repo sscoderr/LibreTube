@@ -1,8 +1,8 @@
-package com.github.libretube.helpers
+package com.bimilyoncu.sscoderr.libretube.helpers
 
-import com.github.libretube.api.PipedMediaServiceRepository
-import com.github.libretube.api.RetrofitInstance
-import com.github.libretube.constants.PreferenceKeys
+import com.bimilyoncu.sscoderr.libretube.api.PipedMediaServiceRepository
+import com.bimilyoncu.sscoderr.libretube.api.RetrofitInstance
+import com.bimilyoncu.sscoderr.libretube.constants.PreferenceKeys
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

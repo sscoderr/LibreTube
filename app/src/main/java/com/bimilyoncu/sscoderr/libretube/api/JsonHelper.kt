@@ -1,4 +1,4 @@
-package com.github.libretube.api
+package com.bimilyoncu.sscoderr.libretube.api
 
 import kotlinx.serialization.json.Json
 

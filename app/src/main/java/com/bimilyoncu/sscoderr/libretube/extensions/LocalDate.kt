@@ -1,4 +1,4 @@
-package com.github.libretube.extensions
+package com.bimilyoncu.sscoderr.libretube.extensions
 
 import kotlinx.datetime.Instant
 import kotlinx.datetime.LocalDate

@@ -1,4 +1,4 @@
-package com.github.libretube.helpers
+package com.bimilyoncu.sscoderr.libretube.helpers
 
 import android.app.NotificationManager
 import android.content.Context
@@ -7,26 +7,26 @@ import android.os.Handler
 import android.os.Looper
 import android.os.Process
 import androidx.annotation.OptIn
+import androidx.constraintlayout.motion.widget.MotionLayout
 import androidx.core.content.getSystemService
 import androidx.core.os.bundleOf
 import androidx.core.os.postDelayed
 import androidx.fragment.app.commitNow
 import androidx.fragment.app.replace
 import androidx.media3.common.util.UnstableApi
-import com.github.libretube.NavDirections
-import com.github.libretube.R
-import com.github.libretube.constants.IntentData
-import com.github.libretube.constants.PreferenceKeys
-import com.github.libretube.enums.PlaylistType
-import com.github.libretube.extensions.toID
-import com.github.libretube.parcelable.PlayerData
-import com.github.libretube.ui.activities.MainActivity
-import com.github.libretube.ui.activities.ZoomableImageActivity
-import com.github.libretube.ui.base.BaseActivity
-import com.github.libretube.ui.fragments.AudioPlayerFragment
-import com.github.libretube.ui.fragments.PlayerFragment
-import com.github.libretube.ui.views.SingleViewTouchableMotionLayout
-import com.github.libretube.util.PlayingQueue
+import com.bimilyoncu.sscoderr.libretube.NavDirections
+import com.bimilyoncu.sscoderr.libretube.R
+import com.bimilyoncu.sscoderr.libretube.constants.IntentData
+import com.bimilyoncu.sscoderr.libretube.constants.PreferenceKeys
+import com.bimilyoncu.sscoderr.libretube.enums.PlaylistType
+import com.bimilyoncu.sscoderr.libretube.extensions.toID
+import com.bimilyoncu.sscoderr.libretube.parcelable.PlayerData
+import com.bimilyoncu.sscoderr.libretube.ui.activities.MainActivity
+import com.bimilyoncu.sscoderr.libretube.ui.activities.ZoomableImageActivity
+import com.bimilyoncu.sscoderr.libretube.ui.base.BaseActivity
+import com.bimilyoncu.sscoderr.libretube.ui.fragments.AudioPlayerFragment
+import com.bimilyoncu.sscoderr.libretube.ui.fragments.PlayerFragment
+import com.bimilyoncu.sscoderr.libretube.util.PlayingQueue
 
 object NavigationHelper {
     private val handler = Handler(Looper.getMainLooper())
@@ -40,7 +40,7 @@ object NavigationHelper {
             // minimize player if currently expanded
             if (activity.binding.mainMotionLayout.progress == 0f) {
                 activity.binding.mainMotionLayout.transitionToEnd()
-                activity.findViewById<SingleViewTouchableMotionLayout>(R.id.playerMotionLayout)
+                activity.findViewById<MotionLayout>(R.id.playerMotionLayout)
                     .transitionToEnd()
             }
         } catch (e: Exception) {

@@ -1,6 +1,6 @@
-package com.github.libretube.obj
+package com.bimilyoncu.sscoderr.libretube.obj
 
-import com.github.libretube.ui.dialogs.ShareDialog
+import com.bimilyoncu.sscoderr.libretube.ui.dialogs.ShareDialog
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 

@@ -1,4 +1,4 @@
-package com.github.libretube.ui.sheets
+package com.bimilyoncu.sscoderr.libretube.ui.sheets
 
 import android.annotation.SuppressLint
 import android.os.Bundle
@@ -6,14 +6,14 @@ import android.view.View
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.github.libretube.R
-import com.github.libretube.databinding.DialogSubscriptionGroupsBinding
-import com.github.libretube.db.DatabaseHolder
-import com.github.libretube.db.obj.SubscriptionGroup
-import com.github.libretube.extensions.move
-import com.github.libretube.extensions.setOnDraggedListener
-import com.github.libretube.ui.adapters.SubscriptionGroupsAdapter
-import com.github.libretube.ui.models.EditChannelGroupsModel
+import com.bimilyoncu.sscoderr.libretube.R
+import com.bimilyoncu.sscoderr.libretube.databinding.DialogSubscriptionGroupsBinding
+import com.bimilyoncu.sscoderr.libretube.db.DatabaseHolder
+import com.bimilyoncu.sscoderr.libretube.db.obj.SubscriptionGroup
+import com.bimilyoncu.sscoderr.libretube.extensions.move
+import com.bimilyoncu.sscoderr.libretube.extensions.setOnDraggedListener
+import com.bimilyoncu.sscoderr.libretube.ui.adapters.SubscriptionGroupsAdapter
+import com.bimilyoncu.sscoderr.libretube.ui.models.EditChannelGroupsModel
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

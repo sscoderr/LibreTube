@@ -1,12 +1,12 @@
-package com.github.libretube.ui.activities
+package com.bimilyoncu.sscoderr.libretube.ui.activities
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.core.net.toUri
-import com.github.libretube.constants.IntentData
-import com.github.libretube.helpers.IntentHelper
-import com.github.libretube.ui.base.BaseActivity
-import com.github.libretube.util.PlayingQueue
+import com.bimilyoncu.sscoderr.libretube.constants.IntentData
+import com.bimilyoncu.sscoderr.libretube.helpers.IntentHelper
+import com.bimilyoncu.sscoderr.libretube.ui.base.BaseActivity
+import com.bimilyoncu.sscoderr.libretube.util.PlayingQueue
 
 /**
  * Receives a text by the intent and attempts to add it to the playing queue

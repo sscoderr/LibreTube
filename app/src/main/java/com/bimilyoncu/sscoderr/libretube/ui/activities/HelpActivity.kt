@@ -1,9 +1,9 @@
-package com.github.libretube.ui.activities
+package com.bimilyoncu.sscoderr.libretube.ui.activities
 
 import android.os.Bundle
-import com.github.libretube.databinding.ActivityHelpBinding
-import com.github.libretube.helpers.IntentHelper
-import com.github.libretube.ui.base.BaseActivity
+import com.bimilyoncu.sscoderr.libretube.databinding.ActivityHelpBinding
+import com.bimilyoncu.sscoderr.libretube.helpers.IntentHelper
+import com.bimilyoncu.sscoderr.libretube.ui.base.BaseActivity
 import com.google.android.material.card.MaterialCardView
 
 class HelpActivity : BaseActivity() {

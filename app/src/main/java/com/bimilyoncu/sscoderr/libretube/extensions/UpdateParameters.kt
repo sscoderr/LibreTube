@@ -1,4 +1,4 @@
-package com.github.libretube.extensions
+package com.bimilyoncu.sscoderr.libretube.extensions
 
 import androidx.media3.exoplayer.trackselection.DefaultTrackSelector
 

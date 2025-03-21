@@ -1,4 +1,4 @@
-package com.github.libretube.util
+package com.bimilyoncu.sscoderr.libretube.util
 
 import android.net.Uri
 import androidx.annotation.OptIn

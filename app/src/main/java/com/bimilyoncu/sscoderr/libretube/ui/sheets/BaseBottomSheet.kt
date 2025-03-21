@@ -1,4 +1,4 @@
-package com.github.libretube.ui.sheets
+package com.bimilyoncu.sscoderr.libretube.ui.sheets
 
 import android.os.Bundle
 import android.util.Log
@@ -9,11 +9,11 @@ import androidx.core.view.isVisible
 import androidx.core.view.updateLayoutParams
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.github.libretube.R
-import com.github.libretube.databinding.BottomSheetBinding
-import com.github.libretube.extensions.dpToPx
-import com.github.libretube.obj.BottomSheetItem
-import com.github.libretube.ui.adapters.BottomSheetAdapter
+import com.bimilyoncu.sscoderr.libretube.R
+import com.bimilyoncu.sscoderr.libretube.databinding.BottomSheetBinding
+import com.bimilyoncu.sscoderr.libretube.extensions.dpToPx
+import com.bimilyoncu.sscoderr.libretube.obj.BottomSheetItem
+import com.bimilyoncu.sscoderr.libretube.ui.adapters.BottomSheetAdapter
 import kotlinx.coroutines.launch
 
 open class BaseBottomSheet(@LayoutRes layoutResId: Int = R.layout.bottom_sheet) : ExpandedBottomSheet(layoutResId) {

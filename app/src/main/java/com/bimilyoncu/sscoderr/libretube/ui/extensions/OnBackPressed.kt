@@ -1,4 +1,4 @@
-package com.github.libretube.ui.extensions
+package com.bimilyoncu.sscoderr.libretube.ui.extensions
 
 import androidx.activity.OnBackPressedCallback
 import androidx.fragment.app.Fragment

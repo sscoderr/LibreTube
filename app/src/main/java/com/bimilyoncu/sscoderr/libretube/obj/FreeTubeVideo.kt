@@ -1,4 +1,4 @@
-package com.github.libretube.obj
+package com.bimilyoncu.sscoderr.libretube.obj
 
 import kotlinx.serialization.Serializable
 

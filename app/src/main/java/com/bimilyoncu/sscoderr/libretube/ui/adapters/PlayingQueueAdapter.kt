@@ -1,4 +1,4 @@
-package com.github.libretube.ui.adapters
+package com.bimilyoncu.sscoderr.libretube.ui.adapters
 
 import android.annotation.SuppressLint
 import android.graphics.Color
@@ -6,12 +6,12 @@ import android.text.format.DateUtils
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.github.libretube.databinding.QueueRowBinding
-import com.github.libretube.extensions.toID
-import com.github.libretube.helpers.ImageHelper
-import com.github.libretube.helpers.ThemeHelper
-import com.github.libretube.ui.viewholders.PlayingQueueViewHolder
-import com.github.libretube.util.PlayingQueue
+import com.bimilyoncu.sscoderr.libretube.databinding.QueueRowBinding
+import com.bimilyoncu.sscoderr.libretube.extensions.toID
+import com.bimilyoncu.sscoderr.libretube.helpers.ImageHelper
+import com.bimilyoncu.sscoderr.libretube.helpers.ThemeHelper
+import com.bimilyoncu.sscoderr.libretube.ui.viewholders.PlayingQueueViewHolder
+import com.bimilyoncu.sscoderr.libretube.util.PlayingQueue
 
 class PlayingQueueAdapter(
     private val onQueueItemSelected: (String) -> Unit

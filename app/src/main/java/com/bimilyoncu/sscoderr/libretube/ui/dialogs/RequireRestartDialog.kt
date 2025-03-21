@@ -1,11 +1,11 @@
-package com.github.libretube.ui.dialogs
+package com.bimilyoncu.sscoderr.libretube.ui.dialogs
 
 import android.app.Dialog
 import android.os.Bundle
 import androidx.core.app.ActivityCompat
 import androidx.fragment.app.DialogFragment
-import com.github.libretube.R
-import com.github.libretube.helpers.NavigationHelper
+import com.bimilyoncu.sscoderr.libretube.R
+import com.bimilyoncu.sscoderr.libretube.helpers.NavigationHelper
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 class RequireRestartDialog : DialogFragment() {

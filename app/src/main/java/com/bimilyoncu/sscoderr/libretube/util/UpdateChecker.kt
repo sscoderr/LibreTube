@@ -1,17 +1,17 @@
-package com.github.libretube.util
+package com.bimilyoncu.sscoderr.libretube.util
 
 import android.content.Context
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.FragmentActivity
-import com.github.libretube.BuildConfig
-import com.github.libretube.R
-import com.github.libretube.api.RetrofitInstance
-import com.github.libretube.constants.IntentData.appUpdateChangelog
-import com.github.libretube.constants.IntentData.appUpdateURL
-import com.github.libretube.extensions.TAG
-import com.github.libretube.extensions.toastFromMainDispatcher
-import com.github.libretube.ui.dialogs.UpdateAvailableDialog
+import com.bimilyoncu.sscoderr.libretube.BuildConfig
+import com.bimilyoncu.sscoderr.libretube.R
+import com.bimilyoncu.sscoderr.libretube.api.RetrofitInstance
+import com.bimilyoncu.sscoderr.libretube.constants.IntentData.appUpdateChangelog
+import com.bimilyoncu.sscoderr.libretube.constants.IntentData.appUpdateURL
+import com.bimilyoncu.sscoderr.libretube.extensions.TAG
+import com.bimilyoncu.sscoderr.libretube.extensions.toastFromMainDispatcher
+import com.bimilyoncu.sscoderr.libretube.ui.dialogs.UpdateAvailableDialog
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import java.util.Locale

@@ -16,10 +16,11 @@
         </KeyFrameSet>
         <OnSwipe
             motion:dragDirection="dragDown"
-            motion:dragScale="1.0"
+            motion:dragScale="6"
             motion:touchAnchorId="@+id/audio_player_container"
             motion:touchAnchorSide="top"
             motion:moveWhenScrollAtTop="true"
+            motion:maxAcceleration="40"
             motion:onTouchUp="stop" />
     </Transition>
 

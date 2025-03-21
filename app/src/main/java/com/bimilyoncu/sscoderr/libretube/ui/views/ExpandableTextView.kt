@@ -1,12 +1,12 @@
-package com.github.libretube.ui.views
+package com.bimilyoncu.sscoderr.libretube.ui.views
 
 import android.content.Context
 import android.text.TextUtils
 import android.text.util.Linkify
 import android.util.AttributeSet
 import androidx.appcompat.widget.AppCompatTextView
-import com.github.libretube.R
-import com.github.libretube.helpers.ClipboardHelper
+import com.bimilyoncu.sscoderr.libretube.R
+import com.bimilyoncu.sscoderr.libretube.helpers.ClipboardHelper
 
 class ExpandableTextView(context: Context, attributeSet: AttributeSet? = null) :
     AppCompatTextView(context, attributeSet) {

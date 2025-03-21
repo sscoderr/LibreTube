@@ -1,4 +1,4 @@
-package com.github.libretube.ui.views
+package com.bimilyoncu.sscoderr.libretube.ui.views
 
 import android.content.Context
 import android.os.Handler
@@ -10,12 +10,12 @@ import androidx.core.os.postDelayed
 import androidx.core.view.isVisible
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.get
-import com.github.libretube.R
-import com.github.libretube.compat.PictureInPictureCompat
-import com.github.libretube.databinding.AutoplayCountdownBinding
-import com.github.libretube.helpers.ContextHelper
-import com.github.libretube.ui.activities.MainActivity
-import com.github.libretube.ui.models.CommonPlayerViewModel
+import com.bimilyoncu.sscoderr.libretube.R
+import com.bimilyoncu.sscoderr.libretube.compat.PictureInPictureCompat
+import com.bimilyoncu.sscoderr.libretube.databinding.AutoplayCountdownBinding
+import com.bimilyoncu.sscoderr.libretube.helpers.ContextHelper
+import com.bimilyoncu.sscoderr.libretube.ui.activities.MainActivity
+import com.bimilyoncu.sscoderr.libretube.ui.models.CommonPlayerViewModel
 
 class AutoplayCountdownView(
     context: Context,

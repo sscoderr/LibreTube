@@ -1,14 +1,14 @@
-package com.github.libretube.ui.dialogs
+package com.bimilyoncu.sscoderr.libretube.ui.dialogs
 
 import android.app.Dialog
 import android.os.Bundle
 import androidx.fragment.app.DialogFragment
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.github.libretube.R
-import com.github.libretube.databinding.SimpleOptionsRecyclerBinding
-import com.github.libretube.extensions.setOnDraggedListener
-import com.github.libretube.helpers.NavBarHelper
-import com.github.libretube.ui.adapters.NavBarOptionsAdapter
+import com.bimilyoncu.sscoderr.libretube.R
+import com.bimilyoncu.sscoderr.libretube.databinding.SimpleOptionsRecyclerBinding
+import com.bimilyoncu.sscoderr.libretube.extensions.setOnDraggedListener
+import com.bimilyoncu.sscoderr.libretube.helpers.NavBarHelper
+import com.bimilyoncu.sscoderr.libretube.ui.adapters.NavBarOptionsAdapter
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 class NavBarOptionsDialog : DialogFragment() {

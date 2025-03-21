@@ -1,14 +1,14 @@
-package com.github.libretube.ui.preferences
+package com.bimilyoncu.sscoderr.libretube.ui.preferences
 
 import android.os.Bundle
 import androidx.core.app.ActivityCompat
 import androidx.preference.ListPreference
 import androidx.preference.Preference
-import com.github.libretube.R
-import com.github.libretube.constants.PreferenceKeys
-import com.github.libretube.helpers.ImageHelper
-import com.github.libretube.helpers.PreferenceHelper
-import com.github.libretube.ui.base.BasePreferenceFragment
+import com.bimilyoncu.sscoderr.libretube.R
+import com.bimilyoncu.sscoderr.libretube.constants.PreferenceKeys
+import com.bimilyoncu.sscoderr.libretube.helpers.ImageHelper
+import com.bimilyoncu.sscoderr.libretube.helpers.PreferenceHelper
+import com.bimilyoncu.sscoderr.libretube.ui.base.BasePreferenceFragment
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 class AdvancedSettings : BasePreferenceFragment() {

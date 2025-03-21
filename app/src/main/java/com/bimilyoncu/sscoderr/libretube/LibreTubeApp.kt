@@ -1,16 +1,16 @@
-package com.github.libretube
+package com.bimilyoncu.sscoderr.libretube
 
 import android.app.Application
 import androidx.core.app.NotificationChannelCompat
 import androidx.core.app.NotificationManagerCompat
 import androidx.work.ExistingPeriodicWorkPolicy
-import com.github.libretube.helpers.ImageHelper
-import com.github.libretube.helpers.NewPipeExtractorInstance
-import com.github.libretube.helpers.NotificationHelper
-import com.github.libretube.helpers.PreferenceHelper
-import com.github.libretube.helpers.ProxyHelper
-import com.github.libretube.helpers.ShortcutHelper
-import com.github.libretube.util.ExceptionHandler
+import com.bimilyoncu.sscoderr.libretube.helpers.ImageHelper
+import com.bimilyoncu.sscoderr.libretube.helpers.NewPipeExtractorInstance
+import com.bimilyoncu.sscoderr.libretube.helpers.NotificationHelper
+import com.bimilyoncu.sscoderr.libretube.helpers.PreferenceHelper
+import com.bimilyoncu.sscoderr.libretube.helpers.ProxyHelper
+import com.bimilyoncu.sscoderr.libretube.helpers.ShortcutHelper
+import com.bimilyoncu.sscoderr.libretube.util.ExceptionHandler
 
 class LibreTubeApp : Application() {
     override fun onCreate() {

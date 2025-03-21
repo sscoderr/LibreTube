@@ -1,4 +1,4 @@
-package com.github.libretube.api.obj
+package com.bimilyoncu.sscoderr.libretube.api.obj
 
 import android.graphics.drawable.Drawable
 import android.os.Parcelable

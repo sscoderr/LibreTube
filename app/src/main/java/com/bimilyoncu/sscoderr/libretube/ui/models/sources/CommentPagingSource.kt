@@ -1,9 +1,9 @@
-package com.github.libretube.ui.models.sources
+package com.bimilyoncu.sscoderr.libretube.ui.models.sources
 
 import androidx.paging.PagingSource
 import androidx.paging.PagingState
-import com.github.libretube.api.MediaServiceRepository
-import com.github.libretube.api.obj.Comment
+import com.bimilyoncu.sscoderr.libretube.api.MediaServiceRepository
+import com.bimilyoncu.sscoderr.libretube.api.obj.Comment
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 

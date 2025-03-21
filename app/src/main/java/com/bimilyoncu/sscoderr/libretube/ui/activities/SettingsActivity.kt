@@ -1,14 +1,14 @@
-package com.github.libretube.ui.activities
+package com.bimilyoncu.sscoderr.libretube.ui.activities
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.commit
 import androidx.fragment.app.replace
-import com.github.libretube.R
-import com.github.libretube.databinding.ActivitySettingsBinding
-import com.github.libretube.ui.base.BaseActivity
-import com.github.libretube.ui.preferences.InstanceSettings
-import com.github.libretube.ui.preferences.MainSettings
+import com.bimilyoncu.sscoderr.libretube.R
+import com.bimilyoncu.sscoderr.libretube.databinding.ActivitySettingsBinding
+import com.bimilyoncu.sscoderr.libretube.ui.base.BaseActivity
+import com.bimilyoncu.sscoderr.libretube.ui.preferences.InstanceSettings
+import com.bimilyoncu.sscoderr.libretube.ui.preferences.MainSettings
 
 class SettingsActivity : BaseActivity() {
     lateinit var binding: ActivitySettingsBinding

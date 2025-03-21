@@ -1,4 +1,4 @@
-package com.github.libretube.ui.fragments
+package com.bimilyoncu.sscoderr.libretube.ui.fragments
 
 import android.content.Intent
 import android.content.res.Configuration
@@ -7,14 +7,14 @@ import android.view.View
 import androidx.core.view.isGone
 import androidx.fragment.app.activityViewModels
 import androidx.recyclerview.widget.RecyclerView
-import com.github.libretube.R
-import com.github.libretube.databinding.FragmentTrendsBinding
-import com.github.libretube.helpers.NavBarHelper
-import com.github.libretube.ui.activities.SettingsActivity
-import com.github.libretube.ui.adapters.VideosAdapter
-import com.github.libretube.ui.base.DynamicLayoutManagerFragment
-import com.github.libretube.ui.extensions.setupFragmentAnimation
-import com.github.libretube.ui.models.TrendsViewModel
+import com.bimilyoncu.sscoderr.libretube.R
+import com.bimilyoncu.sscoderr.libretube.databinding.FragmentTrendsBinding
+import com.bimilyoncu.sscoderr.libretube.helpers.NavBarHelper
+import com.bimilyoncu.sscoderr.libretube.ui.activities.SettingsActivity
+import com.bimilyoncu.sscoderr.libretube.ui.adapters.VideosAdapter
+import com.bimilyoncu.sscoderr.libretube.ui.base.DynamicLayoutManagerFragment
+import com.bimilyoncu.sscoderr.libretube.ui.extensions.setupFragmentAnimation
+import com.bimilyoncu.sscoderr.libretube.ui.models.TrendsViewModel
 import com.google.android.material.snackbar.Snackbar
 
 class TrendsFragment : DynamicLayoutManagerFragment(R.layout.fragment_trends) {

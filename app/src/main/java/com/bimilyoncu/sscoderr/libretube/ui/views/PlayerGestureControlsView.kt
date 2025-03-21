@@ -1,11 +1,11 @@
-package com.github.libretube.ui.views
+package com.bimilyoncu.sscoderr.libretube.ui.views
 
 import android.content.Context
 import android.util.AttributeSet
 import android.view.LayoutInflater
 import androidx.constraintlayout.widget.ConstraintLayout
-import com.github.libretube.databinding.PlayerGestureControlsViewBinding
-import com.github.libretube.extensions.normalize
+import com.bimilyoncu.sscoderr.libretube.databinding.PlayerGestureControlsViewBinding
+import com.bimilyoncu.sscoderr.libretube.extensions.normalize
 
 class PlayerGestureControlsView(
     context: Context,

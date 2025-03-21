@@ -1,9 +1,9 @@
-package com.github.libretube.ui.preferences
+package com.bimilyoncu.sscoderr.libretube.ui.preferences
 
 import android.content.Context
 import android.util.AttributeSet
 import androidx.preference.EditTextPreference
-import com.github.libretube.ui.base.BasePreferenceFragment
+import com.bimilyoncu.sscoderr.libretube.ui.base.BasePreferenceFragment
 
 /**
  * [EditTextPreference] that only allows numeric input.

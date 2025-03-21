@@ -1,11 +1,11 @@
-package com.github.libretube.ui.adapters
+package com.bimilyoncu.sscoderr.libretube.ui.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
-import com.github.libretube.databinding.SuggestionRowBinding
-import com.github.libretube.ui.adapters.callbacks.DiffUtilItemCallback
-import com.github.libretube.ui.viewholders.SuggestionsViewHolder
+import com.bimilyoncu.sscoderr.libretube.databinding.SuggestionRowBinding
+import com.bimilyoncu.sscoderr.libretube.ui.adapters.callbacks.DiffUtilItemCallback
+import com.bimilyoncu.sscoderr.libretube.ui.viewholders.SuggestionsViewHolder
 
 class SearchSuggestionsAdapter(
     private val onRootClickListener: (String) -> Unit,

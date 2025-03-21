@@ -1,11 +1,11 @@
-package com.github.libretube.ui.preferences
+package com.bimilyoncu.sscoderr.libretube.ui.preferences
 
 import android.os.Bundle
 import androidx.preference.Preference
-import com.github.libretube.R
-import com.github.libretube.constants.PreferenceKeys
-import com.github.libretube.db.DatabaseHolder.Database
-import com.github.libretube.ui.base.BasePreferenceFragment
+import com.bimilyoncu.sscoderr.libretube.R
+import com.bimilyoncu.sscoderr.libretube.constants.PreferenceKeys
+import com.bimilyoncu.sscoderr.libretube.db.DatabaseHolder.Database
+import com.bimilyoncu.sscoderr.libretube.ui.base.BasePreferenceFragment
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers

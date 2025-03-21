@@ -1,8 +1,8 @@
-package com.github.libretube.db.obj
+package com.bimilyoncu.sscoderr.libretube.db.obj
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import com.github.libretube.api.obj.ChapterSegment
+import com.bimilyoncu.sscoderr.libretube.api.obj.ChapterSegment
 
 @Entity(tableName = "downloadChapters")
 data class DownloadChapter(

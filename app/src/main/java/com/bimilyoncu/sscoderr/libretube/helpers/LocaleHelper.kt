@@ -1,11 +1,11 @@
-package com.github.libretube.helpers
+package com.bimilyoncu.sscoderr.libretube.helpers
 
 import android.content.Context
 import android.telephony.TelephonyManager
 import androidx.core.content.getSystemService
 import androidx.core.os.ConfigurationCompat
-import com.github.libretube.constants.PreferenceKeys
-import com.github.libretube.obj.Country
+import com.bimilyoncu.sscoderr.libretube.constants.PreferenceKeys
+import com.bimilyoncu.sscoderr.libretube.obj.Country
 import java.util.Locale
 
 object LocaleHelper {

@@ -1,4 +1,4 @@
-package com.github.libretube.ui.fragments
+package com.bimilyoncu.sscoderr.libretube.ui.fragments
 
 import android.os.Bundle
 import android.view.View
@@ -17,16 +17,16 @@ import androidx.paging.Pager
 import androidx.paging.PagingConfig
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.github.libretube.R
-import com.github.libretube.api.obj.Comment
-import com.github.libretube.constants.IntentData
-import com.github.libretube.databinding.FragmentCommentsBinding
-import com.github.libretube.extensions.formatShort
-import com.github.libretube.extensions.parcelable
-import com.github.libretube.ui.adapters.CommentPagingAdapter
-import com.github.libretube.ui.models.CommentsViewModel
-import com.github.libretube.ui.models.sources.CommentRepliesPagingSource
-import com.github.libretube.ui.sheets.CommentsSheet
+import com.bimilyoncu.sscoderr.libretube.R
+import com.bimilyoncu.sscoderr.libretube.api.obj.Comment
+import com.bimilyoncu.sscoderr.libretube.constants.IntentData
+import com.bimilyoncu.sscoderr.libretube.databinding.FragmentCommentsBinding
+import com.bimilyoncu.sscoderr.libretube.extensions.formatShort
+import com.bimilyoncu.sscoderr.libretube.extensions.parcelable
+import com.bimilyoncu.sscoderr.libretube.ui.adapters.CommentPagingAdapter
+import com.bimilyoncu.sscoderr.libretube.ui.models.CommentsViewModel
+import com.bimilyoncu.sscoderr.libretube.ui.models.sources.CommentRepliesPagingSource
+import com.bimilyoncu.sscoderr.libretube.ui.sheets.CommentsSheet
 import kotlinx.coroutines.launch
 
 class CommentsRepliesFragment : Fragment(R.layout.fragment_comments) {

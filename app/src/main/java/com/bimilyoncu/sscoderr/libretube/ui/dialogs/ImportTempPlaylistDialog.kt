@@ -1,16 +1,16 @@
-package com.github.libretube.ui.dialogs
+package com.bimilyoncu.sscoderr.libretube.ui.dialogs
 
 import android.app.Dialog
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.DialogFragment
-import com.github.libretube.R
-import com.github.libretube.api.PlaylistsHelper
-import com.github.libretube.constants.IntentData
-import com.github.libretube.extensions.TAG
-import com.github.libretube.extensions.toastFromMainDispatcher
-import com.github.libretube.obj.PipedImportPlaylist
-import com.github.libretube.util.TextUtils
+import com.bimilyoncu.sscoderr.libretube.R
+import com.bimilyoncu.sscoderr.libretube.api.PlaylistsHelper
+import com.bimilyoncu.sscoderr.libretube.constants.IntentData
+import com.bimilyoncu.sscoderr.libretube.extensions.TAG
+import com.bimilyoncu.sscoderr.libretube.extensions.toastFromMainDispatcher
+import com.bimilyoncu.sscoderr.libretube.obj.PipedImportPlaylist
+import com.bimilyoncu.sscoderr.libretube.util.TextUtils
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers

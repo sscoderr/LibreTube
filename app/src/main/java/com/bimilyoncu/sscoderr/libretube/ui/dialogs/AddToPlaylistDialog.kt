@@ -1,4 +1,4 @@
-package com.github.libretube.ui.dialogs
+package com.bimilyoncu.sscoderr.libretube.ui.dialogs
 
 import android.app.Dialog
 import android.content.DialogInterface
@@ -9,12 +9,12 @@ import androidx.core.os.bundleOf
 import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.setFragmentResult
 import androidx.fragment.app.viewModels
-import com.github.libretube.R
-import com.github.libretube.api.obj.StreamItem
-import com.github.libretube.constants.IntentData
-import com.github.libretube.databinding.DialogAddToPlaylistBinding
-import com.github.libretube.extensions.parcelable
-import com.github.libretube.ui.models.PlaylistViewModel
+import com.bimilyoncu.sscoderr.libretube.R
+import com.bimilyoncu.sscoderr.libretube.api.obj.StreamItem
+import com.bimilyoncu.sscoderr.libretube.constants.IntentData
+import com.bimilyoncu.sscoderr.libretube.databinding.DialogAddToPlaylistBinding
+import com.bimilyoncu.sscoderr.libretube.extensions.parcelable
+import com.bimilyoncu.sscoderr.libretube.ui.models.PlaylistViewModel
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 /**

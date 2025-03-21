@@ -1,14 +1,14 @@
-package com.github.libretube.ui.activities
+package com.bimilyoncu.sscoderr.libretube.ui.activities
 
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.util.Log
 import androidx.core.net.toUri
-import com.github.libretube.extensions.TAG
-import com.github.libretube.helpers.IntentHelper
-import com.github.libretube.helpers.NavigationHelper
-import com.github.libretube.ui.base.BaseActivity
+import com.bimilyoncu.sscoderr.libretube.extensions.TAG
+import com.bimilyoncu.sscoderr.libretube.helpers.IntentHelper
+import com.bimilyoncu.sscoderr.libretube.helpers.NavigationHelper
+import com.bimilyoncu.sscoderr.libretube.ui.base.BaseActivity
 
 class RouterActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

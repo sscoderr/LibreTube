@@ -1,4 +1,4 @@
-package com.github.libretube.extensions
+package com.bimilyoncu.sscoderr.libretube.extensions
 
 import android.support.v4.media.MediaMetadataCompat
 import androidx.annotation.OptIn
@@ -7,11 +7,11 @@ import androidx.core.os.bundleOf
 import androidx.media3.common.MediaItem
 import androidx.media3.common.MediaMetadata
 import androidx.media3.common.util.UnstableApi
-import com.github.libretube.api.JsonHelper
-import com.github.libretube.api.obj.Streams
-import com.github.libretube.constants.IntentData
-import com.github.libretube.db.obj.DownloadChapter
-import com.github.libretube.db.obj.DownloadWithItems
+import com.bimilyoncu.sscoderr.libretube.api.JsonHelper
+import com.bimilyoncu.sscoderr.libretube.api.obj.Streams
+import com.bimilyoncu.sscoderr.libretube.constants.IntentData
+import com.bimilyoncu.sscoderr.libretube.db.obj.DownloadChapter
+import com.bimilyoncu.sscoderr.libretube.db.obj.DownloadWithItems
 import kotlinx.serialization.encodeToString
 
 @OptIn(UnstableApi::class)

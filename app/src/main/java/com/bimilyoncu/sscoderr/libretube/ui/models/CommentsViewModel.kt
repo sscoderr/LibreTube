@@ -1,4 +1,4 @@
-package com.github.libretube.ui.models
+package com.bimilyoncu.sscoderr.libretube.ui.models
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -8,8 +8,8 @@ import androidx.lifecycle.viewModelScope
 import androidx.paging.Pager
 import androidx.paging.PagingConfig
 import androidx.paging.cachedIn
-import com.github.libretube.extensions.updateIfChanged
-import com.github.libretube.ui.models.sources.CommentPagingSource
+import com.bimilyoncu.sscoderr.libretube.extensions.updateIfChanged
+import com.bimilyoncu.sscoderr.libretube.ui.models.sources.CommentPagingSource
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.flatMapLatest
 

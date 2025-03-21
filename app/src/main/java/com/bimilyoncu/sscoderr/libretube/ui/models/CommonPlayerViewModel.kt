@@ -1,8 +1,8 @@
-package com.github.libretube.ui.models
+package com.bimilyoncu.sscoderr.libretube.ui.models
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.github.libretube.extensions.updateIfChanged
+import com.bimilyoncu.sscoderr.libretube.extensions.updateIfChanged
 
 class CommonPlayerViewModel : ViewModel() {
     val isMiniPlayerVisible = MutableLiveData(false)

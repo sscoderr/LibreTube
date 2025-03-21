@@ -1,9 +1,9 @@
-package com.github.libretube.ui.models
+package com.bimilyoncu.sscoderr.libretube.ui.models
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.github.libretube.db.DatabaseHolder.Database
-import com.github.libretube.db.obj.CustomInstance
+import com.bimilyoncu.sscoderr.libretube.db.DatabaseHolder.Database
+import com.bimilyoncu.sscoderr.libretube.db.obj.CustomInstance
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.flowOn
 import kotlinx.coroutines.launch

@@ -1,8 +1,8 @@
-package com.github.libretube.api
+package com.bimilyoncu.sscoderr.libretube.api
 
 import android.content.Context
-import com.github.libretube.R
-import com.github.libretube.api.obj.PipedInstance
+import com.bimilyoncu.sscoderr.libretube.R
+import com.bimilyoncu.sscoderr.libretube.api.obj.PipedInstance
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 

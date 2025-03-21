@@ -1,7 +1,7 @@
-package com.github.libretube.enums
+package com.bimilyoncu.sscoderr.libretube.enums
 
-import com.github.libretube.constants.PreferenceKeys.SELECTED_FEED_FILTERS
-import com.github.libretube.helpers.PreferenceHelper
+import com.bimilyoncu.sscoderr.libretube.constants.PreferenceKeys.SELECTED_FEED_FILTERS
+import com.bimilyoncu.sscoderr.libretube.helpers.PreferenceHelper
 
 enum class ContentFilter {
     VIDEOS,

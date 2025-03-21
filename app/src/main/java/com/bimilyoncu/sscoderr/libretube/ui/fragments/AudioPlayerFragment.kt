@@ -1,4 +1,4 @@
-package com.github.libretube.ui.fragments
+package com.bimilyoncu.sscoderr.libretube.ui.fragments
 
 import android.annotation.SuppressLint
 import android.graphics.Color
@@ -25,41 +25,41 @@ import androidx.media3.common.MediaMetadata
 import androidx.media3.common.Player
 import androidx.media3.common.util.UnstableApi
 import androidx.media3.session.MediaController
-import com.github.libretube.R
-import com.github.libretube.api.JsonHelper
-import com.github.libretube.api.obj.ChapterSegment
-import com.github.libretube.constants.IntentData
-import com.github.libretube.databinding.FragmentAudioPlayerBinding
-import com.github.libretube.extensions.navigateVideo
-import com.github.libretube.extensions.normalize
-import com.github.libretube.extensions.seekBy
-import com.github.libretube.extensions.togglePlayPauseState
-import com.github.libretube.extensions.updateIfChanged
-import com.github.libretube.helpers.AudioHelper
-import com.github.libretube.helpers.BackgroundHelper
-import com.github.libretube.helpers.ClipboardHelper
-import com.github.libretube.helpers.ImageHelper
-import com.github.libretube.helpers.NavBarHelper
-import com.github.libretube.helpers.NavigationHelper
-import com.github.libretube.helpers.PlayerHelper
-import com.github.libretube.helpers.ThemeHelper
-import com.github.libretube.services.AbstractPlayerService
-import com.github.libretube.services.OfflinePlayerService
-import com.github.libretube.services.OnlinePlayerService
-import com.github.libretube.ui.activities.MainActivity
-import com.github.libretube.ui.base.BaseActivity
-import com.github.libretube.ui.extensions.setOnBackPressed
-import com.github.libretube.ui.interfaces.AudioPlayerOptions
-import com.github.libretube.ui.listeners.AudioPlayerThumbnailListener
-import com.github.libretube.ui.models.ChaptersViewModel
-import com.github.libretube.ui.models.CommonPlayerViewModel
-import com.github.libretube.ui.sheets.ChaptersBottomSheet
-import com.github.libretube.ui.sheets.PlaybackOptionsSheet
-import com.github.libretube.ui.sheets.PlayingQueueSheet
-import com.github.libretube.ui.sheets.SleepTimerSheet
-import com.github.libretube.ui.sheets.VideoOptionsBottomSheet
-import com.github.libretube.util.DataSaverMode
-import com.github.libretube.util.PlayingQueue
+import com.bimilyoncu.sscoderr.libretube.R
+import com.bimilyoncu.sscoderr.libretube.api.JsonHelper
+import com.bimilyoncu.sscoderr.libretube.api.obj.ChapterSegment
+import com.bimilyoncu.sscoderr.libretube.constants.IntentData
+import com.bimilyoncu.sscoderr.libretube.databinding.FragmentAudioPlayerBinding
+import com.bimilyoncu.sscoderr.libretube.extensions.navigateVideo
+import com.bimilyoncu.sscoderr.libretube.extensions.normalize
+import com.bimilyoncu.sscoderr.libretube.extensions.seekBy
+import com.bimilyoncu.sscoderr.libretube.extensions.togglePlayPauseState
+import com.bimilyoncu.sscoderr.libretube.extensions.updateIfChanged
+import com.bimilyoncu.sscoderr.libretube.helpers.AudioHelper
+import com.bimilyoncu.sscoderr.libretube.helpers.BackgroundHelper
+import com.bimilyoncu.sscoderr.libretube.helpers.ClipboardHelper
+import com.bimilyoncu.sscoderr.libretube.helpers.ImageHelper
+import com.bimilyoncu.sscoderr.libretube.helpers.NavBarHelper
+import com.bimilyoncu.sscoderr.libretube.helpers.NavigationHelper
+import com.bimilyoncu.sscoderr.libretube.helpers.PlayerHelper
+import com.bimilyoncu.sscoderr.libretube.helpers.ThemeHelper
+import com.bimilyoncu.sscoderr.libretube.services.AbstractPlayerService
+import com.bimilyoncu.sscoderr.libretube.services.OfflinePlayerService
+import com.bimilyoncu.sscoderr.libretube.services.OnlinePlayerService
+import com.bimilyoncu.sscoderr.libretube.ui.activities.MainActivity
+import com.bimilyoncu.sscoderr.libretube.ui.base.BaseActivity
+import com.bimilyoncu.sscoderr.libretube.ui.extensions.setOnBackPressed
+import com.bimilyoncu.sscoderr.libretube.ui.interfaces.AudioPlayerOptions
+import com.bimilyoncu.sscoderr.libretube.ui.listeners.AudioPlayerThumbnailListener
+import com.bimilyoncu.sscoderr.libretube.ui.models.ChaptersViewModel
+import com.bimilyoncu.sscoderr.libretube.ui.models.CommonPlayerViewModel
+import com.bimilyoncu.sscoderr.libretube.ui.sheets.ChaptersBottomSheet
+import com.bimilyoncu.sscoderr.libretube.ui.sheets.PlaybackOptionsSheet
+import com.bimilyoncu.sscoderr.libretube.ui.sheets.PlayingQueueSheet
+import com.bimilyoncu.sscoderr.libretube.ui.sheets.SleepTimerSheet
+import com.bimilyoncu.sscoderr.libretube.ui.sheets.VideoOptionsBottomSheet
+import com.bimilyoncu.sscoderr.libretube.util.DataSaverMode
+import com.bimilyoncu.sscoderr.libretube.util.PlayingQueue
 import kotlinx.coroutines.launch
 import kotlin.math.abs
 
@@ -131,31 +131,6 @@ class AudioPlayerFragment : Fragment(R.layout.fragment_audio_player), AudioPlaye
         binding.minimizePlayer.setOnClickListener {
             mainActivityMotionLayout?.transitionToStart()
             binding.playerMotionLayout.transitionToEnd()
-        }
-
-        // Add click listener to maximize player when mini player is clicked
-        binding.miniPlayerControls.setOnClickListener {
-            // Only maximize if clicking directly on the container, not on child elements with their own click listeners
-            if (binding.playerMotionLayout.currentState == transitionEndId) {
-                binding.playerMotionLayout.transitionToStart()
-                mainActivityMotionLayout?.progress = 0f
-            }
-        }
-
-        // Make sure the mini player title is also clickable for maximizing
-        binding.miniPlayerTitle.setOnClickListener {
-            if (binding.playerMotionLayout.currentState == transitionEndId) {
-                binding.playerMotionLayout.transitionToStart()
-                mainActivityMotionLayout?.progress = 0f
-            }
-        }
-
-        // Make sure the mini player thumbnail is also clickable for maximizing
-        binding.miniPlayerThumbnail.setOnClickListener {
-            if (binding.playerMotionLayout.currentState == transitionEndId) {
-                binding.playerMotionLayout.transitionToStart()
-                mainActivityMotionLayout?.progress = 0f
-            }
         }
 
         binding.autoPlay.isChecked = PlayerHelper.autoPlayEnabled
@@ -342,46 +317,13 @@ class AudioPlayerFragment : Fragment(R.layout.fragment_audio_player), AudioPlaye
                 }
             }
         })
-
-        // Add touch listener to ensure complete transition on release
-        binding.playerMotionLayout.setOnTouchListener { _, event ->
-            if (event.action == MotionEvent.ACTION_UP || event.action == MotionEvent.ACTION_CANCEL) {
-                val currentProgress = binding.playerMotionLayout.progress
-                
-                // If the progress is not at start or end position when touch is released,
-                // complete the transition
-                if (currentProgress > 0 && currentProgress < 1) {
-                    // Different thresholds based on the player's initial state
-                    // For minimizing (starting from fully expanded): if progress > 0.3, minimize
-                    // For maximizing (starting from minimized): if progress < 0.7, maximize
-                    
-                    // Check if we're minimizing or maximizing based on which state the motion is closer to
-                    val wasMinimized = binding.playerMotionLayout.currentState == transitionEndId
-                    
-                    if (wasMinimized) {
-                        // We're trying to maximize from minimized state
-                        val shouldMaximize = currentProgress < 0.7
-                        if (shouldMaximize) {
-                            binding.playerMotionLayout.transitionToStart()
-                            mainActivityMotionLayout?.progress = 0f
-                        } else {
-                            binding.playerMotionLayout.transitionToEnd()
-                            mainActivityMotionLayout?.progress = 1f
-                        }
-                    } else {
-                        // We're trying to minimize from maximized state
-                        val shouldMinimize = currentProgress > 0.3
-                        if (shouldMinimize) {
-                            binding.playerMotionLayout.transitionToEnd()
-                            mainActivityMotionLayout?.progress = 1f
-                        } else {
-                            binding.playerMotionLayout.transitionToStart()
-                            mainActivityMotionLayout?.progress = 0f
-                        }
-                    }
-                }
+        
+        // Add tap listener to maximize player when mini player is tapped
+        binding.playerMotionLayout.addTapWhenMinimizedListener {
+            if (binding.playerMotionLayout.currentState == transitionEndId) {
+                binding.playerMotionLayout.transitionToStart()
+                mainActivityMotionLayout?.progress = 0f
             }
-            false // Return false to allow other touch events to be processed
         }
 
         // Set initial state

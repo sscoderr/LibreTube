@@ -1,4 +1,4 @@
-package com.github.libretube.extensions
+package com.bimilyoncu.sscoderr.libretube.extensions
 
 /**
  * Read a string as long as the char is a digit and return the number value as int

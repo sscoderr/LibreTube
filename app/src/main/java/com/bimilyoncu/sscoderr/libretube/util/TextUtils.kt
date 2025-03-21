@@ -1,14 +1,14 @@
-package com.github.libretube.util
+package com.bimilyoncu.sscoderr.libretube.util
 
 import android.content.Context
 import android.icu.text.RelativeDateTimeFormatter
 import android.net.Uri
 import android.text.format.DateUtils
 import androidx.core.text.isDigitsOnly
-import com.github.libretube.BuildConfig
-import com.github.libretube.R
-import com.github.libretube.extensions.formatShort
-import com.github.libretube.extensions.toLocalDate
+import com.bimilyoncu.sscoderr.libretube.BuildConfig
+import com.bimilyoncu.sscoderr.libretube.R
+import com.bimilyoncu.sscoderr.libretube.extensions.formatShort
+import com.bimilyoncu.sscoderr.libretube.extensions.toLocalDate
 import com.google.common.math.IntMath.pow
 import kotlinx.datetime.toJavaLocalDate
 import java.time.Instant

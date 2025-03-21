@@ -1,4 +1,4 @@
-package com.github.libretube.db.obj
+package com.bimilyoncu.sscoderr.libretube.db.obj
 
 import android.os.Parcelable
 import androidx.room.ColumnInfo

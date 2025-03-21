@@ -1,7 +1,7 @@
-package com.github.libretube.api.obj
+package com.bimilyoncu.sscoderr.libretube.api.obj
 
-import com.github.libretube.db.obj.PlaylistBookmark
-import com.github.libretube.helpers.ProxyHelper
+import com.bimilyoncu.sscoderr.libretube.db.obj.PlaylistBookmark
+import com.bimilyoncu.sscoderr.libretube.helpers.ProxyHelper
 import kotlinx.serialization.Serializable
 
 @Serializable

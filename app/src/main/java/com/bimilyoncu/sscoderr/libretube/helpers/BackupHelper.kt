@@ -1,4 +1,4 @@
-package com.github.libretube.helpers
+package com.bimilyoncu.sscoderr.libretube.helpers
 
 import android.content.Context
 import android.net.Uri
@@ -6,12 +6,12 @@ import android.util.Log
 import androidx.core.content.edit
 import androidx.preference.PreferenceManager
 import androidx.work.ExistingPeriodicWorkPolicy
-import com.github.libretube.api.JsonHelper
-import com.github.libretube.constants.PreferenceKeys
-import com.github.libretube.db.DatabaseHolder.Database
-import com.github.libretube.extensions.TAG
-import com.github.libretube.obj.BackupFile
-import com.github.libretube.obj.PreferenceItem
+import com.bimilyoncu.sscoderr.libretube.api.JsonHelper
+import com.bimilyoncu.sscoderr.libretube.constants.PreferenceKeys
+import com.bimilyoncu.sscoderr.libretube.db.DatabaseHolder.Database
+import com.bimilyoncu.sscoderr.libretube.extensions.TAG
+import com.bimilyoncu.sscoderr.libretube.obj.BackupFile
+import com.bimilyoncu.sscoderr.libretube.obj.PreferenceItem
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import kotlinx.serialization.ExperimentalSerializationApi

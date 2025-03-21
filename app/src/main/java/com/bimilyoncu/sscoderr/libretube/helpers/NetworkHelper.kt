@@ -1,4 +1,4 @@
-package com.github.libretube.helpers
+package com.bimilyoncu.sscoderr.libretube.helpers
 
 import android.content.Context
 import android.net.ConnectivityManager

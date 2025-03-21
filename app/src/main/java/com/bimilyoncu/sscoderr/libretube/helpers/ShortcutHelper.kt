@@ -1,14 +1,14 @@
-package com.github.libretube.helpers
+package com.bimilyoncu.sscoderr.libretube.helpers
 
 import android.content.Context
 import android.content.Intent
 import androidx.core.content.pm.ShortcutInfoCompat
 import androidx.core.content.pm.ShortcutManagerCompat
 import androidx.core.graphics.drawable.IconCompat
-import com.github.libretube.R
-import com.github.libretube.constants.IntentData
-import com.github.libretube.obj.AppShortcut
-import com.github.libretube.ui.activities.MainActivity
+import com.bimilyoncu.sscoderr.libretube.R
+import com.bimilyoncu.sscoderr.libretube.constants.IntentData
+import com.bimilyoncu.sscoderr.libretube.obj.AppShortcut
+import com.bimilyoncu.sscoderr.libretube.ui.activities.MainActivity
 
 object ShortcutHelper {
     private val shortcuts = listOf(

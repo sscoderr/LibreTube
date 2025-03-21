@@ -1,8 +1,8 @@
-package com.github.libretube.api
+package com.bimilyoncu.sscoderr.libretube.api
 
-import com.github.libretube.BuildConfig
-import com.github.libretube.constants.PreferenceKeys
-import com.github.libretube.helpers.PreferenceHelper
+import com.bimilyoncu.sscoderr.libretube.BuildConfig
+import com.bimilyoncu.sscoderr.libretube.constants.PreferenceKeys
+import com.bimilyoncu.sscoderr.libretube.helpers.PreferenceHelper
 import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor

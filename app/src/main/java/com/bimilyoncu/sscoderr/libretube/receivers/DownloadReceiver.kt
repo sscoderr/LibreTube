@@ -1,11 +1,11 @@
-package com.github.libretube.receivers
+package com.bimilyoncu.sscoderr.libretube.receivers
 
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
-import com.github.libretube.constants.IntentData
-import com.github.libretube.services.DownloadService
-import com.github.libretube.ui.activities.MainActivity
+import com.bimilyoncu.sscoderr.libretube.constants.IntentData
+import com.bimilyoncu.sscoderr.libretube.services.DownloadService
+import com.bimilyoncu.sscoderr.libretube.ui.activities.MainActivity
 
 class DownloadReceiver : BroadcastReceiver() {
     override fun onReceive(context: Context?, intent: Intent?) {

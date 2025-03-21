@@ -1,4 +1,4 @@
-package com.github.libretube.db.dao
+package com.bimilyoncu.sscoderr.libretube.db.dao
 
 import androidx.room.Dao
 import androidx.room.Delete
@@ -7,11 +7,11 @@ import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import androidx.room.Transaction
 import androidx.room.Update
-import com.github.libretube.db.obj.Download
-import com.github.libretube.db.obj.DownloadChapter
-import com.github.libretube.db.obj.DownloadItem
-import com.github.libretube.db.obj.DownloadWithItems
-import com.github.libretube.enums.FileType
+import com.bimilyoncu.sscoderr.libretube.db.obj.Download
+import com.bimilyoncu.sscoderr.libretube.db.obj.DownloadChapter
+import com.bimilyoncu.sscoderr.libretube.db.obj.DownloadItem
+import com.bimilyoncu.sscoderr.libretube.db.obj.DownloadWithItems
+import com.bimilyoncu.sscoderr.libretube.enums.FileType
 
 @Dao
 interface DownloadDao {

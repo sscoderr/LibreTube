@@ -1,15 +1,15 @@
-package com.github.libretube.ui.models
+package com.bimilyoncu.sscoderr.libretube.ui.models
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.asFlow
 import androidx.lifecycle.asLiveData
 import androidx.lifecycle.viewModelScope
-import com.github.libretube.constants.PreferenceKeys
-import com.github.libretube.db.DatabaseHelper
-import com.github.libretube.db.DatabaseHolder
-import com.github.libretube.db.obj.WatchHistoryItem
-import com.github.libretube.helpers.PreferenceHelper
+import com.bimilyoncu.sscoderr.libretube.constants.PreferenceKeys
+import com.bimilyoncu.sscoderr.libretube.db.DatabaseHelper
+import com.bimilyoncu.sscoderr.libretube.db.DatabaseHolder
+import com.bimilyoncu.sscoderr.libretube.db.obj.WatchHistoryItem
+import com.bimilyoncu.sscoderr.libretube.helpers.PreferenceHelper
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.combine

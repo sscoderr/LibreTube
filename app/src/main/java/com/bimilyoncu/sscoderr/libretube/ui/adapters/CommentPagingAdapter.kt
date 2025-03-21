@@ -1,4 +1,4 @@
-package com.github.libretube.ui.adapters
+package com.bimilyoncu.sscoderr.libretube.ui.adapters
 
 import android.view.LayoutInflater
 import android.view.View
@@ -15,20 +15,20 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.commit
 import androidx.fragment.app.replace
 import androidx.paging.PagingDataAdapter
-import com.github.libretube.R
-import com.github.libretube.api.obj.Comment
-import com.github.libretube.constants.IntentData
-import com.github.libretube.databinding.CommentsRowBinding
-import com.github.libretube.extensions.formatShort
-import com.github.libretube.helpers.ClipboardHelper
-import com.github.libretube.helpers.ImageHelper
-import com.github.libretube.helpers.NavigationHelper
-import com.github.libretube.helpers.ThemeHelper
-import com.github.libretube.ui.adapters.callbacks.DiffUtilItemCallback
-import com.github.libretube.ui.fragments.CommentsRepliesFragment
-import com.github.libretube.ui.viewholders.CommentsViewHolder
-import com.github.libretube.util.HtmlParser
-import com.github.libretube.util.LinkHandler
+import com.bimilyoncu.sscoderr.libretube.R
+import com.bimilyoncu.sscoderr.libretube.api.obj.Comment
+import com.bimilyoncu.sscoderr.libretube.constants.IntentData
+import com.bimilyoncu.sscoderr.libretube.databinding.CommentsRowBinding
+import com.bimilyoncu.sscoderr.libretube.extensions.formatShort
+import com.bimilyoncu.sscoderr.libretube.helpers.ClipboardHelper
+import com.bimilyoncu.sscoderr.libretube.helpers.ImageHelper
+import com.bimilyoncu.sscoderr.libretube.helpers.NavigationHelper
+import com.bimilyoncu.sscoderr.libretube.helpers.ThemeHelper
+import com.bimilyoncu.sscoderr.libretube.ui.adapters.callbacks.DiffUtilItemCallback
+import com.bimilyoncu.sscoderr.libretube.ui.fragments.CommentsRepliesFragment
+import com.bimilyoncu.sscoderr.libretube.ui.viewholders.CommentsViewHolder
+import com.bimilyoncu.sscoderr.libretube.util.HtmlParser
+import com.bimilyoncu.sscoderr.libretube.util.LinkHandler
 
 class CommentPagingAdapter(
     private val fragment: Fragment?,

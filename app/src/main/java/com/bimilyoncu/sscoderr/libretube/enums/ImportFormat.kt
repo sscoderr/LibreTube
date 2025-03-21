@@ -1,7 +1,7 @@
-package com.github.libretube.enums
+package com.bimilyoncu.sscoderr.libretube.enums
 
 import androidx.annotation.StringRes
-import com.github.libretube.R
+import com.bimilyoncu.sscoderr.libretube.R
 
 enum class ImportFormat(@StringRes val value: Int, val fileExtension: String) {
     NEWPIPE(R.string.import_format_newpipe, "json"),

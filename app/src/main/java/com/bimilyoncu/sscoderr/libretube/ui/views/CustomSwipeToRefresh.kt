@@ -1,4 +1,4 @@
-package com.github.libretube.ui.views
+package com.bimilyoncu.sscoderr.libretube.ui.views
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -7,7 +7,7 @@ import android.view.MotionEvent
 import android.view.MotionEvent.ACTION_MOVE
 import android.view.ViewConfiguration
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
-import com.github.libretube.helpers.ThemeHelper
+import com.bimilyoncu.sscoderr.libretube.helpers.ThemeHelper
 import com.google.android.material.elevation.SurfaceColors
 import kotlin.math.abs
 

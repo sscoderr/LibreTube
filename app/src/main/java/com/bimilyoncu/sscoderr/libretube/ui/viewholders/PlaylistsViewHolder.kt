@@ -1,7 +1,7 @@
-package com.github.libretube.ui.viewholders
+package com.bimilyoncu.sscoderr.libretube.ui.viewholders
 
 import androidx.recyclerview.widget.RecyclerView
-import com.github.libretube.databinding.PlaylistsRowBinding
+import com.bimilyoncu.sscoderr.libretube.databinding.PlaylistsRowBinding
 
 class PlaylistsViewHolder(
     val binding: PlaylistsRowBinding

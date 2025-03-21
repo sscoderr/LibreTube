@@ -1,11 +1,11 @@
-package com.github.libretube.ui.activities
+package com.bimilyoncu.sscoderr.libretube.ui.activities
 
 import android.content.Intent
 import android.os.Bundle
-import com.github.libretube.constants.IntentData
-import com.github.libretube.databinding.ActivityNointernetBinding
-import com.github.libretube.helpers.NavigationHelper
-import com.github.libretube.ui.base.BaseActivity
+import com.bimilyoncu.sscoderr.libretube.constants.IntentData
+import com.bimilyoncu.sscoderr.libretube.databinding.ActivityNointernetBinding
+import com.bimilyoncu.sscoderr.libretube.helpers.NavigationHelper
+import com.bimilyoncu.sscoderr.libretube.ui.base.BaseActivity
 
 class NoInternetActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

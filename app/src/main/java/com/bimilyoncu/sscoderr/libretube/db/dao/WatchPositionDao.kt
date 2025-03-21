@@ -1,10 +1,10 @@
-package com.github.libretube.db.dao
+package com.bimilyoncu.sscoderr.libretube.db.dao
 
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
-import com.github.libretube.db.obj.WatchPosition
+import com.bimilyoncu.sscoderr.libretube.db.obj.WatchPosition
 
 @Dao
 interface WatchPositionDao {

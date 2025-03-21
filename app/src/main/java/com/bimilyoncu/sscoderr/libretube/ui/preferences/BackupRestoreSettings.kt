@@ -1,4 +1,4 @@
-package com.github.libretube.ui.preferences
+package com.bimilyoncu.sscoderr.libretube.ui.preferences
 
 import android.content.Context
 import android.os.Bundle
@@ -7,17 +7,17 @@ import androidx.activity.result.contract.ActivityResultContracts.CreateDocument
 import androidx.annotation.StringRes
 import androidx.lifecycle.lifecycleScope
 import androidx.preference.Preference
-import com.github.libretube.R
-import com.github.libretube.constants.IntentData
-import com.github.libretube.enums.ImportFormat
-import com.github.libretube.helpers.BackupHelper
-import com.github.libretube.helpers.ImportHelper
-import com.github.libretube.obj.BackupFile
-import com.github.libretube.ui.base.BasePreferenceFragment
-import com.github.libretube.ui.dialogs.BackupDialog
-import com.github.libretube.ui.dialogs.BackupDialog.Companion.BACKUP_DIALOG_REQUEST_KEY
-import com.github.libretube.ui.dialogs.RequireRestartDialog
-import com.github.libretube.util.TextUtils
+import com.bimilyoncu.sscoderr.libretube.R
+import com.bimilyoncu.sscoderr.libretube.constants.IntentData
+import com.bimilyoncu.sscoderr.libretube.enums.ImportFormat
+import com.bimilyoncu.sscoderr.libretube.helpers.BackupHelper
+import com.bimilyoncu.sscoderr.libretube.helpers.ImportHelper
+import com.bimilyoncu.sscoderr.libretube.obj.BackupFile
+import com.bimilyoncu.sscoderr.libretube.ui.base.BasePreferenceFragment
+import com.bimilyoncu.sscoderr.libretube.ui.dialogs.BackupDialog
+import com.bimilyoncu.sscoderr.libretube.ui.dialogs.BackupDialog.Companion.BACKUP_DIALOG_REQUEST_KEY
+import com.bimilyoncu.sscoderr.libretube.ui.dialogs.RequireRestartDialog
+import com.bimilyoncu.sscoderr.libretube.util.TextUtils
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers

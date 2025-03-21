@@ -1,10 +1,10 @@
-package com.github.libretube.db.obj
+package com.bimilyoncu.sscoderr.libretube.db.obj
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.Ignore
 import androidx.room.PrimaryKey
-import com.github.libretube.ui.dialogs.ShareDialog
+import com.bimilyoncu.sscoderr.libretube.ui.dialogs.ShareDialog
 import kotlinx.serialization.Serializable
 
 @Serializable

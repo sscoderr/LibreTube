@@ -1,15 +1,15 @@
-package com.github.libretube.repo
+package com.bimilyoncu.sscoderr.libretube.repo
 
-import com.github.libretube.api.PlaylistsHelper
-import com.github.libretube.api.RetrofitInstance
-import com.github.libretube.api.obj.EditPlaylistBody
-import com.github.libretube.api.obj.Message
-import com.github.libretube.api.obj.Playlist
-import com.github.libretube.api.obj.Playlists
-import com.github.libretube.api.obj.StreamItem
-import com.github.libretube.extensions.toID
-import com.github.libretube.helpers.PreferenceHelper
-import com.github.libretube.obj.PipedImportPlaylist
+import com.bimilyoncu.sscoderr.libretube.api.PlaylistsHelper
+import com.bimilyoncu.sscoderr.libretube.api.RetrofitInstance
+import com.bimilyoncu.sscoderr.libretube.api.obj.EditPlaylistBody
+import com.bimilyoncu.sscoderr.libretube.api.obj.Message
+import com.bimilyoncu.sscoderr.libretube.api.obj.Playlist
+import com.bimilyoncu.sscoderr.libretube.api.obj.Playlists
+import com.bimilyoncu.sscoderr.libretube.api.obj.StreamItem
+import com.bimilyoncu.sscoderr.libretube.extensions.toID
+import com.bimilyoncu.sscoderr.libretube.helpers.PreferenceHelper
+import com.bimilyoncu.sscoderr.libretube.obj.PipedImportPlaylist
 
 class PipedPlaylistRepository: PlaylistRepository {
     private fun Message.isOk() = this.message == "ok"

@@ -1,4 +1,4 @@
-package com.github.libretube.ui.dialogs
+package com.bimilyoncu.sscoderr.libretube.ui.dialogs
 
 import android.app.Dialog
 import android.content.Intent
@@ -6,16 +6,16 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.DialogFragment
-import com.github.libretube.R
-import com.github.libretube.constants.IntentData
-import com.github.libretube.databinding.DialogDownloadPlaylistBinding
-import com.github.libretube.enums.PlaylistType
-import com.github.libretube.extensions.getWhileDigit
-import com.github.libretube.extensions.serializable
-import com.github.libretube.helpers.LocaleHelper
-import com.github.libretube.helpers.PreferenceHelper
-import com.github.libretube.services.PlaylistDownloadEnqueueService
-import com.github.libretube.util.TextUtils
+import com.bimilyoncu.sscoderr.libretube.R
+import com.bimilyoncu.sscoderr.libretube.constants.IntentData
+import com.bimilyoncu.sscoderr.libretube.databinding.DialogDownloadPlaylistBinding
+import com.bimilyoncu.sscoderr.libretube.enums.PlaylistType
+import com.bimilyoncu.sscoderr.libretube.extensions.getWhileDigit
+import com.bimilyoncu.sscoderr.libretube.extensions.serializable
+import com.bimilyoncu.sscoderr.libretube.helpers.LocaleHelper
+import com.bimilyoncu.sscoderr.libretube.helpers.PreferenceHelper
+import com.bimilyoncu.sscoderr.libretube.services.PlaylistDownloadEnqueueService
+import com.bimilyoncu.sscoderr.libretube.util.TextUtils
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 class DownloadPlaylistDialog : DialogFragment() {

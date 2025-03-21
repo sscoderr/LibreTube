@@ -1,6 +1,6 @@
-package com.github.libretube.repo
+package com.bimilyoncu.sscoderr.libretube.repo
 
-import com.github.libretube.api.obj.Subscription
+import com.bimilyoncu.sscoderr.libretube.api.obj.Subscription
 
 interface SubscriptionsRepository {
     suspend fun subscribe(channelId: String, name: String, uploaderAvatar: String?, verified: Boolean)

@@ -1,18 +1,18 @@
-package com.github.libretube.ui.sheets
+package com.bimilyoncu.sscoderr.libretube.ui.sheets
 
 import android.os.Bundle
 import android.util.Log
 import androidx.core.os.bundleOf
-import com.github.libretube.R
-import com.github.libretube.api.MediaServiceRepository
-import com.github.libretube.constants.IntentData
-import com.github.libretube.enums.ShareObjectType
-import com.github.libretube.extensions.TAG
-import com.github.libretube.extensions.toID
-import com.github.libretube.helpers.BackgroundHelper
-import com.github.libretube.helpers.NavigationHelper
-import com.github.libretube.obj.ShareData
-import com.github.libretube.ui.dialogs.ShareDialog
+import com.bimilyoncu.sscoderr.libretube.R
+import com.bimilyoncu.sscoderr.libretube.api.MediaServiceRepository
+import com.bimilyoncu.sscoderr.libretube.constants.IntentData
+import com.bimilyoncu.sscoderr.libretube.enums.ShareObjectType
+import com.bimilyoncu.sscoderr.libretube.extensions.TAG
+import com.bimilyoncu.sscoderr.libretube.extensions.toID
+import com.bimilyoncu.sscoderr.libretube.helpers.BackgroundHelper
+import com.bimilyoncu.sscoderr.libretube.helpers.NavigationHelper
+import com.bimilyoncu.sscoderr.libretube.obj.ShareData
+import com.bimilyoncu.sscoderr.libretube.ui.dialogs.ShareDialog
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 

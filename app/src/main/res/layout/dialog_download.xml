@@ -20,21 +20,21 @@
             android:inputType="text" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <com.github.libretube.ui.views.DropdownMenu
+    <com.bimilyoncu.sscoderr.libretube.ui.views.DropdownMenu
         android:id="@+id/video_spinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:hint="@string/video"
         app:icon="@drawable/ic_video" />
 
-    <com.github.libretube.ui.views.DropdownMenu
+    <com.bimilyoncu.sscoderr.libretube.ui.views.DropdownMenu
         android:id="@+id/audio_spinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:hint="@string/audio"
         app:icon="@drawable/ic_audio" />
 
-    <com.github.libretube.ui.views.DropdownMenu
+    <com.bimilyoncu.sscoderr.libretube.ui.views.DropdownMenu
         android:id="@+id/subtitle_spinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

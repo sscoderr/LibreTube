@@ -1,10 +1,10 @@
-package com.github.libretube.repo
+package com.bimilyoncu.sscoderr.libretube.repo
 
-import com.github.libretube.api.RetrofitInstance
-import com.github.libretube.api.SubscriptionHelper.GET_SUBSCRIPTIONS_LIMIT
-import com.github.libretube.api.obj.Subscription
-import com.github.libretube.db.DatabaseHolder.Database
-import com.github.libretube.db.obj.LocalSubscription
+import com.bimilyoncu.sscoderr.libretube.api.RetrofitInstance
+import com.bimilyoncu.sscoderr.libretube.api.SubscriptionHelper.GET_SUBSCRIPTIONS_LIMIT
+import com.bimilyoncu.sscoderr.libretube.api.obj.Subscription
+import com.bimilyoncu.sscoderr.libretube.db.DatabaseHolder.Database
+import com.bimilyoncu.sscoderr.libretube.db.obj.LocalSubscription
 
 class PipedLocalSubscriptionsRepository : SubscriptionsRepository {
     override suspend fun subscribe(

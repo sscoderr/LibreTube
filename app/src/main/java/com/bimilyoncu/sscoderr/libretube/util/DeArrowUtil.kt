@@ -1,15 +1,15 @@
-package com.github.libretube.util
+package com.bimilyoncu.sscoderr.libretube.util
 
 import android.util.Log
-import com.github.libretube.api.MediaServiceRepository
-import com.github.libretube.api.obj.ContentItem
-import com.github.libretube.api.obj.DeArrowContent
-import com.github.libretube.api.obj.StreamItem
-import com.github.libretube.api.obj.StreamItem.Companion.TYPE_STREAM
-import com.github.libretube.api.obj.Streams
-import com.github.libretube.constants.PreferenceKeys
-import com.github.libretube.extensions.toID
-import com.github.libretube.helpers.PreferenceHelper
+import com.bimilyoncu.sscoderr.libretube.api.MediaServiceRepository
+import com.bimilyoncu.sscoderr.libretube.api.obj.ContentItem
+import com.bimilyoncu.sscoderr.libretube.api.obj.DeArrowContent
+import com.bimilyoncu.sscoderr.libretube.api.obj.StreamItem
+import com.bimilyoncu.sscoderr.libretube.api.obj.StreamItem.Companion.TYPE_STREAM
+import com.bimilyoncu.sscoderr.libretube.api.obj.Streams
+import com.bimilyoncu.sscoderr.libretube.constants.PreferenceKeys
+import com.bimilyoncu.sscoderr.libretube.extensions.toID
+import com.bimilyoncu.sscoderr.libretube.helpers.PreferenceHelper
 import java.util.TreeSet
 
 object DeArrowUtil {

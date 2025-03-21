@@ -1,4 +1,4 @@
-package com.github.libretube.helpers
+package com.bimilyoncu.sscoderr.libretube.helpers
 
 import android.content.Context
 import android.content.Intent
@@ -10,11 +10,11 @@ import android.widget.Toast
 import androidx.core.net.toUri
 import androidx.core.os.bundleOf
 import androidx.fragment.app.FragmentManager
-import com.github.libretube.R
-import com.github.libretube.constants.IntentData
-import com.github.libretube.extensions.toastFromMainThread
-import com.github.libretube.ui.sheets.IntentChooserSheet
-import com.github.libretube.util.TextUtils.toTimeInSeconds
+import com.bimilyoncu.sscoderr.libretube.R
+import com.bimilyoncu.sscoderr.libretube.constants.IntentData
+import com.bimilyoncu.sscoderr.libretube.extensions.toastFromMainThread
+import com.bimilyoncu.sscoderr.libretube.ui.sheets.IntentChooserSheet
+import com.bimilyoncu.sscoderr.libretube.util.TextUtils.toTimeInSeconds
 
 object IntentHelper {
     private fun getResolveIntent(link: String) = Intent(Intent.ACTION_VIEW)

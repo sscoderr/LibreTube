@@ -1,19 +1,19 @@
-package com.github.libretube.api
+package com.bimilyoncu.sscoderr.libretube.api
 
 import android.content.Context
-import com.github.libretube.R
-import com.github.libretube.constants.PreferenceKeys
-import com.github.libretube.db.obj.SubscriptionsFeedItem
-import com.github.libretube.helpers.PreferenceHelper
-import com.github.libretube.repo.AccountSubscriptionsRepository
-import com.github.libretube.repo.FeedProgress
-import com.github.libretube.repo.FeedRepository
-import com.github.libretube.repo.LocalFeedRepository
-import com.github.libretube.repo.LocalSubscriptionsRepository
-import com.github.libretube.repo.PipedAccountFeedRepository
-import com.github.libretube.repo.PipedLocalSubscriptionsRepository
-import com.github.libretube.repo.PipedNoAccountFeedRepository
-import com.github.libretube.repo.SubscriptionsRepository
+import com.bimilyoncu.sscoderr.libretube.R
+import com.bimilyoncu.sscoderr.libretube.constants.PreferenceKeys
+import com.bimilyoncu.sscoderr.libretube.db.obj.SubscriptionsFeedItem
+import com.bimilyoncu.sscoderr.libretube.helpers.PreferenceHelper
+import com.bimilyoncu.sscoderr.libretube.repo.AccountSubscriptionsRepository
+import com.bimilyoncu.sscoderr.libretube.repo.FeedProgress
+import com.bimilyoncu.sscoderr.libretube.repo.FeedRepository
+import com.bimilyoncu.sscoderr.libretube.repo.LocalFeedRepository
+import com.bimilyoncu.sscoderr.libretube.repo.LocalSubscriptionsRepository
+import com.bimilyoncu.sscoderr.libretube.repo.PipedAccountFeedRepository
+import com.bimilyoncu.sscoderr.libretube.repo.PipedLocalSubscriptionsRepository
+import com.bimilyoncu.sscoderr.libretube.repo.PipedNoAccountFeedRepository
+import com.bimilyoncu.sscoderr.libretube.repo.SubscriptionsRepository
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.coroutines.runBlocking
 

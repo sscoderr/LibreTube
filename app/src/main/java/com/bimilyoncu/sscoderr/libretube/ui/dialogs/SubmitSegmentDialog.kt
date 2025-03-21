@@ -1,4 +1,4 @@
-package com.github.libretube.ui.dialogs
+package com.bimilyoncu.sscoderr.libretube.ui.dialogs
 
 import android.app.Dialog
 import android.os.Bundle
@@ -8,18 +8,18 @@ import android.widget.Toast
 import androidx.core.view.isGone
 import androidx.fragment.app.DialogFragment
 import androidx.lifecycle.lifecycleScope
-import com.github.libretube.R
-import com.github.libretube.api.JsonHelper
-import com.github.libretube.api.MediaServiceRepository
-import com.github.libretube.api.RetrofitInstance
-import com.github.libretube.api.obj.Segment
-import com.github.libretube.constants.IntentData
-import com.github.libretube.databinding.DialogSubmitSegmentBinding
-import com.github.libretube.extensions.TAG
-import com.github.libretube.extensions.toastFromMainDispatcher
-import com.github.libretube.helpers.PreferenceHelper
-import com.github.libretube.util.TextUtils
-import com.github.libretube.util.TextUtils.parseDurationString
+import com.bimilyoncu.sscoderr.libretube.R
+import com.bimilyoncu.sscoderr.libretube.api.JsonHelper
+import com.bimilyoncu.sscoderr.libretube.api.MediaServiceRepository
+import com.bimilyoncu.sscoderr.libretube.api.RetrofitInstance
+import com.bimilyoncu.sscoderr.libretube.api.obj.Segment
+import com.bimilyoncu.sscoderr.libretube.constants.IntentData
+import com.bimilyoncu.sscoderr.libretube.databinding.DialogSubmitSegmentBinding
+import com.bimilyoncu.sscoderr.libretube.extensions.TAG
+import com.bimilyoncu.sscoderr.libretube.extensions.toastFromMainDispatcher
+import com.bimilyoncu.sscoderr.libretube.helpers.PreferenceHelper
+import com.bimilyoncu.sscoderr.libretube.util.TextUtils
+import com.bimilyoncu.sscoderr.libretube.util.TextUtils.parseDurationString
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

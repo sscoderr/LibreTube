@@ -1,4 +1,4 @@
-package com.github.libretube.ui.views
+package com.bimilyoncu.sscoderr.libretube.ui.views
 
 import android.content.Context
 import android.content.res.TypedArray
@@ -10,10 +10,10 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.os.bundleOf
 import androidx.preference.Preference
 import androidx.preference.PreferenceViewHolder
-import com.github.libretube.R
-import com.github.libretube.constants.IntentData
-import com.github.libretube.ui.dialogs.ColorPickerDialog
-import com.github.libretube.ui.dialogs.ColorPickerDialog.Companion.COLOR_PICKER_REQUEST_KEY
+import com.bimilyoncu.sscoderr.libretube.R
+import com.bimilyoncu.sscoderr.libretube.constants.IntentData
+import com.bimilyoncu.sscoderr.libretube.ui.dialogs.ColorPickerDialog
+import com.bimilyoncu.sscoderr.libretube.ui.dialogs.ColorPickerDialog.Companion.COLOR_PICKER_REQUEST_KEY
 
 class ColorPreference(context: Context, attrs: AttributeSet) : Preference(context, attrs) {
     private lateinit var circleView: View

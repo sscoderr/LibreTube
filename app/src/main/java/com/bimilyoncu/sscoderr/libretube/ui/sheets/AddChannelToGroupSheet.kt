@@ -1,13 +1,13 @@
-package com.github.libretube.ui.sheets
+package com.bimilyoncu.sscoderr.libretube.ui.sheets
 
 import android.os.Bundle
 import android.view.View
 import androidx.lifecycle.lifecycleScope
-import com.github.libretube.R
-import com.github.libretube.constants.IntentData
-import com.github.libretube.databinding.DialogAddChannelToGroupBinding
-import com.github.libretube.db.DatabaseHolder
-import com.github.libretube.ui.adapters.AddChannelToGroupAdapter
+import com.bimilyoncu.sscoderr.libretube.R
+import com.bimilyoncu.sscoderr.libretube.constants.IntentData
+import com.bimilyoncu.sscoderr.libretube.databinding.DialogAddChannelToGroupBinding
+import com.bimilyoncu.sscoderr.libretube.db.DatabaseHolder
+import com.bimilyoncu.sscoderr.libretube.ui.adapters.AddChannelToGroupAdapter
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext

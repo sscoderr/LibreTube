@@ -1,4 +1,4 @@
-package com.github.libretube.parcelable
+package com.bimilyoncu.sscoderr.libretube.parcelable
 
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize

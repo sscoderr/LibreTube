@@ -349,7 +349,7 @@
             android:layout_marginHorizontal="10dp"
             android:translationZ="10dp">
 
-            <com.github.libretube.ui.views.MarkableTimeBar
+            <com.bimilyoncu.sscoderr.libretube.ui.views.MarkableTimeBar
                 android:id="@+id/exo_progress"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"

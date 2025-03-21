@@ -1,6 +1,6 @@
-package com.github.libretube.ui.extensions
+package com.bimilyoncu.sscoderr.libretube.ui.extensions
 
-import com.github.libretube.api.obj.Comment
+import com.bimilyoncu.sscoderr.libretube.api.obj.Comment
 
 fun List<Comment>.filterNonEmptyComments(): List<Comment> {
     return filter { !it.commentText.isNullOrEmpty() }

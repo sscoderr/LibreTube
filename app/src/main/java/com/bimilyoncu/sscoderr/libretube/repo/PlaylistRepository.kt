@@ -1,9 +1,9 @@
-package com.github.libretube.repo
+package com.bimilyoncu.sscoderr.libretube.repo
 
-import com.github.libretube.api.obj.Playlist
-import com.github.libretube.api.obj.Playlists
-import com.github.libretube.api.obj.StreamItem
-import com.github.libretube.obj.PipedImportPlaylist
+import com.bimilyoncu.sscoderr.libretube.api.obj.Playlist
+import com.bimilyoncu.sscoderr.libretube.api.obj.Playlists
+import com.bimilyoncu.sscoderr.libretube.api.obj.StreamItem
+import com.bimilyoncu.sscoderr.libretube.obj.PipedImportPlaylist
 
 interface PlaylistRepository {
     suspend fun getPlaylist(playlistId: String): Playlist

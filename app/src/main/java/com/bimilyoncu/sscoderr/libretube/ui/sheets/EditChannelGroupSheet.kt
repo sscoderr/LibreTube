@@ -1,4 +1,4 @@
-package com.github.libretube.ui.sheets
+package com.bimilyoncu.sscoderr.libretube.ui.sheets
 
 import android.os.Bundle
 import android.view.View
@@ -7,15 +7,15 @@ import androidx.core.widget.addTextChangedListener
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.github.libretube.R
-import com.github.libretube.api.SubscriptionHelper
-import com.github.libretube.api.obj.Subscription
-import com.github.libretube.databinding.DialogEditChannelGroupBinding
-import com.github.libretube.db.DatabaseHolder
-import com.github.libretube.db.obj.SubscriptionGroup
-import com.github.libretube.ui.adapters.SubscriptionGroupChannelsAdapter
-import com.github.libretube.ui.models.EditChannelGroupsModel
-import com.github.libretube.ui.models.SubscriptionsViewModel
+import com.bimilyoncu.sscoderr.libretube.R
+import com.bimilyoncu.sscoderr.libretube.api.SubscriptionHelper
+import com.bimilyoncu.sscoderr.libretube.api.obj.Subscription
+import com.bimilyoncu.sscoderr.libretube.databinding.DialogEditChannelGroupBinding
+import com.bimilyoncu.sscoderr.libretube.db.DatabaseHolder
+import com.bimilyoncu.sscoderr.libretube.db.obj.SubscriptionGroup
+import com.bimilyoncu.sscoderr.libretube.ui.adapters.SubscriptionGroupChannelsAdapter
+import com.bimilyoncu.sscoderr.libretube.ui.models.EditChannelGroupsModel
+import com.bimilyoncu.sscoderr.libretube.ui.models.SubscriptionsViewModel
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

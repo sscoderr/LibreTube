@@ -1,10 +1,10 @@
-package com.github.libretube.repo
+package com.bimilyoncu.sscoderr.libretube.repo
 
-import com.github.libretube.api.obj.Subscription
-import com.github.libretube.db.DatabaseHolder.Database
-import com.github.libretube.db.obj.LocalSubscription
-import com.github.libretube.extensions.parallelMap
-import com.github.libretube.ui.dialogs.ShareDialog.Companion.YOUTUBE_FRONTEND_URL
+import com.bimilyoncu.sscoderr.libretube.api.obj.Subscription
+import com.bimilyoncu.sscoderr.libretube.db.DatabaseHolder.Database
+import com.bimilyoncu.sscoderr.libretube.db.obj.LocalSubscription
+import com.bimilyoncu.sscoderr.libretube.extensions.parallelMap
+import com.bimilyoncu.sscoderr.libretube.ui.dialogs.ShareDialog.Companion.YOUTUBE_FRONTEND_URL
 import org.schabi.newpipe.extractor.channel.ChannelInfo
 
 class LocalSubscriptionsRepository : SubscriptionsRepository {

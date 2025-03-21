@@ -1,4 +1,4 @@
-package com.github.libretube.ui.views
+package com.bimilyoncu.sscoderr.libretube.ui.views
 
 import android.content.Context
 import android.graphics.Canvas
@@ -8,10 +8,10 @@ import android.util.AttributeSet
 import android.view.View
 import androidx.core.view.marginLeft
 import androidx.media3.common.util.UnstableApi
-import com.github.libretube.api.obj.Segment
-import com.github.libretube.extensions.dpToPx
-import com.github.libretube.helpers.PreferenceHelper
-import com.github.libretube.helpers.ThemeHelper
+import com.bimilyoncu.sscoderr.libretube.api.obj.Segment
+import com.bimilyoncu.sscoderr.libretube.extensions.dpToPx
+import com.bimilyoncu.sscoderr.libretube.helpers.PreferenceHelper
+import com.bimilyoncu.sscoderr.libretube.helpers.ThemeHelper
 import com.google.android.material.R
 
 /**

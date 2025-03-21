@@ -1,11 +1,11 @@
-package com.github.libretube.util
+package com.bimilyoncu.sscoderr.libretube.util
 
 import android.content.Context
 import android.graphics.Bitmap
-import com.github.libretube.api.obj.PreviewFrames
-import com.github.libretube.helpers.ImageHelper
-import com.github.libretube.obj.PreviewFrame
-import com.github.libretube.ui.interfaces.TimeFrameReceiver
+import com.bimilyoncu.sscoderr.libretube.api.obj.PreviewFrames
+import com.bimilyoncu.sscoderr.libretube.helpers.ImageHelper
+import com.bimilyoncu.sscoderr.libretube.obj.PreviewFrame
+import com.bimilyoncu.sscoderr.libretube.ui.interfaces.TimeFrameReceiver
 
 class OnlineTimeFrameReceiver(
     private val context: Context,

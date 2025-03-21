@@ -1,4 +1,4 @@
-package com.github.libretube.compat
+package com.bimilyoncu.sscoderr.libretube.compat
 
 import android.app.PictureInPictureParams
 import android.graphics.Rect

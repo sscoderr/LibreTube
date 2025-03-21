@@ -1,7 +1,7 @@
-package com.github.libretube.ui.viewholders
+package com.bimilyoncu.sscoderr.libretube.ui.viewholders
 
 import androidx.recyclerview.widget.RecyclerView
-import com.github.libretube.databinding.LegacySubscriptionChannelBinding
+import com.bimilyoncu.sscoderr.libretube.databinding.LegacySubscriptionChannelBinding
 
 class LegacySubscriptionViewHolder(
     val binding: LegacySubscriptionChannelBinding

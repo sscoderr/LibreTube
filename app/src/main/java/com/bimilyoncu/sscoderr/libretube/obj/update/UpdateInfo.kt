@@ -1,4 +1,4 @@
-package com.github.libretube.obj.update
+package com.bimilyoncu.sscoderr.libretube.obj.update
 
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize

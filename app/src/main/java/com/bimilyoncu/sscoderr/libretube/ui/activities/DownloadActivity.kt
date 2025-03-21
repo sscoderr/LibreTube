@@ -1,15 +1,15 @@
-package com.github.libretube.ui.activities
+package com.bimilyoncu.sscoderr.libretube.ui.activities
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.core.net.toUri
 import androidx.core.os.bundleOf
-import com.github.libretube.constants.IntentData
-import com.github.libretube.enums.PlaylistType
-import com.github.libretube.helpers.IntentHelper
-import com.github.libretube.ui.base.BaseActivity
-import com.github.libretube.ui.dialogs.DownloadDialog
-import com.github.libretube.ui.dialogs.DownloadPlaylistDialog
+import com.bimilyoncu.sscoderr.libretube.constants.IntentData
+import com.bimilyoncu.sscoderr.libretube.enums.PlaylistType
+import com.bimilyoncu.sscoderr.libretube.helpers.IntentHelper
+import com.bimilyoncu.sscoderr.libretube.ui.base.BaseActivity
+import com.bimilyoncu.sscoderr.libretube.ui.dialogs.DownloadDialog
+import com.bimilyoncu.sscoderr.libretube.ui.dialogs.DownloadPlaylistDialog
 
 class DownloadActivity : BaseActivity() {
     override val isDialogActivity: Boolean = true

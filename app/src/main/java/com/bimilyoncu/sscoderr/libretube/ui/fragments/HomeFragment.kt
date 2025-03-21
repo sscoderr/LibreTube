@@ -1,4 +1,4 @@
-package com.github.libretube.ui.fragments
+package com.bimilyoncu.sscoderr.libretube.ui.fragments
 
 import android.content.Intent
 import android.os.Bundle
@@ -9,25 +9,25 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.RecyclerView
-import com.github.libretube.R
-import com.github.libretube.api.PlaylistsHelper
-import com.github.libretube.api.obj.Playlists
-import com.github.libretube.api.obj.StreamItem
-import com.github.libretube.constants.PreferenceKeys
-import com.github.libretube.constants.PreferenceKeys.HOME_TAB_CONTENT
-import com.github.libretube.databinding.FragmentHomeBinding
-import com.github.libretube.db.DatabaseHelper
-import com.github.libretube.db.obj.PlaylistBookmark
-import com.github.libretube.helpers.NavBarHelper
-import com.github.libretube.helpers.PreferenceHelper
-import com.github.libretube.ui.activities.SettingsActivity
-import com.github.libretube.ui.adapters.PlaylistBookmarkAdapter
-import com.github.libretube.ui.adapters.PlaylistsAdapter
-import com.github.libretube.ui.adapters.VideosAdapter
-import com.github.libretube.ui.adapters.VideosAdapter.Companion.LayoutMode
-import com.github.libretube.ui.extensions.setupFragmentAnimation
-import com.github.libretube.ui.models.HomeViewModel
-import com.github.libretube.ui.models.SubscriptionsViewModel
+import com.bimilyoncu.sscoderr.libretube.R
+import com.bimilyoncu.sscoderr.libretube.api.PlaylistsHelper
+import com.bimilyoncu.sscoderr.libretube.api.obj.Playlists
+import com.bimilyoncu.sscoderr.libretube.api.obj.StreamItem
+import com.bimilyoncu.sscoderr.libretube.constants.PreferenceKeys
+import com.bimilyoncu.sscoderr.libretube.constants.PreferenceKeys.HOME_TAB_CONTENT
+import com.bimilyoncu.sscoderr.libretube.databinding.FragmentHomeBinding
+import com.bimilyoncu.sscoderr.libretube.db.DatabaseHelper
+import com.bimilyoncu.sscoderr.libretube.db.obj.PlaylistBookmark
+import com.bimilyoncu.sscoderr.libretube.helpers.NavBarHelper
+import com.bimilyoncu.sscoderr.libretube.helpers.PreferenceHelper
+import com.bimilyoncu.sscoderr.libretube.ui.activities.SettingsActivity
+import com.bimilyoncu.sscoderr.libretube.ui.adapters.PlaylistBookmarkAdapter
+import com.bimilyoncu.sscoderr.libretube.ui.adapters.PlaylistsAdapter
+import com.bimilyoncu.sscoderr.libretube.ui.adapters.VideosAdapter
+import com.bimilyoncu.sscoderr.libretube.ui.adapters.VideosAdapter.Companion.LayoutMode
+import com.bimilyoncu.sscoderr.libretube.ui.extensions.setupFragmentAnimation
+import com.bimilyoncu.sscoderr.libretube.ui.models.HomeViewModel
+import com.bimilyoncu.sscoderr.libretube.ui.models.SubscriptionsViewModel
 import com.google.android.material.snackbar.Snackbar
 
 

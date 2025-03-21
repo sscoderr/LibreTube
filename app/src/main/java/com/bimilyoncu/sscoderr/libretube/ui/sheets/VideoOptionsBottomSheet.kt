@@ -1,29 +1,29 @@
-package com.github.libretube.ui.sheets
+package com.bimilyoncu.sscoderr.libretube.ui.sheets
 
 import android.os.Bundle
 import androidx.core.os.bundleOf
 import androidx.fragment.app.setFragmentResult
 import androidx.navigation.fragment.NavHostFragment
-import com.github.libretube.R
-import com.github.libretube.api.obj.StreamItem
-import com.github.libretube.constants.IntentData
-import com.github.libretube.constants.PreferenceKeys
-import com.github.libretube.db.DatabaseHelper
-import com.github.libretube.db.DatabaseHolder
-import com.github.libretube.db.obj.WatchPosition
-import com.github.libretube.enums.ShareObjectType
-import com.github.libretube.extensions.parcelable
-import com.github.libretube.extensions.toID
-import com.github.libretube.helpers.DownloadHelper
-import com.github.libretube.helpers.NavigationHelper
-import com.github.libretube.helpers.PlayerHelper
-import com.github.libretube.helpers.PreferenceHelper
-import com.github.libretube.obj.ShareData
-import com.github.libretube.ui.activities.MainActivity
-import com.github.libretube.ui.dialogs.AddToPlaylistDialog
-import com.github.libretube.ui.dialogs.ShareDialog
-import com.github.libretube.ui.fragments.SubscriptionsFragment
-import com.github.libretube.util.PlayingQueue
+import com.bimilyoncu.sscoderr.libretube.R
+import com.bimilyoncu.sscoderr.libretube.api.obj.StreamItem
+import com.bimilyoncu.sscoderr.libretube.constants.IntentData
+import com.bimilyoncu.sscoderr.libretube.constants.PreferenceKeys
+import com.bimilyoncu.sscoderr.libretube.db.DatabaseHelper
+import com.bimilyoncu.sscoderr.libretube.db.DatabaseHolder
+import com.bimilyoncu.sscoderr.libretube.db.obj.WatchPosition
+import com.bimilyoncu.sscoderr.libretube.enums.ShareObjectType
+import com.bimilyoncu.sscoderr.libretube.extensions.parcelable
+import com.bimilyoncu.sscoderr.libretube.extensions.toID
+import com.bimilyoncu.sscoderr.libretube.helpers.DownloadHelper
+import com.bimilyoncu.sscoderr.libretube.helpers.NavigationHelper
+import com.bimilyoncu.sscoderr.libretube.helpers.PlayerHelper
+import com.bimilyoncu.sscoderr.libretube.helpers.PreferenceHelper
+import com.bimilyoncu.sscoderr.libretube.obj.ShareData
+import com.bimilyoncu.sscoderr.libretube.ui.activities.MainActivity
+import com.bimilyoncu.sscoderr.libretube.ui.dialogs.AddToPlaylistDialog
+import com.bimilyoncu.sscoderr.libretube.ui.dialogs.ShareDialog
+import com.bimilyoncu.sscoderr.libretube.ui.fragments.SubscriptionsFragment
+import com.bimilyoncu.sscoderr.libretube.util.PlayingQueue
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.runBlocking
 import kotlinx.coroutines.withContext
@@ -58,6 +58,10 @@ class VideoOptionsBottomSheet : BaseBottomSheet() {
                 // Start the background mode
                 R.string.playOnBackground -> {
                     NavigationHelper.navigateAudio(requireContext(), videoId, minimizeByDefault = true)
+                }
+                // Play as Audio
+                R.string.playAsAudio -> {
+                    NavigationHelper.navigateAudio(requireContext(), videoId)
                 }
                 // Add Video to Playlist Dialog
                 R.string.addToPlaylist -> {
@@ -133,7 +137,7 @@ class VideoOptionsBottomSheet : BaseBottomSheet() {
 
     private fun getOptionsForNotActivePlayback(videoId: String): List<Int> {
         // List that stores the different menu options. In the future could be add more options here.
-        val optionsList = mutableListOf(R.string.playOnBackground)
+        val optionsList = mutableListOf(R.string.playOnBackground, R.string.playAsAudio)
 
         // Check whether the player is running and add queue options
         if (PlayingQueue.isNotEmpty()) {

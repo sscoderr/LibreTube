@@ -1,4 +1,4 @@
-package com.github.libretube.util
+package com.bimilyoncu.sscoderr.libretube.util
 
 import okhttp3.OkHttpClient
 import okhttp3.RequestBody.Companion.toRequestBody

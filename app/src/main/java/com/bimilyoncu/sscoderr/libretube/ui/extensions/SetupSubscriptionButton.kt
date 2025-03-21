@@ -1,12 +1,12 @@
-package com.github.libretube.ui.extensions
+package com.bimilyoncu.sscoderr.libretube.ui.extensions
 
 import android.widget.TextView
 import androidx.core.view.isGone
 import androidx.core.view.isVisible
-import com.github.libretube.R
-import com.github.libretube.api.SubscriptionHelper
-import com.github.libretube.constants.PreferenceKeys
-import com.github.libretube.helpers.PreferenceHelper
+import com.bimilyoncu.sscoderr.libretube.R
+import com.bimilyoncu.sscoderr.libretube.api.SubscriptionHelper
+import com.bimilyoncu.sscoderr.libretube.constants.PreferenceKeys
+import com.bimilyoncu.sscoderr.libretube.helpers.PreferenceHelper
 import com.google.android.material.button.MaterialButton
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers

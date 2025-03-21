@@ -1,4 +1,4 @@
-package com.github.libretube.helpers
+package com.bimilyoncu.sscoderr.libretube.helpers
 
 import android.content.Context
 import android.util.Log
@@ -10,8 +10,8 @@ import androidx.core.view.forEach
 import androidx.core.view.get
 import androidx.core.view.isGone
 import androidx.core.view.size
-import com.github.libretube.R
-import com.github.libretube.constants.PreferenceKeys
+import com.bimilyoncu.sscoderr.libretube.R
+import com.bimilyoncu.sscoderr.libretube.constants.PreferenceKeys
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.navigation.NavigationBarView
 

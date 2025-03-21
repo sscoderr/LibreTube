@@ -1,4 +1,4 @@
-package com.github.libretube.services
+package com.bimilyoncu.sscoderr.libretube.services
 
 import android.app.NotificationManager
 import android.app.PendingIntent.FLAG_CANCEL_CURRENT
@@ -18,34 +18,34 @@ import androidx.core.util.set
 import androidx.core.util.valueIterator
 import androidx.lifecycle.LifecycleService
 import androidx.lifecycle.lifecycleScope
-import com.github.libretube.LibreTubeApp.Companion.DOWNLOAD_CHANNEL_NAME
-import com.github.libretube.R
-import com.github.libretube.api.MediaServiceRepository
-import com.github.libretube.api.obj.Streams
-import com.github.libretube.constants.IntentData
-import com.github.libretube.db.DatabaseHolder.Database
-import com.github.libretube.db.obj.Download
-import com.github.libretube.db.obj.DownloadChapter
-import com.github.libretube.db.obj.DownloadItem
-import com.github.libretube.enums.FileType
-import com.github.libretube.enums.NotificationId
-import com.github.libretube.extensions.formatAsFileSize
-import com.github.libretube.extensions.getContentLength
-import com.github.libretube.extensions.parcelableExtra
-import com.github.libretube.extensions.toLocalDate
-import com.github.libretube.extensions.toastFromMainDispatcher
-import com.github.libretube.extensions.toastFromMainThread
-import com.github.libretube.helpers.DownloadHelper
-import com.github.libretube.helpers.DownloadHelper.getNotificationId
-import com.github.libretube.helpers.ImageHelper
-import com.github.libretube.helpers.ProxyHelper
-import com.github.libretube.obj.DownloadStatus
-import com.github.libretube.parcelable.DownloadData
-import com.github.libretube.receivers.NotificationReceiver
-import com.github.libretube.receivers.NotificationReceiver.Companion.ACTION_DOWNLOAD_PAUSE
-import com.github.libretube.receivers.NotificationReceiver.Companion.ACTION_DOWNLOAD_RESUME
-import com.github.libretube.receivers.NotificationReceiver.Companion.ACTION_DOWNLOAD_STOP
-import com.github.libretube.ui.activities.MainActivity
+import com.bimilyoncu.sscoderr.libretube.LibreTubeApp.Companion.DOWNLOAD_CHANNEL_NAME
+import com.bimilyoncu.sscoderr.libretube.R
+import com.bimilyoncu.sscoderr.libretube.api.MediaServiceRepository
+import com.bimilyoncu.sscoderr.libretube.api.obj.Streams
+import com.bimilyoncu.sscoderr.libretube.constants.IntentData
+import com.bimilyoncu.sscoderr.libretube.db.DatabaseHolder.Database
+import com.bimilyoncu.sscoderr.libretube.db.obj.Download
+import com.bimilyoncu.sscoderr.libretube.db.obj.DownloadChapter
+import com.bimilyoncu.sscoderr.libretube.db.obj.DownloadItem
+import com.bimilyoncu.sscoderr.libretube.enums.FileType
+import com.bimilyoncu.sscoderr.libretube.enums.NotificationId
+import com.bimilyoncu.sscoderr.libretube.extensions.formatAsFileSize
+import com.bimilyoncu.sscoderr.libretube.extensions.getContentLength
+import com.bimilyoncu.sscoderr.libretube.extensions.parcelableExtra
+import com.bimilyoncu.sscoderr.libretube.extensions.toLocalDate
+import com.bimilyoncu.sscoderr.libretube.extensions.toastFromMainDispatcher
+import com.bimilyoncu.sscoderr.libretube.extensions.toastFromMainThread
+import com.bimilyoncu.sscoderr.libretube.helpers.DownloadHelper
+import com.bimilyoncu.sscoderr.libretube.helpers.DownloadHelper.getNotificationId
+import com.bimilyoncu.sscoderr.libretube.helpers.ImageHelper
+import com.bimilyoncu.sscoderr.libretube.helpers.ProxyHelper
+import com.bimilyoncu.sscoderr.libretube.obj.DownloadStatus
+import com.bimilyoncu.sscoderr.libretube.parcelable.DownloadData
+import com.bimilyoncu.sscoderr.libretube.receivers.NotificationReceiver
+import com.bimilyoncu.sscoderr.libretube.receivers.NotificationReceiver.Companion.ACTION_DOWNLOAD_PAUSE
+import com.bimilyoncu.sscoderr.libretube.receivers.NotificationReceiver.Companion.ACTION_DOWNLOAD_RESUME
+import com.bimilyoncu.sscoderr.libretube.receivers.NotificationReceiver.Companion.ACTION_DOWNLOAD_STOP
+import com.bimilyoncu.sscoderr.libretube.ui.activities.MainActivity
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.SupervisorJob
@@ -613,9 +613,9 @@ class DownloadService : LifecycleService() {
     companion object {
         private const val DOWNLOAD_NOTIFICATION_GROUP = "download_notification_group"
         const val ACTION_SERVICE_STARTED =
-            "com.github.libretube.services.DownloadService.ACTION_SERVICE_STARTED"
+            "com.bimilyoncu.sscoderr.libretube.services.DownloadService.ACTION_SERVICE_STARTED"
         const val ACTION_SERVICE_STOPPED =
-            "com.github.libretube.services.DownloadService.ACTION_SERVICE_STOPPED"
+            "com.bimilyoncu.sscoderr.libretube.services.DownloadService.ACTION_SERVICE_STOPPED"
 
         // any values that are not in that range are strictly rate limited by YT or are very slow due
         // to the amount of requests that's being made

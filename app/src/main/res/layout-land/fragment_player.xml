@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.github.libretube.ui.views.SingleViewTouchableMotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.bimilyoncu.sscoderr.libretube.ui.views.SingleViewTouchableMotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/playerMotionLayout"
@@ -24,7 +24,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <com.github.libretube.ui.views.DescriptionLayout
+            <com.bimilyoncu.sscoderr.libretube.ui.views.DescriptionLayout
                 android:id="@+id/descriptionLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -202,7 +202,7 @@
             android:nestedScrollingEnabled="false" />
     </RelativeLayout>
 
-    <com.github.libretube.ui.views.OnlinePlayerView
+    <com.bimilyoncu.sscoderr.libretube.ui.views.OnlinePlayerView
         android:id="@+id/player"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -215,14 +215,14 @@
         app:show_buffering="when_playing"
         app:surface_type="surface_view">
 
-        <com.github.libretube.ui.views.DoubleTapOverlay
+        <com.bimilyoncu.sscoderr.libretube.ui.views.DoubleTapOverlay
             android:id="@+id/doubleTapOverlay"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="center" />
 
-        <com.github.libretube.ui.views.PlayerGestureControlsView
+        <com.bimilyoncu.sscoderr.libretube.ui.views.PlayerGestureControlsView
             android:id="@+id/playerGestureControlsView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -240,7 +240,7 @@
             app:strokeWidth="1dp"
             tools:ignore="RtlSymmetry">
 
-            <com.github.libretube.ui.views.DrawableTextView
+            <com.bimilyoncu.sscoderr.libretube.ui.views.DrawableTextView
                 android:id="@+id/sb_skip_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -256,13 +256,13 @@
 
         </com.google.android.material.card.MaterialCardView>
 
-        <com.github.libretube.ui.views.AutoplayCountdownView
+        <com.bimilyoncu.sscoderr.libretube.ui.views.AutoplayCountdownView
             android:id="@+id/autoplay_countdown"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:visibility="gone" />
 
-    </com.github.libretube.ui.views.OnlinePlayerView>
+    </com.bimilyoncu.sscoderr.libretube.ui.views.OnlinePlayerView>
 
     <ImageView
         android:id="@+id/close_imageView"
@@ -307,4 +307,4 @@
         app:layout_constraintStart_toEndOf="@+id/player"
         app:layout_constraintTop_toTopOf="@+id/play_imageView" />
 
-</com.github.libretube.ui.views.SingleViewTouchableMotionLayout>
+</com.bimilyoncu.sscoderr.libretube.ui.views.SingleViewTouchableMotionLayout>

@@ -1,4 +1,4 @@
-package com.github.libretube.ui.dialogs
+package com.bimilyoncu.sscoderr.libretube.ui.dialogs
 
 import android.app.Dialog
 import android.graphics.Color
@@ -10,9 +10,9 @@ import android.widget.Toast
 import androidx.core.os.bundleOf
 import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.setFragmentResult
-import com.github.libretube.R
-import com.github.libretube.constants.IntentData
-import com.github.libretube.databinding.DialogColorPickerBinding
+import com.bimilyoncu.sscoderr.libretube.R
+import com.bimilyoncu.sscoderr.libretube.constants.IntentData
+import com.bimilyoncu.sscoderr.libretube.databinding.DialogColorPickerBinding
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 class ColorPickerDialog : DialogFragment(), SeekBar.OnSeekBarChangeListener {

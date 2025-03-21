@@ -1,16 +1,16 @@
-package com.github.libretube.ui.adapters
+package com.bimilyoncu.sscoderr.libretube.ui.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
-import com.github.libretube.api.obj.Subscription
-import com.github.libretube.databinding.SubscriptionGroupChannelRowBinding
-import com.github.libretube.db.obj.SubscriptionGroup
-import com.github.libretube.extensions.toID
-import com.github.libretube.helpers.ImageHelper
-import com.github.libretube.helpers.NavigationHelper
-import com.github.libretube.ui.adapters.callbacks.DiffUtilItemCallback
-import com.github.libretube.ui.viewholders.SubscriptionGroupChannelRowViewHolder
+import com.bimilyoncu.sscoderr.libretube.api.obj.Subscription
+import com.bimilyoncu.sscoderr.libretube.databinding.SubscriptionGroupChannelRowBinding
+import com.bimilyoncu.sscoderr.libretube.db.obj.SubscriptionGroup
+import com.bimilyoncu.sscoderr.libretube.extensions.toID
+import com.bimilyoncu.sscoderr.libretube.helpers.ImageHelper
+import com.bimilyoncu.sscoderr.libretube.helpers.NavigationHelper
+import com.bimilyoncu.sscoderr.libretube.ui.adapters.callbacks.DiffUtilItemCallback
+import com.bimilyoncu.sscoderr.libretube.ui.viewholders.SubscriptionGroupChannelRowViewHolder
 
 class SubscriptionGroupChannelsAdapter(
     private val group: SubscriptionGroup,

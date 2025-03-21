@@ -1,8 +1,8 @@
-package com.github.libretube.ui.models
+package com.bimilyoncu.sscoderr.libretube.ui.models
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.github.libretube.api.obj.ChapterSegment
+import com.bimilyoncu.sscoderr.libretube.api.obj.ChapterSegment
 
 class ChaptersViewModel: ViewModel() {
     val chaptersLiveData = MutableLiveData<List<ChapterSegment>>()

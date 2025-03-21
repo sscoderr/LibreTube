@@ -1,14 +1,14 @@
-package com.github.libretube.ui.preferences
+package com.bimilyoncu.sscoderr.libretube.ui.preferences
 
 import android.os.Bundle
 import androidx.lifecycle.lifecycleScope
 import androidx.preference.Preference
-import com.github.libretube.BuildConfig
-import com.github.libretube.R
-import com.github.libretube.helpers.PreferenceHelper
-import com.github.libretube.ui.base.BasePreferenceFragment
-import com.github.libretube.ui.dialogs.ErrorDialog
-import com.github.libretube.util.UpdateChecker
+import com.bimilyoncu.sscoderr.libretube.BuildConfig
+import com.bimilyoncu.sscoderr.libretube.R
+import com.bimilyoncu.sscoderr.libretube.helpers.PreferenceHelper
+import com.bimilyoncu.sscoderr.libretube.ui.base.BasePreferenceFragment
+import com.bimilyoncu.sscoderr.libretube.ui.dialogs.ErrorDialog
+import com.bimilyoncu.sscoderr.libretube.util.UpdateChecker
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 

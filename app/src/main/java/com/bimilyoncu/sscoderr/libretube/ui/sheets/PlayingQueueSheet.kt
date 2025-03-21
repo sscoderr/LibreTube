@@ -1,4 +1,4 @@
-package com.github.libretube.ui.sheets
+package com.bimilyoncu.sscoderr.libretube.ui.sheets
 
 import android.annotation.SuppressLint
 import android.os.Bundle
@@ -7,17 +7,17 @@ import androidx.core.os.bundleOf
 import androidx.fragment.app.setFragmentResult
 import androidx.media3.common.Player
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.github.libretube.R
-import com.github.libretube.constants.IntentData
-import com.github.libretube.databinding.QueueBottomSheetBinding
-import com.github.libretube.db.DatabaseHelper
-import com.github.libretube.db.DatabaseHolder
-import com.github.libretube.db.obj.WatchPosition
-import com.github.libretube.extensions.setActionListener
-import com.github.libretube.extensions.toID
-import com.github.libretube.ui.adapters.PlayingQueueAdapter
-import com.github.libretube.ui.dialogs.AddToPlaylistDialog
-import com.github.libretube.util.PlayingQueue
+import com.bimilyoncu.sscoderr.libretube.R
+import com.bimilyoncu.sscoderr.libretube.constants.IntentData
+import com.bimilyoncu.sscoderr.libretube.databinding.QueueBottomSheetBinding
+import com.bimilyoncu.sscoderr.libretube.db.DatabaseHelper
+import com.bimilyoncu.sscoderr.libretube.db.DatabaseHolder
+import com.bimilyoncu.sscoderr.libretube.db.obj.WatchPosition
+import com.bimilyoncu.sscoderr.libretube.extensions.setActionListener
+import com.bimilyoncu.sscoderr.libretube.extensions.toID
+import com.bimilyoncu.sscoderr.libretube.ui.adapters.PlayingQueueAdapter
+import com.bimilyoncu.sscoderr.libretube.ui.dialogs.AddToPlaylistDialog
+import com.bimilyoncu.sscoderr.libretube.util.PlayingQueue
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers

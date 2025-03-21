@@ -1,7 +1,7 @@
-package com.github.libretube.repo
+package com.bimilyoncu.sscoderr.libretube.repo
 
-import com.github.libretube.api.obj.StreamItem
-import com.github.libretube.db.obj.SubscriptionsFeedItem
+import com.bimilyoncu.sscoderr.libretube.api.obj.StreamItem
+import com.bimilyoncu.sscoderr.libretube.db.obj.SubscriptionsFeedItem
 
 data class FeedProgress(
     val currentProgress: Int,

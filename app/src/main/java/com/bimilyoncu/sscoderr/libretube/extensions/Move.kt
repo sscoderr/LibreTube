@@ -1,4 +1,4 @@
-package com.github.libretube.extensions
+package com.bimilyoncu.sscoderr.libretube.extensions
 
 fun <T> MutableList<T>.move(oldPosition: Int, newPosition: Int) {
     val item = this.get(oldPosition)

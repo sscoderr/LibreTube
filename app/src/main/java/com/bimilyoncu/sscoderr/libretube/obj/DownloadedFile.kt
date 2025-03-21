@@ -1,7 +1,7 @@
-package com.github.libretube.obj
+package com.bimilyoncu.sscoderr.libretube.obj
 
 import android.graphics.Bitmap
-import com.github.libretube.api.obj.Streams
+import com.bimilyoncu.sscoderr.libretube.api.obj.Streams
 
 data class DownloadedFile(
     val name: String,

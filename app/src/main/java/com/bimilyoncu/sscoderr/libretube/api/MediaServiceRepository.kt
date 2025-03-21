@@ -1,15 +1,15 @@
-package com.github.libretube.api
+package com.bimilyoncu.sscoderr.libretube.api
 
-import com.github.libretube.api.obj.Channel
-import com.github.libretube.api.obj.ChannelTabResponse
-import com.github.libretube.api.obj.CommentsPage
-import com.github.libretube.api.obj.DeArrowContent
-import com.github.libretube.api.obj.Playlist
-import com.github.libretube.api.obj.SearchResult
-import com.github.libretube.api.obj.SegmentData
-import com.github.libretube.api.obj.StreamItem
-import com.github.libretube.api.obj.Streams
-import com.github.libretube.helpers.PlayerHelper
+import com.bimilyoncu.sscoderr.libretube.api.obj.Channel
+import com.bimilyoncu.sscoderr.libretube.api.obj.ChannelTabResponse
+import com.bimilyoncu.sscoderr.libretube.api.obj.CommentsPage
+import com.bimilyoncu.sscoderr.libretube.api.obj.DeArrowContent
+import com.bimilyoncu.sscoderr.libretube.api.obj.Playlist
+import com.bimilyoncu.sscoderr.libretube.api.obj.SearchResult
+import com.bimilyoncu.sscoderr.libretube.api.obj.SegmentData
+import com.bimilyoncu.sscoderr.libretube.api.obj.StreamItem
+import com.bimilyoncu.sscoderr.libretube.api.obj.Streams
+import com.bimilyoncu.sscoderr.libretube.helpers.PlayerHelper
 
 interface MediaServiceRepository {
     suspend fun getTrending(region: String): List<StreamItem>

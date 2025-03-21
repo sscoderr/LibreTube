@@ -1,4 +1,4 @@
-package com.github.libretube.extensions
+package com.bimilyoncu.sscoderr.libretube.extensions
 
 import android.graphics.Canvas
 import android.graphics.Paint
@@ -8,8 +8,8 @@ import android.graphics.drawable.ColorDrawable
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.RecyclerView
-import com.github.libretube.R
-import com.github.libretube.helpers.ThemeHelper
+import com.bimilyoncu.sscoderr.libretube.R
+import com.bimilyoncu.sscoderr.libretube.helpers.ThemeHelper
 
 fun RecyclerView.setOnDismissListener(onDismissedListener: (position: Int) -> Unit) {
     setActionListener(

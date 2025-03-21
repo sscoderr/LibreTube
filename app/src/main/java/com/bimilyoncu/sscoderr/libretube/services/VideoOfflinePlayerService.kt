@@ -1,4 +1,4 @@
-package com.github.libretube.services
+package com.bimilyoncu.sscoderr.libretube.services
 
 import androidx.annotation.OptIn
 import androidx.media3.common.C
@@ -10,11 +10,11 @@ import androidx.media3.datasource.FileDataSource
 import androidx.media3.exoplayer.source.MergingMediaSource
 import androidx.media3.exoplayer.source.ProgressiveMediaSource
 import androidx.media3.exoplayer.source.SingleSampleMediaSource
-import com.github.libretube.db.obj.DownloadWithItems
-import com.github.libretube.enums.FileType
-import com.github.libretube.extensions.setMetadata
-import com.github.libretube.extensions.toAndroidUri
-import com.github.libretube.extensions.updateParameters
+import com.bimilyoncu.sscoderr.libretube.db.obj.DownloadWithItems
+import com.bimilyoncu.sscoderr.libretube.enums.FileType
+import com.bimilyoncu.sscoderr.libretube.extensions.setMetadata
+import com.bimilyoncu.sscoderr.libretube.extensions.toAndroidUri
+import com.bimilyoncu.sscoderr.libretube.extensions.updateParameters
 import kotlin.io.path.exists
 
 @OptIn(UnstableApi::class)

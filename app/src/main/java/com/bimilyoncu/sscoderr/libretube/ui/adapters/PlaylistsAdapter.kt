@@ -1,21 +1,21 @@
-package com.github.libretube.ui.adapters
+package com.bimilyoncu.sscoderr.libretube.ui.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.core.os.bundleOf
 import androidx.recyclerview.widget.ListAdapter
-import com.github.libretube.R
-import com.github.libretube.api.obj.Playlists
-import com.github.libretube.constants.IntentData
-import com.github.libretube.databinding.PlaylistsRowBinding
-import com.github.libretube.enums.PlaylistType
-import com.github.libretube.helpers.ImageHelper
-import com.github.libretube.helpers.NavigationHelper
-import com.github.libretube.ui.adapters.callbacks.DiffUtilItemCallback
-import com.github.libretube.ui.base.BaseActivity
-import com.github.libretube.ui.sheets.PlaylistOptionsBottomSheet
-import com.github.libretube.ui.sheets.PlaylistOptionsBottomSheet.Companion.PLAYLIST_OPTIONS_REQUEST_KEY
-import com.github.libretube.ui.viewholders.PlaylistsViewHolder
+import com.bimilyoncu.sscoderr.libretube.R
+import com.bimilyoncu.sscoderr.libretube.api.obj.Playlists
+import com.bimilyoncu.sscoderr.libretube.constants.IntentData
+import com.bimilyoncu.sscoderr.libretube.databinding.PlaylistsRowBinding
+import com.bimilyoncu.sscoderr.libretube.enums.PlaylistType
+import com.bimilyoncu.sscoderr.libretube.helpers.ImageHelper
+import com.bimilyoncu.sscoderr.libretube.helpers.NavigationHelper
+import com.bimilyoncu.sscoderr.libretube.ui.adapters.callbacks.DiffUtilItemCallback
+import com.bimilyoncu.sscoderr.libretube.ui.base.BaseActivity
+import com.bimilyoncu.sscoderr.libretube.ui.sheets.PlaylistOptionsBottomSheet
+import com.bimilyoncu.sscoderr.libretube.ui.sheets.PlaylistOptionsBottomSheet.Companion.PLAYLIST_OPTIONS_REQUEST_KEY
+import com.bimilyoncu.sscoderr.libretube.ui.viewholders.PlaylistsViewHolder
 
 class PlaylistsAdapter(
     private val playlistType: PlaylistType

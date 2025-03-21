@@ -1,9 +1,9 @@
-package com.github.libretube.util
+package com.bimilyoncu.sscoderr.libretube.util
 
 import android.content.Context
-import com.github.libretube.constants.PreferenceKeys
-import com.github.libretube.helpers.NetworkHelper
-import com.github.libretube.helpers.PreferenceHelper
+import com.bimilyoncu.sscoderr.libretube.constants.PreferenceKeys
+import com.bimilyoncu.sscoderr.libretube.helpers.NetworkHelper
+import com.bimilyoncu.sscoderr.libretube.helpers.PreferenceHelper
 
 object DataSaverMode {
     fun isEnabled(context: Context): Boolean {

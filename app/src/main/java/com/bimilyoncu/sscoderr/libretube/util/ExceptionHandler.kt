@@ -1,6 +1,6 @@
-package com.github.libretube.util
+package com.bimilyoncu.sscoderr.libretube.util
 
-import com.github.libretube.helpers.PreferenceHelper
+import com.bimilyoncu.sscoderr.libretube.helpers.PreferenceHelper
 
 class ExceptionHandler(
     private val defaultExceptionHandler: Thread.UncaughtExceptionHandler?

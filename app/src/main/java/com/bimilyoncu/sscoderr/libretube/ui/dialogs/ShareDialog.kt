@@ -1,4 +1,4 @@
-package com.github.libretube.ui.dialogs
+package com.bimilyoncu.sscoderr.libretube.ui.dialogs
 
 import android.app.Dialog
 import android.content.Intent
@@ -6,18 +6,18 @@ import android.os.Bundle
 import androidx.core.view.isVisible
 import androidx.core.widget.addTextChangedListener
 import androidx.fragment.app.DialogFragment
-import com.github.libretube.R
-import com.github.libretube.constants.IntentData
-import com.github.libretube.constants.PreferenceKeys
-import com.github.libretube.databinding.DialogShareBinding
-import com.github.libretube.db.DatabaseHelper
-import com.github.libretube.db.DatabaseHolder.Database
-import com.github.libretube.enums.ShareObjectType
-import com.github.libretube.extensions.parcelable
-import com.github.libretube.extensions.serializable
-import com.github.libretube.helpers.ClipboardHelper
-import com.github.libretube.helpers.PreferenceHelper
-import com.github.libretube.obj.ShareData
+import com.bimilyoncu.sscoderr.libretube.R
+import com.bimilyoncu.sscoderr.libretube.constants.IntentData
+import com.bimilyoncu.sscoderr.libretube.constants.PreferenceKeys
+import com.bimilyoncu.sscoderr.libretube.databinding.DialogShareBinding
+import com.bimilyoncu.sscoderr.libretube.db.DatabaseHelper
+import com.bimilyoncu.sscoderr.libretube.db.DatabaseHolder.Database
+import com.bimilyoncu.sscoderr.libretube.enums.ShareObjectType
+import com.bimilyoncu.sscoderr.libretube.extensions.parcelable
+import com.bimilyoncu.sscoderr.libretube.extensions.serializable
+import com.bimilyoncu.sscoderr.libretube.helpers.ClipboardHelper
+import com.bimilyoncu.sscoderr.libretube.helpers.PreferenceHelper
+import com.bimilyoncu.sscoderr.libretube.obj.ShareData
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.runBlocking

@@ -1,4 +1,4 @@
-package com.github.libretube.ui.adapters.callbacks
+package com.bimilyoncu.sscoderr.libretube.ui.adapters.callbacks
 
 import androidx.recyclerview.widget.DiffUtil
 

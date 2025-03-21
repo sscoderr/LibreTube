@@ -1,4 +1,4 @@
-package com.github.libretube.ui.sheets
+package com.bimilyoncu.sscoderr.libretube.ui.sheets
 
 import android.os.Bundle
 import android.os.Handler
@@ -9,9 +9,9 @@ import android.widget.Toast
 import androidx.core.os.postDelayed
 import androidx.core.view.isGone
 import androidx.core.view.isVisible
-import com.github.libretube.R
-import com.github.libretube.databinding.SleepTimerSheetBinding
-import com.github.libretube.ui.tools.SleepTimer
+import com.bimilyoncu.sscoderr.libretube.R
+import com.bimilyoncu.sscoderr.libretube.databinding.SleepTimerSheetBinding
+import com.bimilyoncu.sscoderr.libretube.ui.tools.SleepTimer
 
 class SleepTimerSheet : ExpandedBottomSheet(R.layout.sleep_timer_sheet) {
     private var _binding: SleepTimerSheetBinding? = null

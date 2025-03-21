@@ -1,4 +1,4 @@
-package com.github.libretube.ui.models
+package com.bimilyoncu.sscoderr.libretube.ui.models
 
 import android.content.Context
 import android.os.Parcelable
@@ -7,12 +7,12 @@ import android.widget.Toast
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.github.libretube.R
-import com.github.libretube.api.MediaServiceRepository
-import com.github.libretube.api.obj.StreamItem
-import com.github.libretube.extensions.TAG
-import com.github.libretube.helpers.LocaleHelper
-import com.github.libretube.util.deArrow
+import com.bimilyoncu.sscoderr.libretube.R
+import com.bimilyoncu.sscoderr.libretube.api.MediaServiceRepository
+import com.bimilyoncu.sscoderr.libretube.api.obj.StreamItem
+import com.bimilyoncu.sscoderr.libretube.extensions.TAG
+import com.bimilyoncu.sscoderr.libretube.helpers.LocaleHelper
+import com.bimilyoncu.sscoderr.libretube.util.deArrow
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext

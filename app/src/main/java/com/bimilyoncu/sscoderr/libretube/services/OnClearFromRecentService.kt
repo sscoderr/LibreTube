@@ -1,12 +1,12 @@
-package com.github.libretube.services
+package com.bimilyoncu.sscoderr.libretube.services
 
 import android.app.NotificationManager
 import android.app.Service
 import android.content.Intent
 import android.os.IBinder
 import androidx.core.content.getSystemService
-import com.github.libretube.enums.NotificationId
-import com.github.libretube.helpers.BackgroundHelper
+import com.bimilyoncu.sscoderr.libretube.enums.NotificationId
+import com.bimilyoncu.sscoderr.libretube.helpers.BackgroundHelper
 
 class OnClearFromRecentService : Service() {
     private var nManager: NotificationManager? = null

@@ -1,13 +1,13 @@
-package com.github.libretube.db
+package com.bimilyoncu.sscoderr.libretube.db
 
-import com.github.libretube.api.obj.StreamItem
-import com.github.libretube.constants.PreferenceKeys
-import com.github.libretube.db.DatabaseHolder.Database
-import com.github.libretube.db.obj.SearchHistoryItem
-import com.github.libretube.db.obj.WatchHistoryItem
-import com.github.libretube.enums.ContentFilter
-import com.github.libretube.extensions.toID
-import com.github.libretube.helpers.PreferenceHelper
+import com.bimilyoncu.sscoderr.libretube.api.obj.StreamItem
+import com.bimilyoncu.sscoderr.libretube.constants.PreferenceKeys
+import com.bimilyoncu.sscoderr.libretube.db.DatabaseHolder.Database
+import com.bimilyoncu.sscoderr.libretube.db.obj.SearchHistoryItem
+import com.bimilyoncu.sscoderr.libretube.db.obj.WatchHistoryItem
+import com.bimilyoncu.sscoderr.libretube.enums.ContentFilter
+import com.bimilyoncu.sscoderr.libretube.extensions.toID
+import com.bimilyoncu.sscoderr.libretube.helpers.PreferenceHelper
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.runBlocking
 import kotlinx.coroutines.withContext

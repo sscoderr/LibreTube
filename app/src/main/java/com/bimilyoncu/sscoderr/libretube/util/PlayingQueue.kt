@@ -1,13 +1,13 @@
-package com.github.libretube.util
+package com.bimilyoncu.sscoderr.libretube.util
 
 import androidx.media3.common.Player
-import com.github.libretube.api.MediaServiceRepository
-import com.github.libretube.api.PlaylistsHelper
-import com.github.libretube.api.obj.StreamItem
-import com.github.libretube.extensions.move
-import com.github.libretube.extensions.runCatchingIO
-import com.github.libretube.extensions.toID
-import com.github.libretube.helpers.PlayerHelper
+import com.bimilyoncu.sscoderr.libretube.api.MediaServiceRepository
+import com.bimilyoncu.sscoderr.libretube.api.PlaylistsHelper
+import com.bimilyoncu.sscoderr.libretube.api.obj.StreamItem
+import com.bimilyoncu.sscoderr.libretube.extensions.move
+import com.bimilyoncu.sscoderr.libretube.extensions.runCatchingIO
+import com.bimilyoncu.sscoderr.libretube.extensions.toID
+import com.bimilyoncu.sscoderr.libretube.helpers.PlayerHelper
 import kotlinx.coroutines.Job
 import java.util.Collections
 

@@ -1,12 +1,12 @@
-package com.github.libretube.api.obj
+package com.bimilyoncu.sscoderr.libretube.api.obj
 
 import android.os.Parcelable
-import com.github.libretube.db.obj.LocalPlaylistItem
-import com.github.libretube.db.obj.SubscriptionsFeedItem
-import com.github.libretube.db.obj.WatchHistoryItem
-import com.github.libretube.extensions.toID
-import com.github.libretube.extensions.toLocalDate
-import com.github.libretube.helpers.ProxyHelper
+import com.bimilyoncu.sscoderr.libretube.db.obj.LocalPlaylistItem
+import com.bimilyoncu.sscoderr.libretube.db.obj.SubscriptionsFeedItem
+import com.bimilyoncu.sscoderr.libretube.db.obj.WatchHistoryItem
+import com.bimilyoncu.sscoderr.libretube.extensions.toID
+import com.bimilyoncu.sscoderr.libretube.extensions.toLocalDate
+import com.bimilyoncu.sscoderr.libretube.helpers.ProxyHelper
 import kotlinx.parcelize.Parcelize
 import kotlinx.serialization.Serializable
 

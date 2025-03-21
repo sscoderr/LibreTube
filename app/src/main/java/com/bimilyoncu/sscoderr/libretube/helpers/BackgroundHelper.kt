@@ -1,4 +1,4 @@
-package com.github.libretube.helpers
+package com.bimilyoncu.sscoderr.libretube.helpers
 
 import android.app.ActivityManager
 import android.content.ComponentName
@@ -12,17 +12,17 @@ import androidx.fragment.app.commit
 import androidx.media3.common.util.UnstableApi
 import androidx.media3.session.MediaController
 import androidx.media3.session.SessionToken
-import com.github.libretube.constants.IntentData
-import com.github.libretube.parcelable.PlayerData
-import com.github.libretube.services.AbstractPlayerService
-import com.github.libretube.services.OfflinePlayerService
-import com.github.libretube.services.OnlinePlayerService
-import com.github.libretube.services.VideoOfflinePlayerService
-import com.github.libretube.services.VideoOnlinePlayerService
-import com.github.libretube.ui.activities.MainActivity
-import com.github.libretube.ui.activities.NoInternetActivity
-import com.github.libretube.ui.fragments.DownloadTab
-import com.github.libretube.ui.fragments.PlayerFragment
+import com.bimilyoncu.sscoderr.libretube.constants.IntentData
+import com.bimilyoncu.sscoderr.libretube.parcelable.PlayerData
+import com.bimilyoncu.sscoderr.libretube.services.AbstractPlayerService
+import com.bimilyoncu.sscoderr.libretube.services.OfflinePlayerService
+import com.bimilyoncu.sscoderr.libretube.services.OnlinePlayerService
+import com.bimilyoncu.sscoderr.libretube.services.VideoOfflinePlayerService
+import com.bimilyoncu.sscoderr.libretube.services.VideoOnlinePlayerService
+import com.bimilyoncu.sscoderr.libretube.ui.activities.MainActivity
+import com.bimilyoncu.sscoderr.libretube.ui.activities.NoInternetActivity
+import com.bimilyoncu.sscoderr.libretube.ui.fragments.DownloadTab
+import com.bimilyoncu.sscoderr.libretube.ui.fragments.PlayerFragment
 import com.google.common.util.concurrent.MoreExecutors
 
 /**

@@ -1,11 +1,11 @@
-package com.github.libretube.ui.models
+package com.bimilyoncu.sscoderr.libretube.ui.models
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.media3.common.util.UnstableApi
-import com.github.libretube.api.obj.Segment
-import com.github.libretube.api.obj.Subtitle
-import com.github.libretube.helpers.PlayerHelper
+import com.bimilyoncu.sscoderr.libretube.api.obj.Segment
+import com.bimilyoncu.sscoderr.libretube.api.obj.Subtitle
+import com.bimilyoncu.sscoderr.libretube.helpers.PlayerHelper
 
 @UnstableApi
 class PlayerViewModel : ViewModel() {

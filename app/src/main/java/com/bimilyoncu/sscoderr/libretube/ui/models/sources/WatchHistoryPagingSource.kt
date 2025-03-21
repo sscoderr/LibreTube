@@ -1,9 +1,9 @@
-package com.github.libretube.ui.models.sources
+package com.bimilyoncu.sscoderr.libretube.ui.models.sources
 
 import androidx.paging.PagingSource
 import androidx.paging.PagingState
-import com.github.libretube.db.DatabaseHelper
-import com.github.libretube.db.obj.WatchHistoryItem
+import com.bimilyoncu.sscoderr.libretube.db.DatabaseHelper
+import com.bimilyoncu.sscoderr.libretube.db.obj.WatchHistoryItem
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 

@@ -1,10 +1,10 @@
-package com.github.libretube.helpers
+package com.bimilyoncu.sscoderr.libretube.helpers
 
 import android.content.Context
 import android.content.SharedPreferences
 import androidx.core.content.edit
 import androidx.preference.PreferenceManager
-import com.github.libretube.constants.PreferenceKeys
+import com.bimilyoncu.sscoderr.libretube.constants.PreferenceKeys
 
 object PreferenceHelper {
     /**

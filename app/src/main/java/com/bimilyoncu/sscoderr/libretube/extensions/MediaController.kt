@@ -1,11 +1,11 @@
-package com.github.libretube.extensions
+package com.bimilyoncu.sscoderr.libretube.extensions
 
 import androidx.annotation.OptIn
 import androidx.core.os.bundleOf
 import androidx.media3.common.util.UnstableApi
 import androidx.media3.session.MediaController
-import com.github.libretube.enums.PlayerCommand
-import com.github.libretube.services.AbstractPlayerService
+import com.bimilyoncu.sscoderr.libretube.enums.PlayerCommand
+import com.bimilyoncu.sscoderr.libretube.services.AbstractPlayerService
 
 @OptIn(UnstableApi::class)
 fun MediaController.navigateVideo(videoId: String) {

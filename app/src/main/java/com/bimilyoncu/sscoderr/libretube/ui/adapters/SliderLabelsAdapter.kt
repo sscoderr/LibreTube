@@ -1,10 +1,10 @@
-package com.github.libretube.ui.adapters
+package com.bimilyoncu.sscoderr.libretube.ui.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.github.libretube.databinding.SliderLabelItemBinding
-import com.github.libretube.ui.viewholders.SliderLabelViewHolder
+import com.bimilyoncu.sscoderr.libretube.databinding.SliderLabelItemBinding
+import com.bimilyoncu.sscoderr.libretube.ui.viewholders.SliderLabelViewHolder
 
 class SliderLabelsAdapter(
     private val playbackSpeeds: List<Float>,

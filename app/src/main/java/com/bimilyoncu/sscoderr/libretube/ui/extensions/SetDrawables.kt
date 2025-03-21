@@ -1,4 +1,4 @@
-package com.github.libretube.ui.extensions
+package com.bimilyoncu.sscoderr.libretube.ui.extensions
 
 import android.widget.TextView
 import androidx.appcompat.content.res.AppCompatResources

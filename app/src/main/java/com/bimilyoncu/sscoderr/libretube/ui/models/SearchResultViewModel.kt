@@ -1,4 +1,4 @@
-package com.github.libretube.ui.models
+package com.bimilyoncu.sscoderr.libretube.ui.models
 
 import androidx.core.net.toUri
 import androidx.lifecycle.SavedStateHandle
@@ -7,10 +7,10 @@ import androidx.lifecycle.viewModelScope
 import androidx.paging.Pager
 import androidx.paging.PagingConfig
 import androidx.paging.cachedIn
-import com.github.libretube.ui.dialogs.ShareDialog
-import com.github.libretube.ui.fragments.SearchResultFragmentArgs
-import com.github.libretube.ui.models.sources.SearchPagingSource
-import com.github.libretube.util.TextUtils
+import com.bimilyoncu.sscoderr.libretube.ui.dialogs.ShareDialog
+import com.bimilyoncu.sscoderr.libretube.ui.fragments.SearchResultFragmentArgs
+import com.bimilyoncu.sscoderr.libretube.ui.models.sources.SearchPagingSource
+import com.bimilyoncu.sscoderr.libretube.util.TextUtils
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.flatMapLatest

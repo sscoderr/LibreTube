@@ -1,4 +1,4 @@
-package com.github.libretube.services
+package com.bimilyoncu.sscoderr.libretube.services
 
 import android.app.Notification
 import android.app.NotificationManager
@@ -8,22 +8,22 @@ import androidx.core.app.ServiceCompat
 import androidx.core.content.getSystemService
 import androidx.lifecycle.LifecycleService
 import androidx.lifecycle.lifecycleScope
-import com.github.libretube.LibreTubeApp.Companion.PLAYLIST_DOWNLOAD_ENQUEUE_CHANNEL_NAME
-import com.github.libretube.R
-import com.github.libretube.api.MediaServiceRepository
-import com.github.libretube.api.PlaylistsHelper
-import com.github.libretube.api.obj.PipedStream
-import com.github.libretube.api.obj.StreamItem
-import com.github.libretube.constants.IntentData
-import com.github.libretube.enums.NotificationId
-import com.github.libretube.enums.PlaylistType
-import com.github.libretube.extensions.getWhileDigit
-import com.github.libretube.extensions.serializableExtra
-import com.github.libretube.extensions.toID
-import com.github.libretube.extensions.toastFromMainDispatcher
-import com.github.libretube.helpers.DownloadHelper
-import com.github.libretube.parcelable.DownloadData
-import com.github.libretube.util.TextUtils
+import com.bimilyoncu.sscoderr.libretube.LibreTubeApp.Companion.PLAYLIST_DOWNLOAD_ENQUEUE_CHANNEL_NAME
+import com.bimilyoncu.sscoderr.libretube.R
+import com.bimilyoncu.sscoderr.libretube.api.MediaServiceRepository
+import com.bimilyoncu.sscoderr.libretube.api.PlaylistsHelper
+import com.bimilyoncu.sscoderr.libretube.api.obj.PipedStream
+import com.bimilyoncu.sscoderr.libretube.api.obj.StreamItem
+import com.bimilyoncu.sscoderr.libretube.constants.IntentData
+import com.bimilyoncu.sscoderr.libretube.enums.NotificationId
+import com.bimilyoncu.sscoderr.libretube.enums.PlaylistType
+import com.bimilyoncu.sscoderr.libretube.extensions.getWhileDigit
+import com.bimilyoncu.sscoderr.libretube.extensions.serializableExtra
+import com.bimilyoncu.sscoderr.libretube.extensions.toID
+import com.bimilyoncu.sscoderr.libretube.extensions.toastFromMainDispatcher
+import com.bimilyoncu.sscoderr.libretube.helpers.DownloadHelper
+import com.bimilyoncu.sscoderr.libretube.parcelable.DownloadData
+import com.bimilyoncu.sscoderr.libretube.util.TextUtils
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 

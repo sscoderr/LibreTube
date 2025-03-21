@@ -1,14 +1,14 @@
-package com.github.libretube.ui.adapters
+package com.bimilyoncu.sscoderr.libretube.ui.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.ListAdapter
-import com.github.libretube.databinding.SuggestionRowBinding
-import com.github.libretube.db.DatabaseHolder.Database
-import com.github.libretube.db.obj.SearchHistoryItem
-import com.github.libretube.ui.adapters.callbacks.DiffUtilItemCallback
-import com.github.libretube.ui.viewholders.SuggestionsViewHolder
+import com.bimilyoncu.sscoderr.libretube.databinding.SuggestionRowBinding
+import com.bimilyoncu.sscoderr.libretube.db.DatabaseHolder.Database
+import com.bimilyoncu.sscoderr.libretube.db.obj.SearchHistoryItem
+import com.bimilyoncu.sscoderr.libretube.ui.adapters.callbacks.DiffUtilItemCallback
+import com.bimilyoncu.sscoderr.libretube.ui.viewholders.SuggestionsViewHolder
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.runBlocking
 

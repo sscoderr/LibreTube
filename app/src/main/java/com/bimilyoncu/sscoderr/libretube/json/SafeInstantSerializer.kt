@@ -1,7 +1,7 @@
-package com.github.libretube.json
+package com.bimilyoncu.sscoderr.libretube.json
 
 import android.util.Log
-import com.github.libretube.extensions.TAG
+import com.bimilyoncu.sscoderr.libretube.extensions.TAG
 import kotlinx.datetime.Instant
 import kotlinx.datetime.LocalDate
 import kotlinx.datetime.TimeZone

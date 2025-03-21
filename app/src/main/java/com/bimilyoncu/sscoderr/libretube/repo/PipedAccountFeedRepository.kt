@@ -1,8 +1,8 @@
-package com.github.libretube.repo
+package com.bimilyoncu.sscoderr.libretube.repo
 
-import com.github.libretube.api.RetrofitInstance
-import com.github.libretube.api.obj.StreamItem
-import com.github.libretube.helpers.PreferenceHelper
+import com.bimilyoncu.sscoderr.libretube.api.RetrofitInstance
+import com.bimilyoncu.sscoderr.libretube.api.obj.StreamItem
+import com.bimilyoncu.sscoderr.libretube.helpers.PreferenceHelper
 
 class PipedAccountFeedRepository : FeedRepository {
     override suspend fun getFeed(

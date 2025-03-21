@@ -1,4 +1,4 @@
-package com.github.libretube.ui.adapters
+package com.bimilyoncu.sscoderr.libretube.ui.adapters
 
 import android.content.Intent
 import android.content.pm.ResolveInfo
@@ -6,8 +6,8 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.core.net.toUri
 import androidx.recyclerview.widget.RecyclerView
-import com.github.libretube.databinding.IntentChooserItemBinding
-import com.github.libretube.ui.viewholders.IntentChooserViewHolder
+import com.bimilyoncu.sscoderr.libretube.databinding.IntentChooserItemBinding
+import com.bimilyoncu.sscoderr.libretube.ui.viewholders.IntentChooserViewHolder
 
 /**
  * An adapter for opening an intent chooser inside the app, example-wise for urls

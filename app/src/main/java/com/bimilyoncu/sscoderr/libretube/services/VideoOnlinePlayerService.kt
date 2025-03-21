@@ -1,4 +1,4 @@
-package com.github.libretube.services
+package com.bimilyoncu.sscoderr.libretube.services
 
 import androidx.annotation.OptIn
 import androidx.media3.common.util.UnstableApi

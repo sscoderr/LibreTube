@@ -1,4 +1,4 @@
-package com.github.libretube.util
+package com.bimilyoncu.sscoderr.libretube.util
 
 import android.text.Editable
 import android.text.Spanned

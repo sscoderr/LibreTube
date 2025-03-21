@@ -1,4 +1,4 @@
-package com.github.libretube.ui.views
+package com.bimilyoncu.sscoderr.libretube.ui.views
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -10,7 +10,7 @@ import androidx.media3.ui.DefaultTimeBar
 import androidx.media3.ui.PlayerControlView
 import androidx.media3.ui.TimeBar
 import androidx.media3.ui.TimeBar.OnScrubListener
-import com.github.libretube.extensions.dpToPx
+import com.bimilyoncu.sscoderr.libretube.extensions.dpToPx
 
 @UnstableApi
 open class DismissableTimeBar(

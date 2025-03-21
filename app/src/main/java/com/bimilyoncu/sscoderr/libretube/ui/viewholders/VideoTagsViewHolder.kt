@@ -1,7 +1,7 @@
-package com.github.libretube.ui.viewholders
+package com.bimilyoncu.sscoderr.libretube.ui.viewholders
 
 import androidx.recyclerview.widget.RecyclerView
-import com.github.libretube.databinding.VideoTagRowBinding
+import com.bimilyoncu.sscoderr.libretube.databinding.VideoTagRowBinding
 
 class VideoTagsViewHolder(
     val binding: VideoTagRowBinding

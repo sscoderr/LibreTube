@@ -1,4 +1,4 @@
-package com.github.libretube.ui.views
+package com.bimilyoncu.sscoderr.libretube.ui.views
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -9,7 +9,7 @@ import android.view.MotionEvent
 import android.view.View
 import androidx.constraintlayout.motion.widget.MotionLayout
 import androidx.constraintlayout.motion.widget.TransitionAdapter
-import com.github.libretube.R
+import com.bimilyoncu.sscoderr.libretube.R
 
 class SingleViewTouchableMotionLayout(context: Context, attributeSet: AttributeSet? = null) :
     MotionLayout(context, attributeSet) {
@@ -25,18 +25,11 @@ class SingleViewTouchableMotionLayout(context: Context, attributeSet: AttributeS
 
     private var startedMinimized = false
     private var isStrictlyDownSwipe = false
-    
-    // Track initial touch location
-    private var initialTouchY = 0f
-    
-    // Flag to prevent handling redundant gestures
-    private var isAnimatingFromGesture = false
 
     init {
         addTransitionListener(object : TransitionAdapter() {
             override fun onTransitionCompleted(motionLayout: MotionLayout?, currentId: Int) {
                 touchStarted = false
-                isAnimatingFromGesture = false
             }
         })
 
@@ -63,9 +56,6 @@ class SingleViewTouchableMotionLayout(context: Context, attributeSet: AttributeS
 
     private inner class Listener : GestureDetector.SimpleOnGestureListener() {
         override fun onSingleTapUp(e: MotionEvent): Boolean {
-            // For audio player, we want to allow clicks inside
-            if (viewToDetectTouch.id == R.id.audio_player_container) return false
-            
             setTransitionDuration(200)
             transitionToStart()
             return true
@@ -81,21 +71,14 @@ class SingleViewTouchableMotionLayout(context: Context, attributeSet: AttributeS
                 isStrictlyDownSwipe = false
             }
 
-            // For special cases not handled by motion scene
             if (isStrictlyDownSwipe && startedMinimized && distanceY < -15F) {
-                if (!isAnimatingFromGesture) {
-                    isAnimatingFromGesture = true
-                    swipeDownListener.forEach { it.invoke() }
-                }
-                return false  // Let MotionLayout also handle it
+                swipeDownListener.forEach { it.invoke() }
+                return true
             }
 
             if (progress == 0F && distanceY > 30F) {
-                if (!isAnimatingFromGesture) {
-                    isAnimatingFromGesture = true
-                    swipeUpListener.forEach { it.invoke() }
-                }
-                return false  // Let MotionLayout also handle it
+                swipeUpListener.forEach { it.invoke() }
+                return true
             }
 
             return false
@@ -114,28 +97,25 @@ class SingleViewTouchableMotionLayout(context: Context, attributeSet: AttributeS
 
     @SuppressLint("ClickableViewAccessibility")
     override fun onTouchEvent(event: MotionEvent): Boolean {
-        // Process gesture detector without interfering with motion events
         gestureDetector.onTouchEvent(event)
-        
+
+        // don't react when trying to minimize audio player with gestures
+        if (viewToDetectTouch.id == R.id.audio_player_container && progress != 1f) return true
+
         when (event.actionMasked) {
+            MotionEvent.ACTION_UP, MotionEvent.ACTION_CANCEL -> {
+                touchStarted = false
+                return super.onTouchEvent(event)
+            }
             MotionEvent.ACTION_DOWN -> {
                 isStrictlyDownSwipe = true
                 startedMinimized = progress == 1F
-                initialTouchY = event.y
-                
-                // Check if touch is inside our detection view
-                viewToDetectTouch.getHitRect(viewRect)
-                touchStarted = viewRect.contains(event.x.toInt(), event.y.toInt())
-            }
-            MotionEvent.ACTION_UP, MotionEvent.ACTION_CANCEL -> {
-                // Reset state
-                touchStarted = false
-                isAnimatingFromGesture = false
             }
         }
-        
-        // Always let MotionLayout handle the touch event if it started in our view
-        // This is key for smooth drag animation
-        return if (touchStarted) super.onTouchEvent(event) else false
+        if (!touchStarted) {
+            viewToDetectTouch.getHitRect(viewRect)
+            touchStarted = viewRect.contains(event.x.toInt(), event.y.toInt())
+        }
+        return touchStarted && super.onTouchEvent(event)
     }
 }

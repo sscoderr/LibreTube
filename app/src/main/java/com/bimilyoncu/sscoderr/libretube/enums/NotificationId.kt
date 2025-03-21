@@ -1,4 +1,4 @@
-package com.github.libretube.enums
+package com.bimilyoncu.sscoderr.libretube.enums
 
 enum class NotificationId(val id: Int) {
     PLAYER_PLAYBACK(1),

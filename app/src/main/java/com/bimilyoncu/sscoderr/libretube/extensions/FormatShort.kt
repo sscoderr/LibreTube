@@ -1,7 +1,7 @@
-package com.github.libretube.extensions
+package com.bimilyoncu.sscoderr.libretube.extensions
 
 import android.icu.text.CompactDecimalFormat
-import com.github.libretube.helpers.LocaleHelper
+import com.bimilyoncu.sscoderr.libretube.helpers.LocaleHelper
 
 fun Long?.formatShort(): String = CompactDecimalFormat
     .getInstance(LocaleHelper.getAppLocale(), CompactDecimalFormat.CompactStyle.SHORT)

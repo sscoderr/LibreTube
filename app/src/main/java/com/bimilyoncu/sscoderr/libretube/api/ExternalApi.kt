@@ -1,13 +1,13 @@
-package com.github.libretube.api
+package com.bimilyoncu.sscoderr.libretube.api
 
-import com.github.libretube.api.obj.DeArrowBody
-import com.github.libretube.api.obj.DeArrowContent
-import com.github.libretube.api.obj.PipedConfig
-import com.github.libretube.api.obj.PipedInstance
-import com.github.libretube.api.obj.SegmentData
-import com.github.libretube.api.obj.SubmitSegmentResponse
-import com.github.libretube.api.obj.VoteInfo
-import com.github.libretube.obj.update.UpdateInfo
+import com.bimilyoncu.sscoderr.libretube.api.obj.DeArrowBody
+import com.bimilyoncu.sscoderr.libretube.api.obj.DeArrowContent
+import com.bimilyoncu.sscoderr.libretube.api.obj.PipedConfig
+import com.bimilyoncu.sscoderr.libretube.api.obj.PipedInstance
+import com.bimilyoncu.sscoderr.libretube.api.obj.SegmentData
+import com.bimilyoncu.sscoderr.libretube.api.obj.SubmitSegmentResponse
+import com.bimilyoncu.sscoderr.libretube.api.obj.VoteInfo
+import com.bimilyoncu.sscoderr.libretube.obj.update.UpdateInfo
 import retrofit2.http.Body
 import retrofit2.http.GET
 import retrofit2.http.POST

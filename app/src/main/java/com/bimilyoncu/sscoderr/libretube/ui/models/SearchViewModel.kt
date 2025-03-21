@@ -1,4 +1,4 @@
-package com.github.libretube.ui.models
+package com.bimilyoncu.sscoderr.libretube.ui.models
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel

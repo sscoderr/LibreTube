@@ -1,15 +1,15 @@
-package com.github.libretube.repo
+package com.bimilyoncu.sscoderr.libretube.repo
 
-import com.github.libretube.api.MediaServiceRepository
-import com.github.libretube.api.PlaylistsHelper
-import com.github.libretube.api.PlaylistsHelper.MAX_CONCURRENT_IMPORT_CALLS
-import com.github.libretube.api.obj.Playlist
-import com.github.libretube.api.obj.Playlists
-import com.github.libretube.api.obj.StreamItem
-import com.github.libretube.db.DatabaseHolder
-import com.github.libretube.db.obj.LocalPlaylist
-import com.github.libretube.extensions.parallelMap
-import com.github.libretube.obj.PipedImportPlaylist
+import com.bimilyoncu.sscoderr.libretube.api.MediaServiceRepository
+import com.bimilyoncu.sscoderr.libretube.api.PlaylistsHelper
+import com.bimilyoncu.sscoderr.libretube.api.PlaylistsHelper.MAX_CONCURRENT_IMPORT_CALLS
+import com.bimilyoncu.sscoderr.libretube.api.obj.Playlist
+import com.bimilyoncu.sscoderr.libretube.api.obj.Playlists
+import com.bimilyoncu.sscoderr.libretube.api.obj.StreamItem
+import com.bimilyoncu.sscoderr.libretube.db.DatabaseHolder
+import com.bimilyoncu.sscoderr.libretube.db.obj.LocalPlaylist
+import com.bimilyoncu.sscoderr.libretube.extensions.parallelMap
+import com.bimilyoncu.sscoderr.libretube.obj.PipedImportPlaylist
 
 class LocalPlaylistsRepository: PlaylistRepository {
     override suspend fun getPlaylist(playlistId: String): Playlist {

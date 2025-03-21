@@ -1,17 +1,17 @@
-package com.github.libretube.ui.dialogs
+package com.bimilyoncu.sscoderr.libretube.ui.dialogs
 
 import android.app.Dialog
 import android.content.DialogInterface
 import android.os.Bundle
 import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.activityViewModels
-import com.github.libretube.R
-import com.github.libretube.constants.IntentData
-import com.github.libretube.databinding.DialogCustomInstanceBinding
-import com.github.libretube.db.obj.CustomInstance
-import com.github.libretube.extensions.parcelable
-import com.github.libretube.extensions.toastFromMainThread
-import com.github.libretube.ui.models.CustomInstancesModel
+import com.bimilyoncu.sscoderr.libretube.R
+import com.bimilyoncu.sscoderr.libretube.constants.IntentData
+import com.bimilyoncu.sscoderr.libretube.databinding.DialogCustomInstanceBinding
+import com.bimilyoncu.sscoderr.libretube.db.obj.CustomInstance
+import com.bimilyoncu.sscoderr.libretube.extensions.parcelable
+import com.bimilyoncu.sscoderr.libretube.extensions.toastFromMainThread
+import com.bimilyoncu.sscoderr.libretube.ui.models.CustomInstancesModel
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import okhttp3.HttpUrl.Companion.toHttpUrlOrNull
 import java.net.MalformedURLException

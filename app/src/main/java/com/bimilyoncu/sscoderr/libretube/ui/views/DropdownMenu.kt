@@ -1,4 +1,4 @@
-package com.github.libretube.ui.views
+package com.bimilyoncu.sscoderr.libretube.ui.views
 
 import android.content.Context
 import android.text.InputType
@@ -7,8 +7,8 @@ import android.view.LayoutInflater
 import android.widget.ArrayAdapter
 import android.widget.FrameLayout
 import androidx.core.content.res.use
-import com.github.libretube.R
-import com.github.libretube.databinding.DropdownMenuBinding
+import com.bimilyoncu.sscoderr.libretube.R
+import com.bimilyoncu.sscoderr.libretube.databinding.DropdownMenuBinding
 
 /**
  * Exposed Dropdown Menu

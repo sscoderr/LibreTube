@@ -1,7 +1,7 @@
-package com.github.libretube.ui.viewholders
+package com.bimilyoncu.sscoderr.libretube.ui.viewholders
 
 import androidx.recyclerview.widget.RecyclerView
-import com.github.libretube.databinding.SubscriptionGroupRowBinding
+import com.bimilyoncu.sscoderr.libretube.databinding.SubscriptionGroupRowBinding
 
 class SubscriptionGroupsViewHolder(
     val binding: SubscriptionGroupRowBinding

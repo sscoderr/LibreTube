@@ -1,8 +1,8 @@
-package com.github.libretube.ui.viewholders
+package com.bimilyoncu.sscoderr.libretube.ui.viewholders
 
 import androidx.recyclerview.widget.RecyclerView
-import com.github.libretube.databinding.PlaylistBookmarkRowBinding
-import com.github.libretube.databinding.PlaylistsRowBinding
+import com.bimilyoncu.sscoderr.libretube.databinding.PlaylistBookmarkRowBinding
+import com.bimilyoncu.sscoderr.libretube.databinding.PlaylistsRowBinding
 
 class PlaylistBookmarkViewHolder : RecyclerView.ViewHolder {
     var playlistBookmarkBinding: PlaylistBookmarkRowBinding? = null

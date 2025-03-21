@@ -1,9 +1,9 @@
-package com.github.libretube.ui.viewholders
+package com.bimilyoncu.sscoderr.libretube.ui.viewholders
 
 import androidx.recyclerview.widget.RecyclerView
-import com.github.libretube.databinding.AllCaughtUpRowBinding
-import com.github.libretube.databinding.TrendingRowBinding
-import com.github.libretube.databinding.VideoRowBinding
+import com.bimilyoncu.sscoderr.libretube.databinding.AllCaughtUpRowBinding
+import com.bimilyoncu.sscoderr.libretube.databinding.TrendingRowBinding
+import com.bimilyoncu.sscoderr.libretube.databinding.VideoRowBinding
 
 class VideosViewHolder : RecyclerView.ViewHolder {
     var trendingRowBinding: TrendingRowBinding? = null

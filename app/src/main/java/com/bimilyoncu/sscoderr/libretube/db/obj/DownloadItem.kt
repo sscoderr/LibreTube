@@ -1,10 +1,10 @@
-package com.github.libretube.db.obj
+package com.bimilyoncu.sscoderr.libretube.db.obj
 
 import androidx.room.Entity
 import androidx.room.ForeignKey
 import androidx.room.Index
 import androidx.room.PrimaryKey
-import com.github.libretube.enums.FileType
+import com.bimilyoncu.sscoderr.libretube.enums.FileType
 import java.nio.file.Path
 
 @Entity(

@@ -1,7 +1,7 @@
-package com.github.libretube.db
+package com.bimilyoncu.sscoderr.libretube.db
 
 import androidx.room.TypeConverter
-import com.github.libretube.api.JsonHelper
+import com.bimilyoncu.sscoderr.libretube.api.JsonHelper
 import kotlinx.datetime.LocalDate
 import kotlinx.serialization.encodeToString
 import java.nio.file.Path

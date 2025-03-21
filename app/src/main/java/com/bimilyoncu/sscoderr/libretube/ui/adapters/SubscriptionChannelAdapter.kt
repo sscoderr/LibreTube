@@ -1,20 +1,20 @@
-package com.github.libretube.ui.adapters
+package com.bimilyoncu.sscoderr.libretube.ui.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.core.os.bundleOf
 import androidx.recyclerview.widget.ListAdapter
-import com.github.libretube.api.obj.Subscription
-import com.github.libretube.constants.IntentData
-import com.github.libretube.databinding.ChannelSubscriptionRowBinding
-import com.github.libretube.extensions.toID
-import com.github.libretube.helpers.ImageHelper
-import com.github.libretube.helpers.NavigationHelper
-import com.github.libretube.ui.adapters.callbacks.DiffUtilItemCallback
-import com.github.libretube.ui.base.BaseActivity
-import com.github.libretube.ui.extensions.setupSubscriptionButton
-import com.github.libretube.ui.sheets.ChannelOptionsBottomSheet
-import com.github.libretube.ui.viewholders.SubscriptionChannelViewHolder
+import com.bimilyoncu.sscoderr.libretube.api.obj.Subscription
+import com.bimilyoncu.sscoderr.libretube.constants.IntentData
+import com.bimilyoncu.sscoderr.libretube.databinding.ChannelSubscriptionRowBinding
+import com.bimilyoncu.sscoderr.libretube.extensions.toID
+import com.bimilyoncu.sscoderr.libretube.helpers.ImageHelper
+import com.bimilyoncu.sscoderr.libretube.helpers.NavigationHelper
+import com.bimilyoncu.sscoderr.libretube.ui.adapters.callbacks.DiffUtilItemCallback
+import com.bimilyoncu.sscoderr.libretube.ui.base.BaseActivity
+import com.bimilyoncu.sscoderr.libretube.ui.extensions.setupSubscriptionButton
+import com.bimilyoncu.sscoderr.libretube.ui.sheets.ChannelOptionsBottomSheet
+import com.bimilyoncu.sscoderr.libretube.ui.viewholders.SubscriptionChannelViewHolder
 
 class SubscriptionChannelAdapter :
     ListAdapter<Subscription, SubscriptionChannelViewHolder>(DiffUtilItemCallback()) {

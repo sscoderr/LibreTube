@@ -1,10 +1,10 @@
-package com.github.libretube.repo
+package com.bimilyoncu.sscoderr.libretube.repo
 
-import com.github.libretube.api.RetrofitInstance
-import com.github.libretube.api.obj.Subscribe
-import com.github.libretube.api.obj.Subscription
-import com.github.libretube.extensions.toID
-import com.github.libretube.helpers.PreferenceHelper
+import com.bimilyoncu.sscoderr.libretube.api.RetrofitInstance
+import com.bimilyoncu.sscoderr.libretube.api.obj.Subscribe
+import com.bimilyoncu.sscoderr.libretube.api.obj.Subscription
+import com.bimilyoncu.sscoderr.libretube.extensions.toID
+import com.bimilyoncu.sscoderr.libretube.helpers.PreferenceHelper
 
 class AccountSubscriptionsRepository : SubscriptionsRepository {
     private val token get() = PreferenceHelper.getToken()

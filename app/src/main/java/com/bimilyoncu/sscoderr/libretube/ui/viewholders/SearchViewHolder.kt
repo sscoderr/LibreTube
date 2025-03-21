@@ -1,9 +1,9 @@
-package com.github.libretube.ui.viewholders
+package com.bimilyoncu.sscoderr.libretube.ui.viewholders
 
 import androidx.recyclerview.widget.RecyclerView
-import com.github.libretube.databinding.ChannelRowBinding
-import com.github.libretube.databinding.PlaylistsRowBinding
-import com.github.libretube.databinding.VideoRowBinding
+import com.bimilyoncu.sscoderr.libretube.databinding.ChannelRowBinding
+import com.bimilyoncu.sscoderr.libretube.databinding.PlaylistsRowBinding
+import com.bimilyoncu.sscoderr.libretube.databinding.VideoRowBinding
 
 class SearchViewHolder : RecyclerView.ViewHolder {
     var videoRowBinding: VideoRowBinding? = null

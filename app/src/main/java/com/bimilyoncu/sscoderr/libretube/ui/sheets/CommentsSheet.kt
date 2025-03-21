@@ -1,4 +1,4 @@
-package com.github.libretube.ui.sheets
+package com.bimilyoncu.sscoderr.libretube.ui.sheets
 
 import android.os.Bundle
 import android.view.View
@@ -9,10 +9,10 @@ import androidx.fragment.app.activityViewModels
 import androidx.fragment.app.commit
 import androidx.fragment.app.replace
 import androidx.fragment.app.setFragmentResult
-import com.github.libretube.R
-import com.github.libretube.databinding.CommentsSheetBinding
-import com.github.libretube.ui.fragments.CommentsMainFragment
-import com.github.libretube.ui.models.CommonPlayerViewModel
+import com.bimilyoncu.sscoderr.libretube.R
+import com.bimilyoncu.sscoderr.libretube.databinding.CommentsSheetBinding
+import com.bimilyoncu.sscoderr.libretube.ui.fragments.CommentsMainFragment
+import com.bimilyoncu.sscoderr.libretube.ui.models.CommonPlayerViewModel
 
 class CommentsSheet : ExpandablePlayerSheet(R.layout.comments_sheet) {
     private var _binding: CommentsSheetBinding? = null

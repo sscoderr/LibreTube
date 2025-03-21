@@ -1,4 +1,4 @@
-package com.github.libretube.ui.listeners
+package com.bimilyoncu.sscoderr.libretube.ui.listeners
 
 import android.text.format.DateUtils
 import android.view.View
@@ -8,8 +8,8 @@ import androidx.core.view.isVisible
 import androidx.core.view.updateLayoutParams
 import androidx.media3.common.util.UnstableApi
 import androidx.media3.ui.TimeBar
-import com.github.libretube.databinding.ExoStyledPlayerControlViewBinding
-import com.github.libretube.ui.interfaces.TimeFrameReceiver
+import com.bimilyoncu.sscoderr.libretube.databinding.ExoStyledPlayerControlViewBinding
+import com.bimilyoncu.sscoderr.libretube.ui.interfaces.TimeFrameReceiver
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

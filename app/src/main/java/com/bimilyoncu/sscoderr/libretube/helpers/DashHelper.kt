@@ -1,7 +1,7 @@
-package com.github.libretube.helpers
+package com.bimilyoncu.sscoderr.libretube.helpers
 
-import com.github.libretube.api.obj.PipedStream
-import com.github.libretube.api.obj.Streams
+import com.bimilyoncu.sscoderr.libretube.api.obj.PipedStream
+import com.bimilyoncu.sscoderr.libretube.api.obj.Streams
 import org.w3c.dom.Document
 import org.w3c.dom.Element
 import java.io.StringWriter

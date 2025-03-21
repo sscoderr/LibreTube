@@ -1,19 +1,19 @@
-package com.github.libretube.ui.models
+package com.bimilyoncu.sscoderr.libretube.ui.models
 
 import android.content.Context
 import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.github.libretube.R
-import com.github.libretube.api.SubscriptionHelper
-import com.github.libretube.api.obj.StreamItem
-import com.github.libretube.api.obj.Subscription
-import com.github.libretube.extensions.TAG
-import com.github.libretube.extensions.toID
-import com.github.libretube.extensions.toastFromMainDispatcher
-import com.github.libretube.helpers.PreferenceHelper
-import com.github.libretube.repo.FeedProgress
+import com.bimilyoncu.sscoderr.libretube.R
+import com.bimilyoncu.sscoderr.libretube.api.SubscriptionHelper
+import com.bimilyoncu.sscoderr.libretube.api.obj.StreamItem
+import com.bimilyoncu.sscoderr.libretube.api.obj.Subscription
+import com.bimilyoncu.sscoderr.libretube.extensions.TAG
+import com.bimilyoncu.sscoderr.libretube.extensions.toID
+import com.bimilyoncu.sscoderr.libretube.extensions.toastFromMainDispatcher
+import com.bimilyoncu.sscoderr.libretube.helpers.PreferenceHelper
+import com.bimilyoncu.sscoderr.libretube.repo.FeedProgress
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 

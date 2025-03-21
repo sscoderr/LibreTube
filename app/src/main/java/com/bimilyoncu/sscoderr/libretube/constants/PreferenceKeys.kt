@@ -1,4 +1,4 @@
-package com.github.libretube.constants
+package com.bimilyoncu.sscoderr.libretube.constants
 
 /**
  * keys for the shared preferences

@@ -1,4 +1,4 @@
-package com.github.libretube.ui.models
+package com.bimilyoncu.sscoderr.libretube.ui.models
 
 import android.content.Context
 import android.net.Uri
@@ -13,13 +13,13 @@ import androidx.lifecycle.createSavedStateHandle
 import androidx.lifecycle.viewModelScope
 import androidx.lifecycle.viewmodel.initializer
 import androidx.lifecycle.viewmodel.viewModelFactory
-import com.github.libretube.R
-import com.github.libretube.api.InstanceRepository
-import com.github.libretube.api.RetrofitInstance
-import com.github.libretube.api.obj.PipedInstance
-import com.github.libretube.constants.PreferenceKeys
-import com.github.libretube.helpers.BackupHelper
-import com.github.libretube.helpers.PreferenceHelper
+import com.bimilyoncu.sscoderr.libretube.R
+import com.bimilyoncu.sscoderr.libretube.api.InstanceRepository
+import com.bimilyoncu.sscoderr.libretube.api.RetrofitInstance
+import com.bimilyoncu.sscoderr.libretube.api.obj.PipedInstance
+import com.bimilyoncu.sscoderr.libretube.constants.PreferenceKeys
+import com.bimilyoncu.sscoderr.libretube.helpers.BackupHelper
+import com.bimilyoncu.sscoderr.libretube.helpers.PreferenceHelper
 import kotlinx.coroutines.launch
 import kotlinx.parcelize.Parcelize
 
