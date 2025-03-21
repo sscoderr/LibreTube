@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.text.format.DateUtils
+import android.view.MotionEvent
 import android.view.View
 import androidx.activity.BackEventCompat
 import androidx.activity.OnBackPressedCallback
@@ -117,7 +118,7 @@ class AudioPlayerFragment : Fragment(R.layout.fragment_audio_player), AudioPlaye
         }
 
         initializeTransitionLayout()
-
+        
         // select the title TV in order for it to automatically scroll
         binding.title.isSelected = true
         binding.uploader.isSelected = true
@@ -130,6 +131,31 @@ class AudioPlayerFragment : Fragment(R.layout.fragment_audio_player), AudioPlaye
         binding.minimizePlayer.setOnClickListener {
             mainActivityMotionLayout?.transitionToStart()
             binding.playerMotionLayout.transitionToEnd()
+        }
+
+        // Add click listener to maximize player when mini player is clicked
+        binding.miniPlayerControls.setOnClickListener {
+            // Only maximize if clicking directly on the container, not on child elements with their own click listeners
+            if (binding.playerMotionLayout.currentState == transitionEndId) {
+                binding.playerMotionLayout.transitionToStart()
+                mainActivityMotionLayout?.progress = 0f
+            }
+        }
+
+        // Make sure the mini player title is also clickable for maximizing
+        binding.miniPlayerTitle.setOnClickListener {
+            if (binding.playerMotionLayout.currentState == transitionEndId) {
+                binding.playerMotionLayout.transitionToStart()
+                mainActivityMotionLayout?.progress = 0f
+            }
+        }
+
+        // Make sure the mini player thumbnail is also clickable for maximizing
+        binding.miniPlayerThumbnail.setOnClickListener {
+            if (binding.playerMotionLayout.currentState == transitionEndId) {
+                binding.playerMotionLayout.transitionToStart()
+                mainActivityMotionLayout?.progress = 0f
+            }
         }
 
         binding.autoPlay.isChecked = PlayerHelper.autoPlayEnabled
@@ -212,8 +238,9 @@ class AudioPlayerFragment : Fragment(R.layout.fragment_audio_player), AudioPlaye
             killFragment()
         }
 
-        val listener = AudioPlayerThumbnailListener(requireContext(), this)
-        binding.thumbnail.setOnTouchListener(listener)
+        //#SSCODERR
+        //val listener = AudioPlayerThumbnailListener(requireContext(), this)
+        //binding.thumbnail.setOnTouchListener(listener)
 
         binding.playPause.setOnClickListener {
             playerController?.togglePlayPauseState()
@@ -294,11 +321,13 @@ class AudioPlayerFragment : Fragment(R.layout.fragment_audio_player), AudioPlaye
                 endId: Int,
                 progress: Float
             ) {
-                if (NavBarHelper.hasTabs()) {
-                    mainActivityMotionLayout?.progress = abs(progress)
-                }
                 transitionEndId = endId
                 transitionStartId = startId
+                
+                // Smoothly update the main activity's motion layout with our progress
+                if (NavBarHelper.hasTabs()) {
+                    mainActivityMotionLayout?.progress = progress
+                }
             }
 
             override fun onTransitionCompleted(motionLayout: MotionLayout?, currentId: Int) {
@@ -314,6 +343,48 @@ class AudioPlayerFragment : Fragment(R.layout.fragment_audio_player), AudioPlaye
             }
         })
 
+        // Add touch listener to ensure complete transition on release
+        binding.playerMotionLayout.setOnTouchListener { _, event ->
+            if (event.action == MotionEvent.ACTION_UP || event.action == MotionEvent.ACTION_CANCEL) {
+                val currentProgress = binding.playerMotionLayout.progress
+                
+                // If the progress is not at start or end position when touch is released,
+                // complete the transition
+                if (currentProgress > 0 && currentProgress < 1) {
+                    // Different thresholds based on the player's initial state
+                    // For minimizing (starting from fully expanded): if progress > 0.3, minimize
+                    // For maximizing (starting from minimized): if progress < 0.7, maximize
+                    
+                    // Check if we're minimizing or maximizing based on which state the motion is closer to
+                    val wasMinimized = binding.playerMotionLayout.currentState == transitionEndId
+                    
+                    if (wasMinimized) {
+                        // We're trying to maximize from minimized state
+                        val shouldMaximize = currentProgress < 0.7
+                        if (shouldMaximize) {
+                            binding.playerMotionLayout.transitionToStart()
+                            mainActivityMotionLayout?.progress = 0f
+                        } else {
+                            binding.playerMotionLayout.transitionToEnd()
+                            mainActivityMotionLayout?.progress = 1f
+                        }
+                    } else {
+                        // We're trying to minimize from maximized state
+                        val shouldMinimize = currentProgress > 0.3
+                        if (shouldMinimize) {
+                            binding.playerMotionLayout.transitionToEnd()
+                            mainActivityMotionLayout?.progress = 1f
+                        } else {
+                            binding.playerMotionLayout.transitionToStart()
+                            mainActivityMotionLayout?.progress = 0f
+                        }
+                    }
+                }
+            }
+            false // Return false to allow other touch events to be processed
+        }
+
+        // Set initial state
         if (arguments?.getBoolean(IntentData.minimizeByDefault, false) != true) {
             binding.playerMotionLayout.progress = 1f
             binding.playerMotionLayout.transitionToStart()

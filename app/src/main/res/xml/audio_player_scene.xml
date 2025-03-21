@@ -6,18 +6,21 @@
         android:id="@+id/mini_player_transition"
         motion:constraintSetEnd="@+id/end"
         motion:constraintSetStart="@id/start"
-        motion:duration="500"
-        motion:motionInterpolator="easeInOut">
+        motion:duration="250"
+        motion:motionInterpolator="easeOut">
         <KeyFrameSet>
             <KeyAttribute
                 android:alpha="0"
                 motion:framePosition="90"
                 motion:motionTarget="@+id/miniPlayerControls" />
         </KeyFrameSet>
-        <OnClick
-            motion:clickAction="toggle"
-            motion:duration="500"
-            motion:targetId="@+id/miniPlayerControls" />
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:dragScale="1.0"
+            motion:touchAnchorId="@+id/audio_player_container"
+            motion:touchAnchorSide="top"
+            motion:moveWhenScrollAtTop="true"
+            motion:onTouchUp="stop" />
     </Transition>
 
     <ConstraintSet android:id="@+id/start">
