@@ -78,7 +78,12 @@ class HomeViewModel : ViewModel() {
 
         runSafely(
             onSuccess = { videos -> trending.updateIfChanged(videos) },
-            ioBlock = { MediaServiceRepository.instance.getTrending(region).deArrow().take(10) }
+            ioBlock = { 
+                MediaServiceRepository.instance.getTrending(region)
+                    .deArrow()
+                    .filter { !it.isShort }
+                    .take(10) 
+            }
         )
     }
 

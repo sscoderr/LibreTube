@@ -30,7 +30,11 @@ class TrendsViewModel : ViewModel() {
                 val response = withContext(Dispatchers.IO) {
                     MediaServiceRepository.instance.getTrending(region).deArrow()
                 }
-                trendingVideos.postValue(response)
+                
+                // Always filter out shorts from trends section
+                val filteredResponse = response.filter { !it.isShort }
+                
+                trendingVideos.postValue(filteredResponse)
             } catch (e: IOException) {
                 println(e)
                 Log.e(TAG(), "IOException, you might not have internet connection")
