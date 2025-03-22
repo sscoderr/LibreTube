@@ -102,7 +102,12 @@ class SearchResultsAdapter(
             ImageHelper.loadImage(item.uploaderAvatar, channelImage, true)
 
             root.setOnClickListener {
-                NavigationHelper.navigateVideo(root.context, item.url, timestamp = timeStamp)
+                NavigationHelper.navigateVideo(
+                    root.context, 
+                    item.url, 
+                    timestamp = timeStamp,
+                    resumeFromSavedPosition = false
+                )
             }
 
             val videoId = item.url.toID()

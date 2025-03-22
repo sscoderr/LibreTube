@@ -434,8 +434,15 @@ class MainActivity : BaseActivity() {
         }
 
         if (intent?.getBooleanExtra(IntentData.openAudioPlayer, false) == true) {
-            val offlinePlayer = intent!!.getBooleanExtra(IntentData.offlinePlayer, false)
-            NavigationHelper.openAudioPlayerFragment(this, offlinePlayer = offlinePlayer)
+            // Check if AudioPlayerFragment is already in the fragment container
+            val existingAudioPlayer = supportFragmentManager.findFragmentById(R.id.container) as? AudioPlayerFragment
+            if (existingAudioPlayer == null) {
+                val offlinePlayer = intent!!.getBooleanExtra(IntentData.offlinePlayer, false)
+                NavigationHelper.openAudioPlayerFragment(this, offlinePlayer = offlinePlayer)
+            } else {
+                // Fragment exists, just bring it to the foreground by restoring its state
+                existingAudioPlayer.maximizePlayer()
+            }
             return
         }
 

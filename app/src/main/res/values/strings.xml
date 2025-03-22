@@ -123,7 +123,6 @@
     <string name="piped" translatable="false">Piped</string>
     <string name="youtube" translatable="false">YouTube</string>
     <string name="playOnBackground">Play in the background</string>
-    <string name="playAsAudio">Play as Audio</string>
     <string name="update_available">Update available</string>
     <string name="update_available_text">New update available. Click to open the GitHub releases page.</string>
     <string name="appearance">Appearance</string>
@@ -387,6 +386,8 @@
     <string name="alternative_pip_controls_summary">Show audio only and skip controls in PiP instead of forward and rewind</string>
     <string name="audio_only_mode">Audio only mode</string>
     <string name="audio_only_mode_summary">Turn LibreTube into a music player</string>
+    <string name="audio_only_mode_enabled">Audio only mode enabled</string>
+    <string name="audio_only_mode_disabled">Audio only mode disabled</string>
     <string name="sleep_timer">Sleep timer</string>
     <string name="skip_silence">Skip silence</string>
     <string name="help">Help</string>

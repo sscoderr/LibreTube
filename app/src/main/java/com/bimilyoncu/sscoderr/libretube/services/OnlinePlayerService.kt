@@ -51,6 +51,7 @@ open class OnlinePlayerService : AbstractPlayerService() {
     private var playlistId: String? = null
     private var channelId: String? = null
     private var startTimestamp: Long? = null
+    private var resumeFromSavedPosition: Boolean = false
 
     /**
      * The response that gets when called the Api.
@@ -106,6 +107,7 @@ open class OnlinePlayerService : AbstractPlayerService() {
         playlistId = playerData.playlistId
         channelId = playerData.channelId
         startTimestamp = playerData.timestamp
+        resumeFromSavedPosition = playerData.resumeFromSavedPosition
 
         if (!playerData.keepQueue) PlayingQueue.clear()
 
@@ -162,7 +164,7 @@ open class OnlinePlayerService : AbstractPlayerService() {
         // seek to the previous position if available
         if (seekToPosition != 0L) {
             exoPlayer?.seekTo(seekToPosition)
-        } else if (watchPositionsEnabled) {
+        } else if (watchPositionsEnabled && resumeFromSavedPosition) {
             DatabaseHelper.getWatchPositionBlocking(videoId)?.let {
                 if (!DatabaseHelper.isVideoWatched(it, streams?.duration)) exoPlayer?.seekTo(it)
             }

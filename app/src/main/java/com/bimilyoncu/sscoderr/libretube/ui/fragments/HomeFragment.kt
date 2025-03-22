@@ -40,7 +40,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
 
     private val trendingAdapter = VideosAdapter(forceMode = LayoutMode.TRENDING_ROW)
     private val feedAdapter = VideosAdapter(forceMode = LayoutMode.RELATED_COLUMN)
-    private val watchingAdapter = VideosAdapter(forceMode = LayoutMode.RELATED_COLUMN)
+    private val watchingAdapter = VideosAdapter(forceMode = LayoutMode.RELATED_COLUMN, isContinueWatchingSection = true)
     private val bookmarkAdapter = PlaylistBookmarkAdapter(PlaylistBookmarkAdapter.Companion.BookmarkMode.HOME)
     private val playlistAdapter = PlaylistsAdapter(playlistType = PlaylistsHelper.getPrivatePlaylistType())
 
@@ -63,6 +63,9 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
             }
         })
         binding.watchingRV.adapter = watchingAdapter
+
+        // Setup audio-only mode toggle
+        setupAudioOnlyModeToggle()
 
         with(homeViewModel) {
             trending.observe(viewLifecycleOwner, ::showTrending)
@@ -111,8 +114,43 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         }
     }
 
+    /**
+     * Set up the audio-only mode toggle switch
+     */
+    private fun setupAudioOnlyModeToggle() {
+        // Get the current preference state
+        val isAudioOnlyMode = PreferenceHelper.getBoolean(PreferenceKeys.AUDIO_ONLY_MODE, false)
+        
+        // Set the switch state based on the preference
+        binding.audioOnlyModeSwitch.isChecked = isAudioOnlyMode
+        
+        // Make the whole container clickable to toggle the switch
+        binding.audioModeContainer.setOnClickListener {
+            binding.audioOnlyModeSwitch.toggle()
+        }
+        
+        // Set up the change listener for the switch
+        binding.audioOnlyModeSwitch.setOnCheckedChangeListener { _, isChecked ->
+            // Save the preference
+            PreferenceHelper.putBoolean(PreferenceKeys.AUDIO_ONLY_MODE, isChecked)
+            
+            // Show feedback to the user
+            val message = if (isChecked) {
+                getString(R.string.audio_only_mode_enabled)
+            } else {
+                getString(R.string.audio_only_mode_disabled)
+            }
+            
+            Snackbar.make(binding.root, message, Snackbar.LENGTH_SHORT).show()
+        }
+    }
+
     override fun onResume() {
         super.onResume()
+
+        // Update the audio-only mode switch to reflect any changes made in settings
+        val isAudioOnlyMode = PreferenceHelper.getBoolean(PreferenceKeys.AUDIO_ONLY_MODE, false)
+        binding.audioOnlyModeSwitch.isChecked = isAudioOnlyMode
 
         // Avoid re-fetching when re-entering the screen if it was loaded successfully
         if (homeViewModel.loadedSuccessfully.value == false) {

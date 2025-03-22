@@ -37,7 +37,8 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
 class VideosAdapter(
-    private val forceMode: LayoutMode = LayoutMode.RESPECT_PREF
+    private val forceMode: LayoutMode? = null,
+    private val isContinueWatchingSection: Boolean = false
 ) : ListAdapter<StreamItem, VideosViewHolder>(DiffUtilItemCallback()) {
 
     override fun getItemViewType(position: Int): Int {
@@ -121,7 +122,11 @@ class VideosAdapter(
             ImageHelper.loadImage(video.thumbnail, thumbnail)
             ImageHelper.loadImage(video.uploaderAvatar, channelImage, true)
             root.setOnClickListener {
-                NavigationHelper.navigateVideo(root.context, videoId)
+                NavigationHelper.navigateVideo(
+                    root.context, 
+                    videoId,
+                    resumeFromSavedPosition = isContinueWatchingSection
+                )
             }
 
             root.setOnLongClickListener {
@@ -159,7 +164,11 @@ class VideosAdapter(
             }
 
             root.setOnClickListener {
-                NavigationHelper.navigateVideo(root.context, videoId)
+                NavigationHelper.navigateVideo(
+                    root.context, 
+                    videoId,
+                    resumeFromSavedPosition = isContinueWatchingSection
+                )
             }
 
             root.setOnLongClickListener {

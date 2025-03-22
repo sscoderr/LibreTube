@@ -59,10 +59,6 @@ class VideoOptionsBottomSheet : BaseBottomSheet() {
                 R.string.playOnBackground -> {
                     NavigationHelper.navigateAudio(requireContext(), videoId, minimizeByDefault = true)
                 }
-                // Play as Audio
-                R.string.playAsAudio -> {
-                    NavigationHelper.navigateAudio(requireContext(), videoId)
-                }
                 // Add Video to Playlist Dialog
                 R.string.addToPlaylist -> {
                     AddToPlaylistDialog().apply {
@@ -137,7 +133,7 @@ class VideoOptionsBottomSheet : BaseBottomSheet() {
 
     private fun getOptionsForNotActivePlayback(videoId: String): List<Int> {
         // List that stores the different menu options. In the future could be add more options here.
-        val optionsList = mutableListOf(R.string.playOnBackground, R.string.playAsAudio)
+        val optionsList = mutableListOf(R.string.playOnBackground)
 
         // Check whether the player is running and add queue options
         if (PlayingQueue.isNotEmpty()) {

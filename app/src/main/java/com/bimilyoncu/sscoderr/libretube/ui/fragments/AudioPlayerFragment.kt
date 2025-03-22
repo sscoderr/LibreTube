@@ -529,4 +529,15 @@ class AudioPlayerFragment : Fragment(R.layout.fragment_audio_player), AudioPlaye
             )
         chaptersModel.currentChapterIndex.updateIfChanged(currentIndex ?: return)
     }
+
+    /**
+     * Maximizes the player when the notification is clicked.
+     * This avoids reloading the player from scratch.
+     */
+    fun maximizePlayer() {
+        if (_binding != null && binding.playerMotionLayout.currentState == transitionEndId) {
+            binding.playerMotionLayout.transitionToStart()
+            mainActivityMotionLayout?.progress = 0f
+        }
+    }
 }

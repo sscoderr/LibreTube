@@ -60,4 +60,5 @@ object IntentData {
     const val alreadyStarted = "alreadyStarted"
     const val showUpcoming = "showUpcoming"
     const val customInstance = "customInstance"
+    const val resumeFromSavedPosition = "resumeFromSavedPosition"
 }

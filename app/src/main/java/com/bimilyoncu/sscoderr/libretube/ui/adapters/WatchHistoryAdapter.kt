@@ -60,7 +60,11 @@ class WatchHistoryAdapter :
             }
 
             root.setOnClickListener {
-                NavigationHelper.navigateVideo(root.context, video.videoId)
+                NavigationHelper.navigateVideo(
+                    root.context, 
+                    video.videoId,
+                    resumeFromSavedPosition = true
+                )
             }
 
             val activity = (root.context as BaseActivity)

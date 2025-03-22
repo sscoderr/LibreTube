@@ -40,7 +40,8 @@ object BackgroundHelper {
         playlistId: String? = null,
         channelId: String? = null,
         keepQueue: Boolean = false,
-        keepVideoPlayerAlive: Boolean = false
+        keepVideoPlayerAlive: Boolean = false,
+        resumeFromSavedPosition: Boolean = false
     ) {
         // close the previous video player if open
         if (!keepVideoPlayerAlive) {
@@ -51,7 +52,7 @@ object BackgroundHelper {
             }
         }
 
-        val playerData = PlayerData(videoId, playlistId, channelId, keepQueue, position)
+        val playerData = PlayerData(videoId, playlistId, channelId, keepQueue, position, resumeFromSavedPosition)
 
         startMediaService(
             context,
@@ -97,7 +98,8 @@ object BackgroundHelper {
         context: Context,
         videoId: String?,
         downloadTab: DownloadTab,
-        shuffle: Boolean = false
+        shuffle: Boolean = false,
+        resumeFromSavedPosition: Boolean = false
     ) {
         // whether the service is started from the MainActivity or NoInternetActivity
         val noInternet = ContextHelper.tryUnwrapActivity<NoInternetActivity>(context) != null
@@ -106,7 +108,8 @@ object BackgroundHelper {
             IntentData.videoId to videoId,
             IntentData.shuffle to shuffle,
             IntentData.downloadTab to downloadTab,
-            IntentData.noInternet to noInternet
+            IntentData.noInternet to noInternet,
+            IntentData.resumeFromSavedPosition to resumeFromSavedPosition
         )
 
         startMediaService(context, OfflinePlayerService::class.java, arguments)

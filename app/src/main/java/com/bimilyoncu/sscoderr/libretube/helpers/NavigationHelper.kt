@@ -59,12 +59,13 @@ object NavigationHelper {
         channelId: String? = null,
         keepQueue: Boolean = false,
         timestamp: Long = 0,
-        forceVideo: Boolean = false
+        forceVideo: Boolean = false,
+        resumeFromSavedPosition: Boolean = false
     ) {
         if (videoUrlOrId == null) return
 
         if (PreferenceHelper.getBoolean(PreferenceKeys.AUDIO_ONLY_MODE, false) && !forceVideo) {
-            navigateAudio(context, videoUrlOrId.toID(), playlistId, channelId, keepQueue, timestamp)
+            navigateAudio(context, videoUrlOrId.toID(), playlistId, channelId, keepQueue, timestamp, resumeFromSavedPosition = resumeFromSavedPosition)
             return
         }
 
@@ -84,7 +85,7 @@ object NavigationHelper {
         if (attachedToRunningPlayer) return
 
         val playerData =
-            PlayerData(videoUrlOrId.toID(), playlistId, channelId, keepQueue, timestamp)
+            PlayerData(videoUrlOrId.toID(), playlistId, channelId, keepQueue, timestamp, resumeFromSavedPosition)
         val bundle = bundleOf(IntentData.playerData to playerData)
         activity.supportFragmentManager.commitNow {
             replace<PlayerFragment>(R.id.container, args = bundle)
@@ -99,7 +100,8 @@ object NavigationHelper {
         channelId: String? = null,
         keepQueue: Boolean = false,
         timestamp: Long = 0,
-        minimizeByDefault: Boolean = false
+        minimizeByDefault: Boolean = false,
+        resumeFromSavedPosition: Boolean = false
     ) {
         val activity = ContextHelper.unwrapActivity<MainActivity>(context)
         val attachedToRunningPlayer = activity.runOnAudioPlayerFragment {
@@ -114,7 +116,8 @@ object NavigationHelper {
             timestamp,
             playlistId,
             channelId,
-            keepQueue
+            keepQueue,
+            resumeFromSavedPosition = resumeFromSavedPosition
         )
 
         handler.postDelayed(500) {

@@ -35,6 +35,7 @@ open class OfflinePlayerService : AbstractPlayerService() {
     override val isOfflinePlayer: Boolean = true
     override val isAudioOnlyPlayer: Boolean = true
     private var noInternetService: Boolean = false
+    private var resumeFromSavedPosition: Boolean = false
 
     private var downloadWithItems: DownloadWithItems? = null
     private lateinit var downloadTab: DownloadTab
@@ -65,6 +66,7 @@ open class OfflinePlayerService : AbstractPlayerService() {
         downloadTab = args.serializable(IntentData.downloadTab)!!
         shuffle = args.getBoolean(IntentData.shuffle, false)
         noInternetService = args.getBoolean(IntentData.noInternet, false)
+        resumeFromSavedPosition = args.getBoolean(IntentData.resumeFromSavedPosition, false)
 
         val videoId = if (shuffle) {
             runBlocking(Dispatchers.IO) {
@@ -104,7 +106,7 @@ open class OfflinePlayerService : AbstractPlayerService() {
             exoPlayer?.playWhenReady = PlayerHelper.playAutomatically
             exoPlayer?.prepare()
 
-            if (watchPositionsEnabled) {
+            if (watchPositionsEnabled && resumeFromSavedPosition) {
                 DatabaseHelper.getWatchPosition(videoId)?.let {
                     if (!DatabaseHelper.isVideoWatched(
                             it,
