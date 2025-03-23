@@ -215,7 +215,8 @@
                 android:layout_height="48dp"
                 android:layout_gravity="center"
                 android:layout_marginHorizontal="20dp"
-                android:background="?attr/selectableItemBackgroundBorderless"
+                android:background="@drawable/audio_button_background"
+                android:padding="8dp"
                 android:src="@drawable/ic_prev" />
 
             <com.google.android.material.button.MaterialButton
@@ -236,6 +237,8 @@
                 android:layout_height="48dp"
                 android:layout_gravity="center"
                 android:layout_marginHorizontal="20dp"
+                android:background="@drawable/audio_button_background"
+                android:padding="8dp"
                 android:src="@drawable/ic_next" />
 
             <FrameLayout

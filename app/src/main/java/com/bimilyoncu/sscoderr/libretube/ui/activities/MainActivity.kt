@@ -5,6 +5,7 @@ import android.content.Intent
 import android.content.res.Configuration
 import android.os.Build
 import android.os.Bundle
+import android.util.Log
 import android.view.KeyEvent
 import android.view.Menu
 import android.view.MenuItem
@@ -22,6 +23,7 @@ import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.core.view.allViews
 import androidx.core.view.children
 import androidx.core.view.isNotEmpty
+import androidx.core.view.isVisible
 import androidx.core.widget.NestedScrollView
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.NavController
@@ -32,6 +34,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bimilyoncu.sscoderr.libretube.BuildConfig
 import com.bimilyoncu.sscoderr.libretube.NavDirections
 import com.bimilyoncu.sscoderr.libretube.R
+import com.bimilyoncu.sscoderr.libretube.api.RetrofitInstance
 import com.bimilyoncu.sscoderr.libretube.compat.PictureInPictureCompat
 import com.bimilyoncu.sscoderr.libretube.constants.IntentData
 import com.bimilyoncu.sscoderr.libretube.constants.PreferenceKeys
@@ -43,8 +46,10 @@ import com.bimilyoncu.sscoderr.libretube.helpers.IntentHelper
 import com.bimilyoncu.sscoderr.libretube.helpers.NavBarHelper
 import com.bimilyoncu.sscoderr.libretube.helpers.NavigationHelper
 import com.bimilyoncu.sscoderr.libretube.helpers.NetworkHelper
+import com.bimilyoncu.sscoderr.libretube.helpers.PlayerHelper
 import com.bimilyoncu.sscoderr.libretube.helpers.PreferenceHelper
 import com.bimilyoncu.sscoderr.libretube.helpers.ThemeHelper
+import com.bimilyoncu.sscoderr.libretube.helpers.VersionControlHelper
 import com.bimilyoncu.sscoderr.libretube.helpers.WindowHelper
 import com.bimilyoncu.sscoderr.libretube.ui.base.BaseActivity
 import com.bimilyoncu.sscoderr.libretube.ui.dialogs.ErrorDialog
@@ -113,10 +118,12 @@ class MainActivity : BaseActivity() {
         val isAppConfigured = PreferenceHelper.getBoolean(PreferenceKeys.LOCAL_FEED_EXTRACTION, false) ||
                 PreferenceHelper.getString(PreferenceKeys.FETCH_INSTANCE, "").isNotEmpty()
         if (!isAppConfigured) {
-            val welcomeIntent = Intent(this, WelcomeActivity::class.java)
-            startActivity(welcomeIntent)
-            finish()
-            return
+            // Set full local mode as default instead of showing welcome activity
+            PreferenceHelper.putBoolean(PreferenceKeys.FULL_LOCAL_MODE, true)
+            PreferenceHelper.putBoolean(PreferenceKeys.LOCAL_FEED_EXTRACTION, true)
+            
+            // Reset API URLs since they have changed
+            RetrofitInstance.apiLazyMgr.reset()
         }
 
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -128,6 +135,52 @@ class MainActivity : BaseActivity() {
                 UpdateChecker(this@MainActivity).checkUpdate(false)
             }
         }
+        
+        // Check app version for updates and feature visibility
+        lifecycleScope.launch {
+            // Check for updates with improved structure
+            when (val result = VersionControlHelper.checkForUpdates(
+                activity = this@MainActivity,
+                isMandatoryCheck = true
+            )) {
+                is VersionControlHelper.UpdateCheckResult.UpToDate -> {
+                }
+                is VersionControlHelper.UpdateCheckResult.UpdateAvailable -> {
+                }
+                is VersionControlHelper.UpdateCheckResult.MandatoryUpdateRequired -> {
+                    // Show the mandatory update screen
+                    VersionControlHelper.showMandatoryUpdateScreen(
+                        this@MainActivity,
+                        result.downloadUrl,
+                        result.requiredVersion
+                    )
+                }
+                is VersionControlHelper.UpdateCheckResult.Error -> {
+                    // Handle error if needed, maybe log it
+                    Log.e("MainActivity", "Error checking for updates", result.error)
+                }
+            }
+        }
+        
+        // Defer checking feature visibility until after navController is initialized
+        // This ensures we don't try to navigate before the controller is ready
+        binding.fragment.post {
+            lifecycleScope.launch {
+                if (::navController.isInitialized) {
+                    // Check feature visibility
+                    val shouldShowControls = VersionControlHelper.shouldShowControls(this@MainActivity)
+                    
+                    // Update UI based on feature visibility
+                    binding.bottomNav.menu.findItem(R.id.downloadsFragment)?.isVisible = shouldShowControls
+                    
+                    // If current destination is downloadsFragment but it should be hidden, navigate to home
+                    if (!shouldShowControls && 
+                        navController.currentDestination?.id == R.id.downloadsFragment) {
+                        navController.navigate(R.id.homeFragment)
+                    }
+                }
+            }
+        }
 
         // set the action bar for the activity
         setSupportActionBar(binding.toolbar)
@@ -135,7 +188,7 @@ class MainActivity : BaseActivity() {
         val navHostFragment = binding.fragment.getFragment<NavHostFragment>()
         navController = navHostFragment.navController
         binding.bottomNav.setupWithNavController(navController)
-
+        
         // save start tab fragment id and apply navbar style
         startFragmentId = try {
             NavBarHelper.applyNavBarStyle(binding.bottomNav)
@@ -399,28 +452,6 @@ class MainActivity : BaseActivity() {
                 true
             }
 
-            R.id.action_about -> {
-                val aboutIntent = Intent(this, AboutActivity::class.java)
-                startActivity(aboutIntent)
-                true
-            }
-
-            R.id.action_help -> {
-                val helpIntent = Intent(this, HelpActivity::class.java)
-                startActivity(helpIntent)
-                true
-            }
-
-            R.id.action_donate -> {
-                IntentHelper.openLinkFromHref(
-                    this,
-                    supportFragmentManager,
-                    AboutActivity.DONATE_URL,
-                    forceDefaultOpen = true
-                )
-                true
-            }
-
             else -> super.onOptionsItemSelected(item)
         }
     }
@@ -520,7 +551,8 @@ class MainActivity : BaseActivity() {
                         NavigationHelper.navigateVideo(
                             context = this@MainActivity,
                             videoUrlOrId = it,
-                            timestamp = intent.getLongExtra(IntentData.timeStamp, 0L)
+                            timestamp = intent.getLongExtra(IntentData.timeStamp, 0L),
+                            resumeFromSavedPosition = false
                         )
 
                         binding.bottomNav.viewTreeObserver.removeOnGlobalLayoutListener(this)
@@ -530,7 +562,8 @@ class MainActivity : BaseActivity() {
                 NavigationHelper.navigateVideo(
                     context = this@MainActivity,
                     videoUrlOrId = it,
-                    timestamp = intent.getLongExtra(IntentData.timeStamp, 0L)
+                    timestamp = intent.getLongExtra(IntentData.timeStamp, 0L),
+                    resumeFromSavedPosition = false
                 )
             }
 
@@ -635,5 +668,12 @@ class MainActivity : BaseActivity() {
                 )
             }
             .show()
+    }
+
+    override fun onResume() {
+        super.onResume()
+        
+        // Clear the position tracking list to ensure it doesn't grow indefinitely
+        PlayerHelper.clearPositionTrackingList()
     }
 }

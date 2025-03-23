@@ -72,7 +72,8 @@ class ChannelOptionsBottomSheet : BaseBottomSheet() {
                             NavigationHelper.navigateVideo(
                                 requireContext(),
                                 it,
-                                channelId = channelId
+                                channelId = channelId,
+                                resumeFromSavedPosition = false
                             )
                         }
                     } catch (e: Exception) {

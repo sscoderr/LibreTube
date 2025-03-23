@@ -139,11 +139,21 @@ class AudioPlayerFragment : Fragment(R.layout.fragment_audio_player), AudioPlaye
         }
 
         binding.prev.setOnClickListener {
-            playerController?.navigateVideo(PlayingQueue.getPrev() ?: return@setOnClickListener)
+            val prevVideo = PlayingQueue.getPrev() ?: return@setOnClickListener
+            // Pause current playback and show loading spinner
+            playerController?.pause()
+            binding.progress.isVisible = true
+            binding.thumbnail.alpha = 0.5f
+            playerController?.navigateVideo(prevVideo)
         }
 
         binding.next.setOnClickListener {
-            playerController?.navigateVideo(PlayingQueue.getNext() ?: return@setOnClickListener)
+            val nextVideo = PlayingQueue.getNext() ?: return@setOnClickListener
+            // Pause current playback and show loading spinner
+            playerController?.pause()
+            binding.progress.isVisible = true
+            binding.thumbnail.alpha = 0.5f
+            playerController?.navigateVideo(nextVideo)
         }
 
         listOf(binding.forwardTV, binding.rewindTV).forEach {
@@ -157,7 +167,12 @@ class AudioPlayerFragment : Fragment(R.layout.fragment_audio_player), AudioPlaye
         }
 
         childFragmentManager.setFragmentResultListener(PlayingQueueSheet.PLAYING_QUEUE_REQUEST_KEY, viewLifecycleOwner) { _, args ->
-            playerController?.navigateVideo(args.getString(IntentData.videoId) ?: return@setFragmentResultListener)
+            val videoId = args.getString(IntentData.videoId) ?: return@setFragmentResultListener
+            // Pause current playback and show loading spinner
+            playerController?.pause()
+            binding.progress.isVisible = true
+            binding.thumbnail.alpha = 0.5f
+            playerController?.navigateVideo(videoId)
         }
         binding.openQueue.setOnClickListener {
             PlayingQueueSheet().show(childFragmentManager)
@@ -182,7 +197,8 @@ class AudioPlayerFragment : Fragment(R.layout.fragment_audio_player), AudioPlaye
                 videoUrlOrId = PlayingQueue.getCurrent()?.url,
                 timestamp = playerController?.currentPosition?.div(1000) ?: 0,
                 keepQueue = true,
-                forceVideo = true
+                forceVideo = true,
+                resumeFromSavedPosition = false
             )
         }
 
@@ -439,6 +455,12 @@ class AudioPlayerFragment : Fragment(R.layout.fragment_audio_player), AudioPlaye
 
                 updatePlayPauseButton()
                 isPaused = !isPlaying
+                
+                // Hide loading indicator when playback starts
+                if (isPlaying) {
+                    binding.progress.isVisible = false
+                    binding.thumbnail.alpha = 1.0f
+                }
             }
 
             override fun onMediaMetadataChanged(mediaMetadata: MediaMetadata) {
@@ -450,6 +472,22 @@ class AudioPlayerFragment : Fragment(R.layout.fragment_audio_player), AudioPlaye
                     JsonHelper.json.decodeFromString(it)
                 }
                 _binding?.openChapters?.isVisible = !chapters.isNullOrEmpty()
+            }
+
+            override fun onPlaybackStateChanged(playbackState: Int) {
+                super.onPlaybackStateChanged(playbackState)
+                
+                // Show loading indicator when buffering, hide when ready
+                when (playbackState) {
+                    Player.STATE_BUFFERING -> {
+                        binding.progress.isVisible = true
+                        binding.thumbnail.alpha = 0.5f
+                    }
+                    Player.STATE_READY -> {
+                        binding.progress.isVisible = false
+                        binding.thumbnail.alpha = 1.0f
+                    }
+                }
             }
         })
         initializeSeekBar()

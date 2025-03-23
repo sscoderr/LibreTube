@@ -215,7 +215,8 @@ class PlaylistFragment : DynamicLayoutManagerFragment(R.layout.fragment_playlist
                         requireContext(),
                         sortedStreams.first().url,
                         playlistId,
-                        keepQueue = true
+                        keepQueue = true,
+                        resumeFromSavedPosition = false
                     )
                 }
             }
@@ -248,7 +249,8 @@ class PlaylistFragment : DynamicLayoutManagerFragment(R.layout.fragment_playlist
                             requireContext(),
                             queue.firstOrNull()?.url,
                             playlistId = playlistId,
-                            keepQueue = true
+                            keepQueue = true,
+                            resumeFromSavedPosition = false
                         )
                     }
                 }

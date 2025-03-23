@@ -63,7 +63,7 @@ class WatchHistoryAdapter :
                 NavigationHelper.navigateVideo(
                     root.context, 
                     video.videoId,
-                    resumeFromSavedPosition = true
+                    resumeFromSavedPosition = false
                 )
             }
 

@@ -83,6 +83,33 @@ object PlayerHelper {
         "exclusive_access" to SbSkipOptions.AUTOMATIC,
     )
 
+    // Set of video IDs that should have their watch positions saved and restored
+    private val videoIdsForPositionTracking = mutableSetOf<String>()
+
+    /**
+     * Register a video ID for position tracking (save and restore)
+     * @param videoId The video ID to track
+     */
+    fun registerVideoForPositionTracking(videoId: String) {
+        videoIdsForPositionTracking.add(videoId)
+    }
+
+    /**
+     * Check if a video ID should have its position tracked
+     * @param videoId The video ID to check
+     * @return True if this video's position should be saved and restored
+     */
+    fun shouldTrackVideoPosition(videoId: String): Boolean {
+        return videoIdsForPositionTracking.contains(videoId)
+    }
+
+    /**
+     * Clear the list of tracked video IDs
+     */
+    fun clearPositionTrackingList() {
+        videoIdsForPositionTracking.clear()
+    }
+
     /**
      * Create a base64 encoded DASH stream manifest
      */
@@ -876,6 +903,12 @@ object PlayerHelper {
     }
 
     fun saveWatchPosition(player: Player, videoId: String) {
+        // Only save watch positions for videos launched from "Continue watching" section
+        // or other explicitly registered videos
+        if (!shouldTrackVideoPosition(videoId)) {
+            return
+        }
+        
         if (player.duration == C.TIME_UNSET || player.currentPosition in listOf(0L, C.TIME_UNSET)) {
             return
         }

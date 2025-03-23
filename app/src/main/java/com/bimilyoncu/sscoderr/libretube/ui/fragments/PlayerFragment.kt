@@ -82,6 +82,7 @@ import com.bimilyoncu.sscoderr.libretube.helpers.PlayerHelper.isInSegment
 import com.bimilyoncu.sscoderr.libretube.helpers.PreferenceHelper
 import com.bimilyoncu.sscoderr.libretube.helpers.ProxyHelper
 import com.bimilyoncu.sscoderr.libretube.helpers.ThemeHelper
+import com.bimilyoncu.sscoderr.libretube.helpers.VersionControlHelper
 import com.bimilyoncu.sscoderr.libretube.helpers.WindowHelper
 import com.bimilyoncu.sscoderr.libretube.obj.ShareData
 import com.bimilyoncu.sscoderr.libretube.obj.VideoResolution
@@ -317,6 +318,8 @@ class PlayerFragment : Fragment(R.layout.fragment_player), OnlinePlayerOptions {
                 viewModel.segments.postValue(emptyList())
                 setPlayerDefaults()
                 updatePlayerView()
+                // Update controlled features visibility when streams data is updated
+                updateControlledFeaturesVisibility()
             }
         }
 
@@ -738,10 +741,24 @@ class PlayerFragment : Fragment(R.layout.fragment_player), OnlinePlayerOptions {
             PlayingQueue.getNext()?.let { next -> playNextVideo(next) }
         }
 
+        // Initialize download button visibility
+        binding.relPlayerDownload.isVisible = false
+        
         binding.relPlayerDownload.setOnClickListener {
             if (!this::streams.isInitialized) return@setOnClickListener
 
             DownloadHelper.startDownloadDialog(requireContext(), childFragmentManager, videoId)
+        }
+
+        // Initialize background/audio button visibility
+        binding.relPlayerBackground.isVisible = false
+        
+        binding.relPlayerBackground.setOnClickListener {
+            // pause the current player
+            if (::playerController.isInitialized) playerController.pause()
+
+            // start the background mode
+            playOnBackground()
         }
 
         binding.relPlayerScreenshot.setOnClickListener {
@@ -1125,7 +1142,9 @@ class PlayerFragment : Fragment(R.layout.fragment_player), OnlinePlayerOptions {
                 streams.uploaderSubscriberCount.formatShort()
             )
             player.isLive = streams.isLive
-            relPlayerDownload.isVisible = !streams.isLive
+            
+            // Update controlled features visibility when streams data is updated
+            updateControlledFeaturesVisibility()
         }
         playerBinding.exoTitle.text = streams.title
 
@@ -1548,5 +1567,46 @@ class PlayerFragment : Fragment(R.layout.fragment_player), OnlinePlayerOptions {
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
+    }
+
+    /**
+     * Updates visibility for all version-controlled features
+     */
+    private fun updateControlledFeaturesVisibility() {
+        if (!isAdded || _binding == null) return
+        
+        // Check cached version control status
+        val cachedStatus = VersionControlHelper.getCachedControlFeaturesStatus()
+        if (cachedStatus == null) {
+            // If no cached status yet, hide buttons initially and check asynchronously
+            binding.relPlayerDownload.isVisible = false
+            binding.relPlayerBackground.isVisible = false
+            
+            viewLifecycleOwner.lifecycleScope.launch {
+                val shouldShowControls = VersionControlHelper.shouldShowControls(requireContext())
+                if (shouldShowControls && isAdded && _binding != null) {
+                    // Update download button - only visible if not a live stream
+                    if (this@PlayerFragment::streams.isInitialized) {
+                        binding.relPlayerDownload.isVisible = !streams.isLive
+                    }
+                    
+                    // Update audio button - always visible if controls are enabled
+                    binding.relPlayerBackground.isVisible = true
+                }
+            }
+        } else if (cachedStatus) {
+            // If features should be shown according to cache
+            // Download button - only visible if not a live stream
+            if (this::streams.isInitialized) {
+                binding.relPlayerDownload.isVisible = !streams.isLive
+            }
+            
+            // Audio button - always visible if controls are enabled
+            binding.relPlayerBackground.isVisible = true
+        } else {
+            // If features should be hidden according to cache, hide all buttons
+            binding.relPlayerDownload.isVisible = false
+            binding.relPlayerBackground.isVisible = false
+        }
     }
 }

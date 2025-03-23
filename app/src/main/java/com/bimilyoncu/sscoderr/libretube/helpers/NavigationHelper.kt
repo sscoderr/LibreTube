@@ -64,6 +64,12 @@ object NavigationHelper {
     ) {
         if (videoUrlOrId == null) return
 
+        // Register this video for position tracking if resumeFromSavedPosition is true
+        // (meaning it came from "Continue watching" section)
+        if (resumeFromSavedPosition) {
+            PlayerHelper.registerVideoForPositionTracking(videoUrlOrId.toID())
+        }
+
         if (PreferenceHelper.getBoolean(PreferenceKeys.AUDIO_ONLY_MODE, false) && !forceVideo) {
             navigateAudio(context, videoUrlOrId.toID(), playlistId, channelId, keepQueue, timestamp, resumeFromSavedPosition = resumeFromSavedPosition)
             return
@@ -103,13 +109,20 @@ object NavigationHelper {
         minimizeByDefault: Boolean = false,
         resumeFromSavedPosition: Boolean = false
     ) {
+        // For audio-only mode, we always start from the beginning, even for videos from "Continue watching"
+        // We still register the video for position tracking if it came from "Continue watching" section
+        // This ensures video mode remembers the position, but audio mode always starts from beginning
+        if (resumeFromSavedPosition) {
+            PlayerHelper.registerVideoForPositionTracking(videoId)
+        }
+        
         val activity = ContextHelper.unwrapActivity<MainActivity>(context)
         val attachedToRunningPlayer = activity.runOnAudioPlayerFragment {
             this.playNextVideo(videoId)
             true
         }
         if (attachedToRunningPlayer) return
-
+        
         BackgroundHelper.playOnBackground(
             context,
             videoId,
@@ -117,7 +130,7 @@ object NavigationHelper {
             playlistId,
             channelId,
             keepQueue,
-            resumeFromSavedPosition = resumeFromSavedPosition
+            resumeFromSavedPosition = false // Always set to false for audio-only mode
         )
 
         handler.postDelayed(500) {

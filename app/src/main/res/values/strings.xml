@@ -574,4 +574,12 @@
     <string name="also_clear_watch_positions">Also clear watch positions</string>
     <string name="import_temp_playlist">Import temporary playlist?</string>
     <string name="import_temp_playlist_summary">Do you want to create a new playlist named \'%1$s\'? The playlist will contain %2$d videos.</string>
+
+    <!-- Update required strings -->
+    <string name="update_required">Update Required</string>
+    <string name="update_required_message">A new version of LibreTube is available. You need to update to continue using the app.</string>
+    <string name="update_now">Update Now</string>
+    <string name="exit_app">Exit App</string>
+    <string name="current_version">Current Version: %s</string>
+    <string name="required_version">Required Version: %s</string>
 </resources>

@@ -252,15 +252,6 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
     }
 
     private fun showChangeInstanceSnackBar() {
-        val root = _binding?.root ?: return
-        Snackbar
-            .make(root, R.string.suggest_change_instance, Snackbar.LENGTH_LONG)
-            .apply {
-                setAction(R.string.change) {
-                    redirectToIntentSettings()
-                }
-                show()
-            }
     }
 
     private fun redirectToIntentSettings() {

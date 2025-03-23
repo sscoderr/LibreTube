@@ -109,7 +109,7 @@ object BackgroundHelper {
             IntentData.shuffle to shuffle,
             IntentData.downloadTab to downloadTab,
             IntentData.noInternet to noInternet,
-            IntentData.resumeFromSavedPosition to resumeFromSavedPosition
+            IntentData.resumeFromSavedPosition to false // Always set to false for audio-only mode
         )
 
         startMediaService(context, OfflinePlayerService::class.java, arguments)

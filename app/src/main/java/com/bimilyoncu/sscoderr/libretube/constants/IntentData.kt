@@ -61,4 +61,8 @@ object IntentData {
     const val showUpcoming = "showUpcoming"
     const val customInstance = "customInstance"
     const val resumeFromSavedPosition = "resumeFromSavedPosition"
+    
+    // Update required constants
+    const val downloadUrl = "downloadUrl"
+    const val requiredVersion = "requiredVersion"
 }

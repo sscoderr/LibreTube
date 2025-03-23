@@ -47,17 +47,16 @@
             android:screenOrientation="locked" />
 
         <activity
+            android:name=".ui.activities.UpdateRequiredActivity"
+            android:label="@string/update_required"
+            android:launchMode="singleTask"
+            android:excludeFromRecents="true"
+            android:noHistory="false"
+            android:screenOrientation="locked"
+            android:exported="false" />
+
+        <activity
             android:name=".ui.activities.SettingsActivity"
-            android:label="@string/settings"
-            android:screenOrientation="locked" />
-
-        <activity
-            android:name=".ui.activities.AboutActivity"
-            android:label="@string/settings"
-            android:screenOrientation="locked" />
-
-        <activity
-            android:name=".ui.activities.HelpActivity"
             android:label="@string/settings"
             android:screenOrientation="locked" />
 

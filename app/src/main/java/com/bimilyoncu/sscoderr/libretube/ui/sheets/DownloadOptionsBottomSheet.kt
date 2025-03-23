@@ -40,7 +40,11 @@ class DownloadOptionsBottomSheet : BaseBottomSheet() {
                 }
 
                 R.string.go_to_video -> {
-                    NavigationHelper.navigateVideo(requireContext(), videoUrlOrId = videoId)
+                    NavigationHelper.navigateVideo(
+                        requireContext(), 
+                        videoUrlOrId = videoId,
+                        resumeFromSavedPosition = false
+                    )
                 }
 
                 R.string.share -> {

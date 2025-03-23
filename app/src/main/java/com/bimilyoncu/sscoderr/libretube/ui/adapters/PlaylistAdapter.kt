@@ -92,7 +92,12 @@ class PlaylistAdapter(
             thumbnailDuration.setFormattedDuration(streamItem.duration ?: -1, streamItem.isShort, streamItem.uploaded)
 
             root.setOnClickListener {
-                NavigationHelper.navigateVideo(root.context, streamItem.url, playlistId)
+                NavigationHelper.navigateVideo(
+                    root.context, 
+                    streamItem.url, 
+                    playlistId, 
+                    resumeFromSavedPosition = false
+                )
             }
 
             val activity = (root.context as BaseActivity)

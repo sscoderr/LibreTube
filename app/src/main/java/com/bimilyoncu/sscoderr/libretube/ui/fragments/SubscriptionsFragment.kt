@@ -307,7 +307,8 @@ class SubscriptionsFragment : DynamicLayoutManagerFragment(R.layout.fragment_sub
         NavigationHelper.navigateVideo(
             requireContext(),
             videoUrlOrId = streams.first().url,
-            keepQueue = true
+            keepQueue = true,
+            resumeFromSavedPosition = false
         )
     }
 

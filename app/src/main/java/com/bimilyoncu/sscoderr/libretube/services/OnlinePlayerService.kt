@@ -164,7 +164,7 @@ open class OnlinePlayerService : AbstractPlayerService() {
         // seek to the previous position if available
         if (seekToPosition != 0L) {
             exoPlayer?.seekTo(seekToPosition)
-        } else if (watchPositionsEnabled && resumeFromSavedPosition) {
+        } else if (watchPositionsEnabled && resumeFromSavedPosition && PlayerHelper.shouldTrackVideoPosition(videoId)) {
             DatabaseHelper.getWatchPositionBlocking(videoId)?.let {
                 if (!DatabaseHelper.isVideoWatched(it, streams?.duration)) exoPlayer?.seekTo(it)
             }

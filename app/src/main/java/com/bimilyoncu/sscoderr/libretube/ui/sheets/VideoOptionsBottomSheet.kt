@@ -18,13 +18,16 @@ import com.bimilyoncu.sscoderr.libretube.helpers.DownloadHelper
 import com.bimilyoncu.sscoderr.libretube.helpers.NavigationHelper
 import com.bimilyoncu.sscoderr.libretube.helpers.PlayerHelper
 import com.bimilyoncu.sscoderr.libretube.helpers.PreferenceHelper
+import com.bimilyoncu.sscoderr.libretube.helpers.VersionControlHelper
 import com.bimilyoncu.sscoderr.libretube.obj.ShareData
 import com.bimilyoncu.sscoderr.libretube.ui.activities.MainActivity
 import com.bimilyoncu.sscoderr.libretube.ui.dialogs.AddToPlaylistDialog
 import com.bimilyoncu.sscoderr.libretube.ui.dialogs.ShareDialog
 import com.bimilyoncu.sscoderr.libretube.ui.fragments.SubscriptionsFragment
 import com.bimilyoncu.sscoderr.libretube.util.PlayingQueue
+import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
 import kotlinx.coroutines.withContext
 
@@ -50,9 +53,20 @@ class VideoOptionsBottomSheet : BaseBottomSheet() {
             optionsList += getOptionsForNotActivePlayback(videoId)
         }
 
-        optionsList += listOf(R.string.addToPlaylist, R.string.download, R.string.share)
-        if (streamItem.isLive) optionsList.remove(R.string.download)
-
+        // Add all options except download first
+        optionsList += listOf(R.string.addToPlaylist, R.string.share)
+        
+        // Add download conditionally based on live status
+        if (!streamItem.isLive) {
+            // Check cached version control status first
+            val cachedStatus = VersionControlHelper.getCachedControlFeaturesStatus()
+            if (cachedStatus == null || cachedStatus) {
+                // If cached status is null or true, add download option immediately
+                optionsList += R.string.download
+            }
+        }
+        
+        // Set the items synchronously before super.onCreate() is called
         setSimpleItems(optionsList.map { getString(it) }) { which ->
             when (optionsList[which]) {
                 // Start the background mode
@@ -99,7 +113,7 @@ class VideoOptionsBottomSheet : BaseBottomSheet() {
 
                 R.string.mark_as_watched -> {
                     val watchPosition = WatchPosition(videoId, Long.MAX_VALUE)
-                    withContext(Dispatchers.IO) {
+                    CoroutineScope(Dispatchers.IO).launch {
                         DatabaseHolder.Database.watchPositionDao().insert(watchPosition)
 
                         if (PlayerHelper.watchHistoryEnabled) {
@@ -119,7 +133,7 @@ class VideoOptionsBottomSheet : BaseBottomSheet() {
                 }
 
                 R.string.mark_as_unwatched -> {
-                    withContext(Dispatchers.IO) {
+                    CoroutineScope(Dispatchers.IO).launch {
                         DatabaseHolder.Database.watchPositionDao().deleteByVideoId(videoId)
                         DatabaseHolder.Database.watchHistoryDao().deleteByVideoId(videoId)
                     }
@@ -133,7 +147,13 @@ class VideoOptionsBottomSheet : BaseBottomSheet() {
 
     private fun getOptionsForNotActivePlayback(videoId: String): List<Int> {
         // List that stores the different menu options. In the future could be add more options here.
-        val optionsList = mutableListOf(R.string.playOnBackground)
+        val optionsList = mutableListOf<Int>()
+        
+        // Add background play option only if it should be visible based on version control
+        val cachedStatus = VersionControlHelper.getCachedControlFeaturesStatus()
+        if (cachedStatus == null || cachedStatus) {
+            optionsList += R.string.playOnBackground
+        }
 
         // Check whether the player is running and add queue options
         if (PlayingQueue.isNotEmpty()) {

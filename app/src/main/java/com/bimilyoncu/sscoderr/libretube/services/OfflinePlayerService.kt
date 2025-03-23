@@ -106,7 +106,7 @@ open class OfflinePlayerService : AbstractPlayerService() {
             exoPlayer?.playWhenReady = PlayerHelper.playAutomatically
             exoPlayer?.prepare()
 
-            if (watchPositionsEnabled && resumeFromSavedPosition) {
+            if (watchPositionsEnabled && resumeFromSavedPosition && PlayerHelper.shouldTrackVideoPosition(videoId)) {
                 DatabaseHelper.getWatchPosition(videoId)?.let {
                     if (!DatabaseHelper.isVideoWatched(
                             it,

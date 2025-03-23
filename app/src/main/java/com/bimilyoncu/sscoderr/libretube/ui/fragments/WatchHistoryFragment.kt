@@ -143,7 +143,8 @@ class WatchHistoryFragment : DynamicLayoutManagerFragment(R.layout.fragment_watc
             NavigationHelper.navigateVideo(
                 requireContext(),
                 history.last().videoId,
-                keepQueue = true
+                keepQueue = true,
+                resumeFromSavedPosition = false
             )
         }
 
