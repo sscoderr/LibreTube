@@ -401,6 +401,7 @@
     <string name="stats_for_nerds">Stats for nerds</string>
     <string name="video_id">Video ID</string>
     <string name="copy_tooltip">Copy</string>
+    <string name="copy_link">Copy link</string>
     <string name="autoplay_countdown">Autoplay countdown</string>
     <string name="autoplay_countdown_summary">Show a 5s countdown before auto-playing the next video</string>
     <string name="playing_next">Playing next in %1$s</string>
@@ -582,4 +583,21 @@
     <string name="exit_app">Exit App</string>
     <string name="current_version">Current Version: %s</string>
     <string name="required_version">Required Version: %s</string>
+    
+    <!-- Download dialog strings -->
+    <string name="video_mode">Video</string>
+    <string name="audio_mode">Audio</string>
+    <string name="download_type">Download Type</string>
+    <string name="color_teal">Tranquil Teal</string>
+    <string name="color_amber">Ambitious Amber</string>
+    <string name="color_pink">Playful Pink</string>
+    <string name="color_indigo">Impressive Indigo</string>
+    <string name="color_cyan">Calming Cyan</string>
+
+    <!-- Rate app dialog -->
+    <string name="rate_dialog_title">Enjoying LibreTube?</string>
+    <string name="rate_dialog_message">If you enjoy using LibreTube, would you mind taking a moment to rate it? It won\'t take more than a minute. Thank you for your support!</string>
+    <string name="rate_dialog_rate">Rate now</string>
+    <string name="rate_dialog_exit">Exit</string>
+    <string name="rate_dialog_dont_show_again">Don\'t show again</string>
 </resources>

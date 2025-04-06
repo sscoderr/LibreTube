@@ -54,7 +54,7 @@
     <PreferenceCategory app:title="@string/watch_positions_title">
 
         <ListPreference
-            android:defaultValue="always"
+            android:defaultValue="videos"
             android:entries="@array/watchPosition"
             android:entryValues="@array/watchPositionValues"
             android:icon="@drawable/ic_play_filled"

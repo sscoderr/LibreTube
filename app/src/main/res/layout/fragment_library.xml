@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.fragments.LibraryFragment">
+    tools:context="com.bimilyoncu.sscoderr.libretubess.ui.fragments.LibraryFragment">
 
-    <com.bimilyoncu.sscoderr.libretube.ui.views.CustomSwipeToRefresh
+    <com.bimilyoncu.sscoderr.libretubess.ui.views.CustomSwipeToRefresh
         android:id="@+id/playlist_refresh"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -179,7 +179,7 @@
             </LinearLayout>
 
         </androidx.core.widget.NestedScrollView>
-    </com.bimilyoncu.sscoderr.libretube.ui.views.CustomSwipeToRefresh>
+    </com.bimilyoncu.sscoderr.libretubess.ui.views.CustomSwipeToRefresh>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/create_playlist"

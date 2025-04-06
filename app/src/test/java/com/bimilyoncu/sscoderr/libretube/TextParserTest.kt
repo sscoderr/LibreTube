@@ -1,8 +1,8 @@
-package com.bimilyoncu.sscoderr.libretube
+package com.bimilyoncu.sscoderr.libretubess
 
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import com.bimilyoncu.sscoderr.libretube.util.TextUtils.parseDurationString
-import com.bimilyoncu.sscoderr.libretube.util.TextUtils.toTimeInSeconds
+import com.bimilyoncu.sscoderr.libretubess.util.TextUtils.parseDurationString
+import com.bimilyoncu.sscoderr.libretubess.util.TextUtils.toTimeInSeconds
 import org.junit.Assert.assertEquals
 import org.junit.Test
 import org.junit.runner.RunWith

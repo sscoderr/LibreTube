@@ -16,13 +16,13 @@
         <SwitchPreferenceCompat
             android:icon="@drawable/ic_invert_colors"
             android:summary="@string/pure_theme_summary"
-            app:defaultValue="false"
+            app:defaultValue="true"
             app:key="pure_theme"
             app:title="@string/pure_theme" />
 
         <ListPreference
             android:icon="@drawable/ic_color"
-            app:defaultValue="purple"
+            app:defaultValue="amber"
             app:entries="@array/accents"
             app:entryValues="@array/accentsValue"
             app:key="accent_color"

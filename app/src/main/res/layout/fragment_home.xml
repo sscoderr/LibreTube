@@ -10,7 +10,7 @@
         android:layout_height="match_parent"
         android:layout_gravity="center" />
 
-    <com.bimilyoncu.sscoderr.libretube.ui.views.CustomSwipeToRefresh
+    <com.bimilyoncu.sscoderr.libretubess.ui.views.CustomSwipeToRefresh
         android:id="@+id/refresh"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -162,7 +162,7 @@
 
         </ScrollView>
 
-    </com.bimilyoncu.sscoderr.libretube.ui.views.CustomSwipeToRefresh>
+    </com.bimilyoncu.sscoderr.libretubess.ui.views.CustomSwipeToRefresh>
 
     <LinearLayout
         android:id="@+id/nothing_here"

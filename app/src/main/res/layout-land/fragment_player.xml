@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.bimilyoncu.sscoderr.libretube.ui.views.SingleViewTouchableMotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.bimilyoncu.sscoderr.libretubess.ui.views.SingleViewTouchableMotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/playerMotionLayout"
@@ -24,7 +24,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <com.bimilyoncu.sscoderr.libretube.ui.views.DescriptionLayout
+            <com.bimilyoncu.sscoderr.libretubess.ui.views.DescriptionLayout
                 android:id="@+id/descriptionLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -44,22 +44,10 @@
                     android:paddingHorizontal="2dp">
 
                     <com.google.android.material.button.MaterialButton
-                        android:id="@+id/relPlayer_share"
-                        style="@style/PlayerActionsButton"
-                        android:text="@string/share"
-                        app:icon="@drawable/ic_share" />
-
-                    <com.google.android.material.button.MaterialButton
                         android:id="@+id/relPlayer_download"
                         style="@style/PlayerActionsButton"
                         android:text="@string/download"
                         app:icon="@drawable/ic_download" />
-
-                    <com.google.android.material.button.MaterialButton
-                        android:id="@+id/relPlayer_save"
-                        style="@style/PlayerActionsButton"
-                        android:text="@string/save"
-                        app:icon="@drawable/ic_save" />
 
                     <com.google.android.material.button.MaterialButton
                         android:id="@+id/relPlayer_background"
@@ -68,16 +56,28 @@
                         app:icon="@drawable/ic_headphones" />
 
                     <com.google.android.material.button.MaterialButton
-                        android:id="@+id/relPlayer_external_player"
+                        android:id="@+id/relPlayer_save"
                         style="@style/PlayerActionsButton"
-                        android:text="@string/external_player"
-                        app:icon="@drawable/ic_video" />
+                        android:text="@string/save"
+                        app:icon="@drawable/ic_save" />
 
                     <com.google.android.material.button.MaterialButton
                         android:id="@+id/relPlayer_pip"
                         style="@style/PlayerActionsButton"
                         android:text="@string/pip"
                         app:icon="@drawable/ic_open" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/relPlayer_share"
+                        style="@style/PlayerActionsButton"
+                        android:text="@string/share"
+                        app:icon="@drawable/ic_share" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/relPlayer_external_player"
+                        style="@style/PlayerActionsButton"
+                        android:text="@string/external_player"
+                        app:icon="@drawable/ic_video" />
 
                     <com.google.android.material.button.MaterialButton
                         android:id="@+id/relPlayer_screenshot"
@@ -202,7 +202,7 @@
             android:nestedScrollingEnabled="false" />
     </RelativeLayout>
 
-    <com.bimilyoncu.sscoderr.libretube.ui.views.OnlinePlayerView
+    <com.bimilyoncu.sscoderr.libretubess.ui.views.OnlinePlayerView
         android:id="@+id/player"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -215,14 +215,14 @@
         app:show_buffering="when_playing"
         app:surface_type="surface_view">
 
-        <com.bimilyoncu.sscoderr.libretube.ui.views.DoubleTapOverlay
+        <com.bimilyoncu.sscoderr.libretubess.ui.views.DoubleTapOverlay
             android:id="@+id/doubleTapOverlay"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="center" />
 
-        <com.bimilyoncu.sscoderr.libretube.ui.views.PlayerGestureControlsView
+        <com.bimilyoncu.sscoderr.libretubess.ui.views.PlayerGestureControlsView
             android:id="@+id/playerGestureControlsView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -240,7 +240,7 @@
             app:strokeWidth="1dp"
             tools:ignore="RtlSymmetry">
 
-            <com.bimilyoncu.sscoderr.libretube.ui.views.DrawableTextView
+            <com.bimilyoncu.sscoderr.libretubess.ui.views.DrawableTextView
                 android:id="@+id/sb_skip_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -256,13 +256,13 @@
 
         </com.google.android.material.card.MaterialCardView>
 
-        <com.bimilyoncu.sscoderr.libretube.ui.views.AutoplayCountdownView
+        <com.bimilyoncu.sscoderr.libretubess.ui.views.AutoplayCountdownView
             android:id="@+id/autoplay_countdown"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:visibility="gone" />
 
-    </com.bimilyoncu.sscoderr.libretube.ui.views.OnlinePlayerView>
+    </com.bimilyoncu.sscoderr.libretubess.ui.views.OnlinePlayerView>
 
     <ImageView
         android:id="@+id/close_imageView"
@@ -307,4 +307,4 @@
         app:layout_constraintStart_toEndOf="@+id/player"
         app:layout_constraintTop_toTopOf="@+id/play_imageView" />
 
-</com.bimilyoncu.sscoderr.libretube.ui.views.SingleViewTouchableMotionLayout>
+</com.bimilyoncu.sscoderr.libretubess.ui.views.SingleViewTouchableMotionLayout>

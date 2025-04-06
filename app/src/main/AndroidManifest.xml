@@ -20,7 +20,7 @@
     <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <application
-        android:name=".LibreTubeApp"
+        android:name="com.bimilyoncu.sscoderr.libretubess.LibreTubeApp"
         android:allowBackup="true"
         android:banner="@mipmap/ic_launcher"
         android:enableOnBackInvokedCallback="true"
@@ -36,18 +36,18 @@
         tools:targetApi="tiramisu">
 
         <activity
-            android:name=".ui.activities.WelcomeActivity"
+            android:name="com.bimilyoncu.sscoderr.libretubess.ui.activities.WelcomeActivity"
             android:label="@string/welcome"
             android:screenOrientation="locked" />
 
         <activity
-            android:name=".ui.activities.NoInternetActivity"
+            android:name="com.bimilyoncu.sscoderr.libretubess.ui.activities.NoInternetActivity"
             android:label="@string/noInternet"
             android:launchMode="singleTop"
             android:screenOrientation="locked" />
 
         <activity
-            android:name=".ui.activities.UpdateRequiredActivity"
+            android:name="com.bimilyoncu.sscoderr.libretubess.ui.activities.UpdateRequiredActivity"
             android:label="@string/update_required"
             android:launchMode="singleTask"
             android:excludeFromRecents="true"
@@ -56,16 +56,16 @@
             android:exported="false" />
 
         <activity
-            android:name=".ui.activities.SettingsActivity"
+            android:name="com.bimilyoncu.sscoderr.libretubess.ui.activities.SettingsActivity"
             android:label="@string/settings"
             android:screenOrientation="locked" />
 
         <activity
-            android:name=".ui.activities.ZoomableImageActivity"
+            android:name="com.bimilyoncu.sscoderr.libretubess.ui.activities.ZoomableImageActivity"
             android:screenOrientation="locked" />
 
         <activity
-            android:name=".ui.activities.AddToQueueActivity"
+            android:name="com.bimilyoncu.sscoderr.libretubess.ui.activities.AddToQueueActivity"
             android:enabled="true"
             android:exported="true"
             android:label="@string/add_to_queue"
@@ -80,7 +80,7 @@
         </activity>
 
         <activity
-            android:name=".ui.activities.AddToPlaylistActivity"
+            android:name="com.bimilyoncu.sscoderr.libretubess.ui.activities.AddToPlaylistActivity"
             android:enabled="true"
             android:exported="true"
             android:label="@string/addToPlaylist"
@@ -96,7 +96,7 @@
         </activity>
 
         <activity
-            android:name=".ui.activities.DownloadActivity"
+            android:name="com.bimilyoncu.sscoderr.libretubess.ui.activities.DownloadActivity"
             android:enabled="true"
             android:exported="true"
             android:label="@string/download"
@@ -112,14 +112,14 @@
         </activity>
 
         <activity
-            android:name=".ui.activities.OfflinePlayerActivity"
+            android:name="com.bimilyoncu.sscoderr.libretubess.ui.activities.OfflinePlayerActivity"
             android:configChanges="keyboard|keyboardHidden|screenSize|smallestScreenSize|screenLayout|orientation|uiMode"
             android:launchMode="singleTop"
             android:label="@string/player"
             android:supportsPictureInPicture="true" />
 
         <activity
-            android:name=".ui.activities.MainActivity"
+            android:name="com.bimilyoncu.sscoderr.libretubess.ui.activities.MainActivity"
             android:configChanges="keyboard|keyboardHidden|screenSize|smallestScreenSize|screenLayout|orientation|uiMode"
             android:exported="true"
             android:launchMode="singleTask"
@@ -142,7 +142,7 @@
             android:icon="@mipmap/ic_launcher"
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsPictureInPicture="true"
-            android:targetActivity=".ui.activities.MainActivity"
+            android:targetActivity="com.bimilyoncu.sscoderr.libretubess.ui.activities.MainActivity"
             android:theme="@style/SplashScreenTheme"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>
@@ -161,7 +161,7 @@
             android:icon="@mipmap/ic_gradient"
             android:roundIcon="@mipmap/ic_gradient_round"
             android:supportsPictureInPicture="true"
-            android:targetActivity=".ui.activities.MainActivity"
+            android:targetActivity="com.bimilyoncu.sscoderr.libretubess.ui.activities.MainActivity"
             android:theme="@style/SplashScreenTheme"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>
@@ -181,7 +181,7 @@
             android:icon="@mipmap/ic_launcher_light"
             android:roundIcon="@mipmap/ic_launcher_light_round"
             android:supportsPictureInPicture="true"
-            android:targetActivity=".ui.activities.MainActivity"
+            android:targetActivity="com.bimilyoncu.sscoderr.libretubess.ui.activities.MainActivity"
             android:theme="@style/SplashScreenTheme"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>
@@ -201,7 +201,7 @@
             android:icon="@mipmap/ic_fire"
             android:roundIcon="@mipmap/ic_fire_round"
             android:supportsPictureInPicture="true"
-            android:targetActivity=".ui.activities.MainActivity"
+            android:targetActivity="com.bimilyoncu.sscoderr.libretubess.ui.activities.MainActivity"
             android:theme="@style/SplashScreenTheme"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>
@@ -221,7 +221,7 @@
             android:icon="@mipmap/ic_flame"
             android:roundIcon="@mipmap/ic_flame_round"
             android:supportsPictureInPicture="true"
-            android:targetActivity=".ui.activities.MainActivity"
+            android:targetActivity="com.bimilyoncu.sscoderr.libretubess.ui.activities.MainActivity"
             android:theme="@style/SplashScreenTheme"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>
@@ -241,7 +241,7 @@
             android:icon="@mipmap/ic_shaped"
             android:roundIcon="@mipmap/ic_shaped_round"
             android:supportsPictureInPicture="true"
-            android:targetActivity=".ui.activities.MainActivity"
+            android:targetActivity="com.bimilyoncu.sscoderr.libretubess.ui.activities.MainActivity"
             android:theme="@style/SplashScreenTheme"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>
@@ -259,7 +259,7 @@
             android:icon="@mipmap/ic_torch"
             android:roundIcon="@mipmap/ic_torch_round"
             android:supportsPictureInPicture="true"
-            android:targetActivity=".ui.activities.MainActivity"
+            android:targetActivity="com.bimilyoncu.sscoderr.libretubess.ui.activities.MainActivity"
             android:theme="@style/SplashScreenTheme"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>
@@ -279,7 +279,7 @@
             android:icon="@mipmap/ic_legacy"
             android:roundIcon="@mipmap/ic_legacy_round"
             android:supportsPictureInPicture="true"
-            android:targetActivity=".ui.activities.MainActivity"
+            android:targetActivity="com.bimilyoncu.sscoderr.libretubess.ui.activities.MainActivity"
             android:theme="@style/SplashScreenTheme"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>
@@ -299,7 +299,7 @@
             android:icon="@mipmap/ic_bird"
             android:roundIcon="@mipmap/ic_bird_round"
             android:supportsPictureInPicture="true"
-            android:targetActivity=".ui.activities.MainActivity"
+            android:targetActivity="com.bimilyoncu.sscoderr.libretubess.ui.activities.MainActivity"
             android:theme="@style/SplashScreenTheme"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>
@@ -312,7 +312,7 @@
         </activity-alias>
 
         <activity
-            android:name=".ui.activities.RouterActivity"
+            android:name="com.bimilyoncu.sscoderr.libretubess.ui.activities.RouterActivity"
             android:exported="true"
             android:launchMode="singleInstance">
 
@@ -398,19 +398,19 @@
         </activity>
 
         <service
-            android:name=".services.DownloadService"
+            android:name="com.bimilyoncu.sscoderr.libretubess.services.DownloadService"
             android:enabled="true"
             android:exported="false"
             android:foregroundServiceType="dataSync" />
 
         <service
-            android:name=".services.PlaylistDownloadEnqueueService"
+            android:name="com.bimilyoncu.sscoderr.libretubess.services.PlaylistDownloadEnqueueService"
             android:enabled="true"
             android:exported="false"
             android:foregroundServiceType="dataSync" />
 
         <service
-            android:name=".services.OnlinePlayerService"
+            android:name="com.bimilyoncu.sscoderr.libretubess.services.OnlinePlayerService"
             android:enabled="true"
             android:exported="false"
             android:foregroundServiceType="mediaPlayback">
@@ -422,7 +422,7 @@
         </service>
 
         <service
-            android:name=".services.OfflinePlayerService"
+            android:name="com.bimilyoncu.sscoderr.libretubess.services.OfflinePlayerService"
             android:enabled="true"
             android:exported="false"
             android:foregroundServiceType="mediaPlayback">
@@ -434,7 +434,7 @@
         </service>
 
         <service
-            android:name=".services.VideoOnlinePlayerService"
+            android:name="com.bimilyoncu.sscoderr.libretubess.services.VideoOnlinePlayerService"
             android:enabled="true"
             android:exported="false"
             android:foregroundServiceType="mediaPlayback">
@@ -446,7 +446,7 @@
         </service>
 
         <service
-            android:name=".services.VideoOfflinePlayerService"
+            android:name="com.bimilyoncu.sscoderr.libretubess.services.VideoOfflinePlayerService"
             android:enabled="true"
             android:exported="false"
             android:foregroundServiceType="mediaPlayback">
@@ -458,12 +458,12 @@
         </service>
 
         <service
-            android:name=".services.OnClearFromRecentService"
+            android:name="com.bimilyoncu.sscoderr.libretubess.services.OnClearFromRecentService"
             android:enabled="true"
             android:exported="false" />
 
         <receiver
-            android:name=".receivers.NotificationReceiver"
+            android:name="com.bimilyoncu.sscoderr.libretubess.receivers.NotificationReceiver"
             android:enabled="true"
             android:exported="false" />
     </application>

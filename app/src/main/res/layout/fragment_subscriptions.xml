@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.fragments.SubscriptionsFragment">
+    tools:context="com.bimilyoncu.sscoderr.libretubess.ui.fragments.SubscriptionsFragment">
 
     <ProgressBar
         android:id="@+id/sub_progress"
@@ -40,7 +40,7 @@
             android:textStyle="bold" />
     </LinearLayout>
 
-    <com.bimilyoncu.sscoderr.libretube.ui.views.CustomSwipeToRefresh
+    <com.bimilyoncu.sscoderr.libretubess.ui.views.CustomSwipeToRefresh
         android:id="@+id/sub_refresh"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -203,5 +203,5 @@
                 android:visibility="gone"
                 app:layout_behavior="@string/appbar_scrolling_view_behavior" />
         </androidx.coordinatorlayout.widget.CoordinatorLayout>
-    </com.bimilyoncu.sscoderr.libretube.ui.views.CustomSwipeToRefresh>
+    </com.bimilyoncu.sscoderr.libretubess.ui.views.CustomSwipeToRefresh>
 </RelativeLayout>

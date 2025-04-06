@@ -12,11 +12,11 @@ android {
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.bimilyoncu.sscoderr.libretube"
+        applicationId = "com.bimilyoncu.sscoderr.libretubess"
         minSdk = 26
         targetSdk = 34
-        versionCode = 60
-        versionName = "0.27.1"
+        versionCode = 3
+        versionName = "0.0.3"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         resValue("string", "app_name", "LibreTube")
 
@@ -89,7 +89,7 @@ android {
         includeInBundle = false
     }
 
-    namespace = "com.bimilyoncu.sscoderr.libretube"
+    namespace = "com.bimilyoncu.sscoderr.libretubess"
 }
 
 dependencies {

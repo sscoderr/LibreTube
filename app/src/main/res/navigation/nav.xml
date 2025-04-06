@@ -6,7 +6,7 @@
     app:startDestination="@id/homeFragment">
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.bimilyoncu.sscoderr.libretube.ui.fragments.HomeFragment"
+        android:name="com.bimilyoncu.sscoderr.libretubess.ui.fragments.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home">
         <action
@@ -40,27 +40,27 @@
     </fragment>
     <fragment
         android:id="@+id/trendsFragment"
-        android:name="com.bimilyoncu.sscoderr.libretube.ui.fragments.TrendsFragment"
+        android:name="com.bimilyoncu.sscoderr.libretubess.ui.fragments.TrendsFragment"
         android:label="fragment_trends"
         tools:layout="@layout/fragment_trends" />
     <fragment
         android:id="@+id/subscriptionsFragment"
-        android:name="com.bimilyoncu.sscoderr.libretube.ui.fragments.SubscriptionsFragment"
+        android:name="com.bimilyoncu.sscoderr.libretubess.ui.fragments.SubscriptionsFragment"
         android:label="fragment_subscriptions"
         tools:layout="@layout/fragment_subscriptions" />
     <fragment
         android:id="@+id/libraryFragment"
-        android:name="com.bimilyoncu.sscoderr.libretube.ui.fragments.LibraryFragment"
+        android:name="com.bimilyoncu.sscoderr.libretubess.ui.fragments.LibraryFragment"
         android:label="fragment_library"
         tools:layout="@layout/fragment_library" />
     <fragment
         android:id="@+id/searchFragment"
-        android:name="com.bimilyoncu.sscoderr.libretube.ui.fragments.SearchSuggestionsFragment"
+        android:name="com.bimilyoncu.sscoderr.libretubess.ui.fragments.SearchSuggestionsFragment"
         android:label="fragment_search"
         tools:layout="@layout/fragment_search_suggestions" />
     <fragment
         android:id="@+id/searchResultFragment"
-        android:name="com.bimilyoncu.sscoderr.libretube.ui.fragments.SearchResultFragment"
+        android:name="com.bimilyoncu.sscoderr.libretubess.ui.fragments.SearchResultFragment"
         android:label="fragment_search"
         tools:layout="@layout/fragment_search_result">
         <argument
@@ -70,7 +70,7 @@
     </fragment>
     <fragment
         android:id="@+id/channelFragment"
-        android:name="com.bimilyoncu.sscoderr.libretube.ui.fragments.ChannelFragment"
+        android:name="com.bimilyoncu.sscoderr.libretubess.ui.fragments.ChannelFragment"
         android:label="channel"
         tools:layout="@layout/fragment_channel">
         <argument
@@ -86,7 +86,7 @@
     </fragment>
     <fragment
         android:id="@+id/playlistFragment"
-        android:name="com.bimilyoncu.sscoderr.libretube.ui.fragments.PlaylistFragment"
+        android:name="com.bimilyoncu.sscoderr.libretubess.ui.fragments.PlaylistFragment"
         android:label="fragment_playlist"
         tools:layout="@layout/fragment_playlist">
         <argument
@@ -96,17 +96,17 @@
         <argument
             android:name="playlistType"
             android:defaultValue="PUBLIC"
-            app:argType="com.bimilyoncu.sscoderr.libretube.enums.PlaylistType"
+            app:argType="com.bimilyoncu.sscoderr.libretubess.enums.PlaylistType"
             app:nullable="false" />
     </fragment>
     <fragment
         android:id="@+id/watchHistoryFragment"
-        android:name="com.bimilyoncu.sscoderr.libretube.ui.fragments.WatchHistoryFragment"
+        android:name="com.bimilyoncu.sscoderr.libretubess.ui.fragments.WatchHistoryFragment"
         android:label="@string/watch_history"
         tools:layout="@layout/fragment_watch_history" />
     <fragment
         android:id="@+id/downloadsFragment"
-        android:name="com.bimilyoncu.sscoderr.libretube.ui.fragments.DownloadsFragment"
+        android:name="com.bimilyoncu.sscoderr.libretubess.ui.fragments.DownloadsFragment"
         android:label="@string/downloads"
         tools:layout="@layout/fragment_downloads" />
 

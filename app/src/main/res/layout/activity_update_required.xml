@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:padding="24dp"
     android:background="?android:colorBackground"
-    tools:context=".ui.activities.UpdateRequiredActivity">
+    tools:context="com.bimilyoncu.sscoderr.libretubess.ui.activities.UpdateRequiredActivity">
 
     <ImageView
         android:id="@+id/iv_update_logo"

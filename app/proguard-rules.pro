@@ -113,7 +113,7 @@
 -keepclassmembers class androidx.constraintlayout.motion.widget.** { *; }
 
 # Settings fragments are loaded through reflection
--keep class com.github.libretube.ui.preferences.** { *; }
+-keep class com.bimilyoncu.sscoderr.libretubess.ui.preferences.** { *; }
 
 ## Rules for NewPipeExtractor
 -keep class org.schabi.newpipe.extractor.timeago.patterns.** { *; }

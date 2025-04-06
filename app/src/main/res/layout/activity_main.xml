@@ -8,7 +8,7 @@
     android:background="?android:colorBackground"
     app:layoutDescription="@xml/activity_main_scene"
     app:motionProgress="1"
-    tools:context=".ui.activities.MainActivity">
+    tools:context="com.bimilyoncu.sscoderr.libretubess.ui.activities.MainActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBarLayout"

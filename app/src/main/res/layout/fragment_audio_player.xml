@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.bimilyoncu.sscoderr.libretube.ui.views.AudioPlayerMotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.bimilyoncu.sscoderr.libretubess.ui.views.AudioPlayerMotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/playerMotionLayout"
@@ -390,4 +390,4 @@
 
     </LinearLayout>
 
-</com.bimilyoncu.sscoderr.libretube.ui.views.AudioPlayerMotionLayout>
+</com.bimilyoncu.sscoderr.libretubess.ui.views.AudioPlayerMotionLayout>

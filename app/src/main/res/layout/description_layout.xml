@@ -74,7 +74,7 @@
                 android:textIsSelectable="true"
                 tools:text="10M views - 2 days ago " />
 
-            <com.bimilyoncu.sscoderr.libretube.ui.views.DrawableTextView
+            <com.bimilyoncu.sscoderr.libretubess.ui.views.DrawableTextView
                 android:id="@+id/textLike"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -83,7 +83,7 @@
                 app:drawableStartDimen="12dp"
                 tools:text="4.2K" />
 
-            <com.bimilyoncu.sscoderr.libretube.ui.views.DrawableTextView
+            <com.bimilyoncu.sscoderr.libretubess.ui.views.DrawableTextView
                 android:id="@+id/textDislike"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

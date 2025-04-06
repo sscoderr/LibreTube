@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.fragments.PlaylistFragment">
+    tools:context="com.bimilyoncu.sscoderr.libretubess.ui.fragments.PlaylistFragment">
 
     <ProgressBar
         android:id="@+id/playlist_progress"
@@ -85,7 +85,7 @@
                     android:layout_marginTop="8dp"
                     android:orientation="horizontal">
 
-                    <com.bimilyoncu.sscoderr.libretube.ui.views.ExpandableTextView
+                    <com.bimilyoncu.sscoderr.libretubess.ui.views.ExpandableTextView
                         android:id="@+id/playlist_name"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -141,7 +141,7 @@
                     android:paddingBottom="5dp"
                     android:textStyle="bold" />
 
-                <com.bimilyoncu.sscoderr.libretube.ui.views.ExpandableTextView
+                <com.bimilyoncu.sscoderr.libretubess.ui.views.ExpandableTextView
                     android:id="@+id/playlistDescription"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

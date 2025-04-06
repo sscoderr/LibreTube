@@ -145,6 +145,11 @@
         <item>@string/color_purple</item>
         <item>@string/theme_monochrome</item>
         <item>@string/color_violet</item>
+        <item>@string/color_teal</item>
+        <item>@string/color_amber</item>
+        <item>@string/color_pink</item>
+        <item>@string/color_indigo</item>
+        <item>@string/color_cyan</item>
     </string-array>
 
     <string-array name="accentsValue">
@@ -156,6 +161,11 @@
         <item>purple</item>
         <item>monochrome</item>
         <item>violet</item>
+        <item>teal</item>
+        <item>amber</item>
+        <item>pink</item>
+        <item>indigo</item>
+        <item>cyan</item>
     </string-array>
 
     <string-array name="defres">

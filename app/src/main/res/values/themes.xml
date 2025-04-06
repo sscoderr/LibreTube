@@ -62,8 +62,7 @@
         <item name="colorSecondary">@color/blue_md_theme_light_secondary</item>
         <item name="colorOnSecondary">@color/blue_md_theme_light_onSecondary</item>
         <item name="colorSecondaryContainer">@color/blue_md_theme_light_secondaryContainer</item>
-        <item name="colorOnSecondaryContainer">@color/blue_md_theme_light_onSecondaryContainer
-        </item>
+        <item name="colorOnSecondaryContainer">@color/blue_md_theme_light_onSecondaryContainer</item>
         <item name="colorTertiary">@color/blue_md_theme_light_tertiary</item>
         <item name="colorOnTertiary">@color/blue_md_theme_light_onTertiary</item>
         <item name="colorTertiaryContainer">@color/blue_md_theme_light_tertiaryContainer</item>
@@ -94,13 +93,11 @@
         <item name="colorSecondary">@color/yellow_md_theme_light_secondary</item>
         <item name="colorOnSecondary">@color/yellow_md_theme_light_onSecondary</item>
         <item name="colorSecondaryContainer">@color/yellow_md_theme_light_secondaryContainer</item>
-        <item name="colorOnSecondaryContainer">@color/yellow_md_theme_light_onSecondaryContainer
-        </item>
+        <item name="colorOnSecondaryContainer">@color/yellow_md_theme_light_onSecondaryContainer</item>
         <item name="colorTertiary">@color/yellow_md_theme_light_tertiary</item>
         <item name="colorOnTertiary">@color/yellow_md_theme_light_onTertiary</item>
         <item name="colorTertiaryContainer">@color/yellow_md_theme_light_tertiaryContainer</item>
-        <item name="colorOnTertiaryContainer">@color/yellow_md_theme_light_onTertiaryContainer
-        </item>
+        <item name="colorOnTertiaryContainer">@color/yellow_md_theme_light_onTertiaryContainer</item>
         <item name="colorError">@color/yellow_md_theme_light_error</item>
         <item name="colorErrorContainer">@color/yellow_md_theme_light_errorContainer</item>
         <item name="colorOnError">@color/yellow_md_theme_light_onError</item>
@@ -127,8 +124,7 @@
         <item name="colorSecondary">@color/green_md_theme_light_secondary</item>
         <item name="colorOnSecondary">@color/green_md_theme_light_onSecondary</item>
         <item name="colorSecondaryContainer">@color/green_md_theme_light_secondaryContainer</item>
-        <item name="colorOnSecondaryContainer">@color/green_md_theme_light_onSecondaryContainer
-        </item>
+        <item name="colorOnSecondaryContainer">@color/green_md_theme_light_onSecondaryContainer</item>
         <item name="colorTertiary">@color/green_md_theme_light_tertiary</item>
         <item name="colorOnTertiary">@color/green_md_theme_light_onTertiary</item>
         <item name="colorTertiaryContainer">@color/green_md_theme_light_tertiaryContainer</item>
@@ -159,13 +155,11 @@
         <item name="colorSecondary">@color/purple_md_theme_light_secondary</item>
         <item name="colorOnSecondary">@color/purple_md_theme_light_onSecondary</item>
         <item name="colorSecondaryContainer">@color/purple_md_theme_light_secondaryContainer</item>
-        <item name="colorOnSecondaryContainer">@color/purple_md_theme_light_onSecondaryContainer
-        </item>
+        <item name="colorOnSecondaryContainer">@color/purple_md_theme_light_onSecondaryContainer</item>
         <item name="colorTertiary">@color/purple_md_theme_light_tertiary</item>
         <item name="colorOnTertiary">@color/purple_md_theme_light_onTertiary</item>
         <item name="colorTertiaryContainer">@color/purple_md_theme_light_tertiaryContainer</item>
-        <item name="colorOnTertiaryContainer">@color/purple_md_theme_light_onTertiaryContainer
-        </item>
+        <item name="colorOnTertiaryContainer">@color/purple_md_theme_light_onTertiaryContainer</item>
         <item name="colorError">@color/purple_md_theme_light_error</item>
         <item name="colorErrorContainer">@color/purple_md_theme_light_errorContainer</item>
         <item name="colorOnError">@color/purple_md_theme_light_onError</item>
@@ -192,13 +186,11 @@
         <item name="colorSecondary">@color/monochrome_theme_light_secondary</item>
         <item name="colorOnSecondary">@color/monochrome_theme_light_onSecondary</item>
         <item name="colorSecondaryContainer">@color/monochrome_theme_light_secondaryContainer</item>
-        <item name="colorOnSecondaryContainer">@color/monochrome_theme_light_onSecondaryContainer
-        </item>
+        <item name="colorOnSecondaryContainer">@color/monochrome_theme_light_onSecondaryContainer</item>
         <item name="colorTertiary">@color/monochrome_theme_light_tertiary</item>
         <item name="colorOnTertiary">@color/monochrome_theme_light_onTertiary</item>
         <item name="colorTertiaryContainer">@color/monochrome_theme_light_tertiaryContainer</item>
-        <item name="colorOnTertiaryContainer">@color/monochrome_theme_light_onTertiaryContainer
-        </item>
+        <item name="colorOnTertiaryContainer">@color/monochrome_theme_light_onTertiaryContainer</item>
         <item name="colorError">@color/monochrome_theme_light_error</item>
         <item name="colorErrorContainer">@color/monochrome_theme_light_errorContainer</item>
         <item name="colorOnError">@color/monochrome_theme_light_onError</item>
@@ -225,13 +217,11 @@
         <item name="colorSecondary">@color/violet_theme_light_secondary</item>
         <item name="colorOnSecondary">@color/violet_theme_light_onSecondary</item>
         <item name="colorSecondaryContainer">@color/violet_theme_light_secondaryContainer</item>
-        <item name="colorOnSecondaryContainer">@color/violet_theme_light_onSecondaryContainer
-        </item>
+        <item name="colorOnSecondaryContainer">@color/violet_theme_light_onSecondaryContainer</item>
         <item name="colorTertiary">@color/violet_theme_light_tertiary</item>
         <item name="colorOnTertiary">@color/violet_theme_light_onTertiary</item>
         <item name="colorTertiaryContainer">@color/violet_theme_light_tertiaryContainer</item>
-        <item name="colorOnTertiaryContainer">@color/violet_theme_light_onTertiaryContainer
-        </item>
+        <item name="colorOnTertiaryContainer">@color/violet_theme_light_onTertiaryContainer</item>
         <item name="colorError">@color/violet_theme_light_error</item>
         <item name="colorErrorContainer">@color/violet_theme_light_errorContainer</item>
         <item name="colorOnError">@color/violet_theme_light_onError</item>
@@ -285,6 +275,151 @@
         <item name="android:borderlessButtonStyle">@style/Widget.AppCompat.Button.Borderless</item>
         <item name="android:windowCloseOnTouchOutside">true</item>
 
+    </style>
+
+    <style name="Theme.Teal" parent="BaseTheme">
+        <item name="colorPrimary">@color/teal_md_theme_light_primary</item>
+        <item name="colorOnPrimary">@color/teal_md_theme_light_onPrimary</item>
+        <item name="colorPrimaryContainer">@color/teal_md_theme_light_primaryContainer</item>
+        <item name="colorOnPrimaryContainer">@color/teal_md_theme_light_onPrimaryContainer</item>
+        <item name="colorSecondary">@color/teal_md_theme_light_secondary</item>
+        <item name="colorOnSecondary">@color/teal_md_theme_light_onSecondary</item>
+        <item name="colorSecondaryContainer">@color/teal_md_theme_light_secondaryContainer</item>
+        <item name="colorOnSecondaryContainer">@color/teal_md_theme_light_onSecondaryContainer</item>
+        <item name="colorTertiary">@color/teal_md_theme_light_tertiary</item>
+        <item name="colorOnTertiary">@color/teal_md_theme_light_onTertiary</item>
+        <item name="colorTertiaryContainer">@color/teal_md_theme_light_tertiaryContainer</item>
+        <item name="colorOnTertiaryContainer">@color/teal_md_theme_light_onTertiaryContainer</item>
+        <item name="colorError">@color/teal_md_theme_light_error</item>
+        <item name="colorErrorContainer">@color/teal_md_theme_light_errorContainer</item>
+        <item name="colorOnError">@color/teal_md_theme_light_onError</item>
+        <item name="colorOnErrorContainer">@color/teal_md_theme_light_onErrorContainer</item>
+        <item name="android:colorBackground">@color/teal_md_theme_light_background</item>
+        <item name="colorOnBackground">@color/teal_md_theme_light_onBackground</item>
+        <item name="colorSurface">@color/teal_md_theme_light_surface</item>
+        <item name="colorOnSurface">@color/teal_md_theme_light_onSurface</item>
+        <item name="colorSurfaceVariant">@color/teal_md_theme_light_surfaceVariant</item>
+        <item name="colorOnSurfaceVariant">@color/teal_md_theme_light_onSurfaceVariant</item>
+        <item name="colorOutline">@color/teal_md_theme_light_outline</item>
+        <item name="colorOnSurfaceInverse">@color/teal_md_theme_light_inverseOnSurface</item>
+        <item name="colorSurfaceInverse">@color/teal_md_theme_light_inverseSurface</item>
+        <item name="colorPrimaryInverse">@color/teal_md_theme_light_inversePrimary</item>
+    </style>
+
+    <style name="Theme.Amber" parent="BaseTheme">
+        <item name="colorPrimary">@color/amber_md_theme_light_primary</item>
+        <item name="colorOnPrimary">@color/amber_md_theme_light_onPrimary</item>
+        <item name="colorPrimaryContainer">@color/amber_md_theme_light_primaryContainer</item>
+        <item name="colorOnPrimaryContainer">@color/amber_md_theme_light_onPrimaryContainer</item>
+        <item name="colorSecondary">@color/amber_md_theme_light_secondary</item>
+        <item name="colorOnSecondary">@color/amber_md_theme_light_onSecondary</item>
+        <item name="colorSecondaryContainer">@color/amber_md_theme_light_secondaryContainer</item>
+        <item name="colorOnSecondaryContainer">@color/amber_md_theme_light_onSecondaryContainer</item>
+        <item name="colorTertiary">@color/amber_md_theme_light_tertiary</item>
+        <item name="colorOnTertiary">@color/amber_md_theme_light_onTertiary</item>
+        <item name="colorTertiaryContainer">@color/amber_md_theme_light_tertiaryContainer</item>
+        <item name="colorOnTertiaryContainer">@color/amber_md_theme_light_onTertiaryContainer</item>
+        <item name="colorError">@color/amber_md_theme_light_error</item>
+        <item name="colorErrorContainer">@color/amber_md_theme_light_errorContainer</item>
+        <item name="colorOnError">@color/amber_md_theme_light_onError</item>
+        <item name="colorOnErrorContainer">@color/amber_md_theme_light_onErrorContainer</item>
+        <item name="android:colorBackground">@color/amber_md_theme_light_background</item>
+        <item name="colorOnBackground">@color/amber_md_theme_light_onBackground</item>
+        <item name="colorSurface">@color/amber_md_theme_light_surface</item>
+        <item name="colorOnSurface">@color/amber_md_theme_light_onSurface</item>
+        <item name="colorSurfaceVariant">@color/amber_md_theme_light_surfaceVariant</item>
+        <item name="colorOnSurfaceVariant">@color/amber_md_theme_light_onSurfaceVariant</item>
+        <item name="colorOutline">@color/amber_md_theme_light_outline</item>
+        <item name="colorOnSurfaceInverse">@color/amber_md_theme_light_inverseOnSurface</item>
+        <item name="colorSurfaceInverse">@color/amber_md_theme_light_inverseSurface</item>
+        <item name="colorPrimaryInverse">@color/amber_md_theme_light_inversePrimary</item>
+    </style>
+
+    <style name="Theme.Pink" parent="BaseTheme">
+        <item name="colorPrimary">@color/pink_md_theme_light_primary</item>
+        <item name="colorOnPrimary">@color/pink_md_theme_light_onPrimary</item>
+        <item name="colorPrimaryContainer">@color/pink_md_theme_light_primaryContainer</item>
+        <item name="colorOnPrimaryContainer">@color/pink_md_theme_light_onPrimaryContainer</item>
+        <item name="colorSecondary">@color/pink_md_theme_light_secondary</item>
+        <item name="colorOnSecondary">@color/pink_md_theme_light_onSecondary</item>
+        <item name="colorSecondaryContainer">@color/pink_md_theme_light_secondaryContainer</item>
+        <item name="colorOnSecondaryContainer">@color/pink_md_theme_light_onSecondaryContainer</item>
+        <item name="colorTertiary">@color/pink_md_theme_light_tertiary</item>
+        <item name="colorOnTertiary">@color/pink_md_theme_light_onTertiary</item>
+        <item name="colorTertiaryContainer">@color/pink_md_theme_light_tertiaryContainer</item>
+        <item name="colorOnTertiaryContainer">@color/pink_md_theme_light_onTertiaryContainer</item>
+        <item name="colorError">@color/pink_md_theme_light_error</item>
+        <item name="colorErrorContainer">@color/pink_md_theme_light_errorContainer</item>
+        <item name="colorOnError">@color/pink_md_theme_light_onError</item>
+        <item name="colorOnErrorContainer">@color/pink_md_theme_light_onErrorContainer</item>
+        <item name="android:colorBackground">@color/pink_md_theme_light_background</item>
+        <item name="colorOnBackground">@color/pink_md_theme_light_onBackground</item>
+        <item name="colorSurface">@color/pink_md_theme_light_surface</item>
+        <item name="colorOnSurface">@color/pink_md_theme_light_onSurface</item>
+        <item name="colorSurfaceVariant">@color/pink_md_theme_light_surfaceVariant</item>
+        <item name="colorOnSurfaceVariant">@color/pink_md_theme_light_onSurfaceVariant</item>
+        <item name="colorOutline">@color/pink_md_theme_light_outline</item>
+        <item name="colorOnSurfaceInverse">@color/pink_md_theme_light_inverseOnSurface</item>
+        <item name="colorSurfaceInverse">@color/pink_md_theme_light_inverseSurface</item>
+        <item name="colorPrimaryInverse">@color/pink_md_theme_light_inversePrimary</item>
+    </style>
+
+    <style name="Theme.Indigo" parent="BaseTheme">
+        <item name="colorPrimary">@color/indigo_md_theme_light_primary</item>
+        <item name="colorOnPrimary">@color/indigo_md_theme_light_onPrimary</item>
+        <item name="colorPrimaryContainer">@color/indigo_md_theme_light_primaryContainer</item>
+        <item name="colorOnPrimaryContainer">@color/indigo_md_theme_light_onPrimaryContainer</item>
+        <item name="colorSecondary">@color/indigo_md_theme_light_secondary</item>
+        <item name="colorOnSecondary">@color/indigo_md_theme_light_onSecondary</item>
+        <item name="colorSecondaryContainer">@color/indigo_md_theme_light_secondaryContainer</item>
+        <item name="colorOnSecondaryContainer">@color/indigo_md_theme_light_onSecondaryContainer</item>
+        <item name="colorTertiary">@color/indigo_md_theme_light_tertiary</item>
+        <item name="colorOnTertiary">@color/indigo_md_theme_light_onTertiary</item>
+        <item name="colorTertiaryContainer">@color/indigo_md_theme_light_tertiaryContainer</item>
+        <item name="colorOnTertiaryContainer">@color/indigo_md_theme_light_onTertiaryContainer</item>
+        <item name="colorError">@color/indigo_md_theme_light_error</item>
+        <item name="colorErrorContainer">@color/indigo_md_theme_light_errorContainer</item>
+        <item name="colorOnError">@color/indigo_md_theme_light_onError</item>
+        <item name="colorOnErrorContainer">@color/indigo_md_theme_light_onErrorContainer</item>
+        <item name="android:colorBackground">@color/indigo_md_theme_light_background</item>
+        <item name="colorOnBackground">@color/indigo_md_theme_light_onBackground</item>
+        <item name="colorSurface">@color/indigo_md_theme_light_surface</item>
+        <item name="colorOnSurface">@color/indigo_md_theme_light_onSurface</item>
+        <item name="colorSurfaceVariant">@color/indigo_md_theme_light_surfaceVariant</item>
+        <item name="colorOnSurfaceVariant">@color/indigo_md_theme_light_onSurfaceVariant</item>
+        <item name="colorOutline">@color/indigo_md_theme_light_outline</item>
+        <item name="colorOnSurfaceInverse">@color/indigo_md_theme_light_inverseOnSurface</item>
+        <item name="colorSurfaceInverse">@color/indigo_md_theme_light_inverseSurface</item>
+        <item name="colorPrimaryInverse">@color/indigo_md_theme_light_inversePrimary</item>
+    </style>
+
+    <style name="Theme.Cyan" parent="BaseTheme">
+        <item name="colorPrimary">@color/cyan_md_theme_light_primary</item>
+        <item name="colorOnPrimary">@color/cyan_md_theme_light_onPrimary</item>
+        <item name="colorPrimaryContainer">@color/cyan_md_theme_light_primaryContainer</item>
+        <item name="colorOnPrimaryContainer">@color/cyan_md_theme_light_onPrimaryContainer</item>
+        <item name="colorSecondary">@color/cyan_md_theme_light_secondary</item>
+        <item name="colorOnSecondary">@color/cyan_md_theme_light_onSecondary</item>
+        <item name="colorSecondaryContainer">@color/cyan_md_theme_light_secondaryContainer</item>
+        <item name="colorOnSecondaryContainer">@color/cyan_md_theme_light_onSecondaryContainer</item>
+        <item name="colorTertiary">@color/cyan_md_theme_light_tertiary</item>
+        <item name="colorOnTertiary">@color/cyan_md_theme_light_onTertiary</item>
+        <item name="colorTertiaryContainer">@color/cyan_md_theme_light_tertiaryContainer</item>
+        <item name="colorOnTertiaryContainer">@color/cyan_md_theme_light_onTertiaryContainer</item>
+        <item name="colorError">@color/cyan_md_theme_light_error</item>
+        <item name="colorErrorContainer">@color/cyan_md_theme_light_errorContainer</item>
+        <item name="colorOnError">@color/cyan_md_theme_light_onError</item>
+        <item name="colorOnErrorContainer">@color/cyan_md_theme_light_onErrorContainer</item>
+        <item name="android:colorBackground">@color/cyan_md_theme_light_background</item>
+        <item name="colorOnBackground">@color/cyan_md_theme_light_onBackground</item>
+        <item name="colorSurface">@color/cyan_md_theme_light_surface</item>
+        <item name="colorOnSurface">@color/cyan_md_theme_light_onSurface</item>
+        <item name="colorSurfaceVariant">@color/cyan_md_theme_light_surfaceVariant</item>
+        <item name="colorOnSurfaceVariant">@color/cyan_md_theme_light_onSurfaceVariant</item>
+        <item name="colorOutline">@color/cyan_md_theme_light_outline</item>
+        <item name="colorOnSurfaceInverse">@color/cyan_md_theme_light_inverseOnSurface</item>
+        <item name="colorSurfaceInverse">@color/cyan_md_theme_light_inverseSurface</item>
+        <item name="colorPrimaryInverse">@color/cyan_md_theme_light_inversePrimary</item>
     </style>
 
 </resources>

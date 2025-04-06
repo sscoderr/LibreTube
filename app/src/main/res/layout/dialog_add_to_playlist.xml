@@ -6,7 +6,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
-    <com.bimilyoncu.sscoderr.libretube.ui.views.DropdownMenu
+    <com.bimilyoncu.sscoderr.libretubess.ui.views.DropdownMenu
         android:id="@+id/playlists_spinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

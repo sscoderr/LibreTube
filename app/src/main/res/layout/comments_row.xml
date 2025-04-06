@@ -101,7 +101,7 @@
                 android:gravity="center_vertical"
                 android:orientation="horizontal">
 
-                <com.bimilyoncu.sscoderr.libretube.ui.views.DrawableTextView
+                <com.bimilyoncu.sscoderr.libretubess.ui.views.DrawableTextView
                     android:id="@+id/likes_textView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -131,7 +131,7 @@
                     app:shapeAppearance="@style/CircleImageView"
                     tools:visibility="gone" />
 
-                <com.bimilyoncu.sscoderr.libretube.ui.views.DrawableTextView
+                <com.bimilyoncu.sscoderr.libretubess.ui.views.DrawableTextView
                     android:id="@+id/replies_count"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

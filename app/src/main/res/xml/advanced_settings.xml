@@ -4,12 +4,6 @@
 
     <PreferenceCategory app:title="@string/advanced">
 
-        <SwitchPreferenceCompat
-            android:defaultValue="false"
-            android:icon="@drawable/ic_download_filled"
-            app:key="automatic_update_checks"
-            app:title="@string/show_updates" />
-
         <ListPreference
             android:defaultValue="disabled"
             android:entries="@array/dataSaverModeOptions"
@@ -51,7 +45,7 @@
 
     <PreferenceCategory app:title="@string/downloads">
 
-        <com.bimilyoncu.sscoderr.libretube.ui.views.SliderPreference
+        <com.bimilyoncu.sscoderr.libretubess.ui.views.SliderPreference
             android:icon="@drawable/ic_download"
             android:key="max_parallel_downloads"
             android:title="@string/concurrent_downloads"
